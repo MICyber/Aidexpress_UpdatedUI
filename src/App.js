@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ProductPage from './PAGES/Product/ProductPage';
 import About from './PAGES/Extra/About';
 import Contact from './PAGES/Extra/Contact';
-import AccessLevel from  './PAGES/Extra/AccessLevel/AccessLevel';
+import AccessLevel from  './PAGES/Extra/AccessLevel';
 import Login from './PAGES/Auth/Login';
 import Signup from './PAGES/Auth/Signup';
 import ForgotPassword from './PAGES/Auth/ForgotPassword';
