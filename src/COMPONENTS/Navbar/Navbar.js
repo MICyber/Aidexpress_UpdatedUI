@@ -180,7 +180,7 @@ const Navbar = () => {
 
             <li>
               <div className="cart">
-                <span className="qty">{cartquantity}</span>
+            
                 <Link to="/cart" className="stylenone">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
