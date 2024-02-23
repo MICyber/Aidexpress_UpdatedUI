@@ -67,9 +67,9 @@ const Navbar = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item>Sinhala</Dropdown.Item>
+                <Dropdown.Item>සිංහල</Dropdown.Item>
+                <Dropdown.Item>தமிழ்</Dropdown.Item>
                 <Dropdown.Item>English</Dropdown.Item>
-                <Dropdown.Item>Tamil</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
