@@ -15,6 +15,9 @@ import UserProfile from './PAGES/User/UserProfile';
 import FAQ from './PAGES/Extra/FAQ';
 import Termsandconditions from './PAGES/Extra/Termsandconditions';
 import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
+import Donation from './COMPONENTS/Donation/Donation';
+
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -36,6 +39,7 @@ const App = () => {
         <Route path="/FAQ" element={<FAQ/>} />
         <Route path="/termsandconditions" element={<Termsandconditions/>} />
         <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
+        <Route path="/Donation" element={<Donation/>} />
 
         <Route path="*" element={<div>
           <h1>404 NOT FOUND</h1>

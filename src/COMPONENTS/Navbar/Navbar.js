@@ -21,7 +21,9 @@ const Navbar = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Donate </Dropdown.Item>
+            
+              <Dropdown.Item href="/Donation">Donate</Dropdown.Item>
+            
               <Dropdown.Item href="#/action-2">Evidence</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -180,7 +182,7 @@ const Navbar = () => {
 
             <li>
               <div className="cart">
-                <span className="qty">{cartquantity}</span>
+                
                 <Link to="/cart" className="stylenone">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
