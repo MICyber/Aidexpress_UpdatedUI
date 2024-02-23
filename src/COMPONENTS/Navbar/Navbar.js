@@ -49,10 +49,10 @@ const Navbar = () => {
         </div>
         <div className="right">
           <div className="s2">
-          <Dropdown>
-  <Dropdown.Toggle variant="" id="language-dropdown">
-    <GrLanguage className="w-6 h-6" />
-  </Dropdown.Toggle>
+            <Dropdown>
+              <Dropdown.Toggle variant="" id="language-dropdown">
+                <GrLanguage className="w-6 h-6" />
+              </Dropdown.Toggle>
 
               <Dropdown.Menu>
                 <Dropdown.Item>සිංහල</Dropdown.Item>
