@@ -1,11 +1,11 @@
 import React from 'react'
-import veges from '../../ASSETS/veges.png'
+import wheel from '../../ASSETS/wheel.png'
 import './Footer1.css'
 const Footer1 = () => {
     return (
         <div className='footer1'>
             <div className='left'>
-                <img src={veges} alt='veges' />
+                <img src={wheel} alt='threewheel' />
             </div>
             <div className='right'>
                 <h1>Fresh Vegetables & Fruits at your doorstep
