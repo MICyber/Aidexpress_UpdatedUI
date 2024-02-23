@@ -82,8 +82,8 @@ const Navbar = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-             <Dropdown.Item href="/AccessLevel">Login</Dropdown.Item>  {/* //MMainpage eke acces level ekt yana eka thawa ekk thiyenwa rule num=220 */}
-              <Dropdown.Item href="/AccessLevelforSignup">Signup</Dropdown.Item>
+             <Dropdown.Item href="/AccessLevel">Login</Dropdown.Item> 
+              <Dropdown.Item href="/Signup">Signup</Dropdown.Item>
               <Dropdown.Item href="/user/accountsettings">
                 Profile
               </Dropdown.Item>
