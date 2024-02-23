@@ -23,7 +23,7 @@ const UserProfile = () => {
         <Navbar/>
         <SingleBanner 
         heading={`My Profile`}
-        bannerimage = 'https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' 
+        bannerimage = 'https://images.unsplash.com/photo-1613694219918-a7e115429a9a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' 
         />
         {/* UserProfile , showing {activepage}
          */}

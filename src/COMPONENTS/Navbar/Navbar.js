@@ -3,32 +3,13 @@ import "./Navbar.css";
 import logo from "../../ASSETS/logo.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
-const Navbar = ({ reloadnavbar }) => {
-  const [cartquantity, setcartquantity] = useState(0);
-
-  const getcarttotalitems = () => {
-    let cart = JSON.parse(localStorage.getItem("cart"));
-    if (cart) {
-      let total = 0;
-      cart.forEach((item) => {
-        total += item.quantity;
-      });
-      setcartquantity(total);
-    } else {
-      setcartquantity(0);
-    }
-  };
-
-  useEffect(() => {
-    getcarttotalitems();
-  }, [reloadnavbar]);
-
+const Navbar = () => {
   const [shows3, setshows3] = useState(false);
   return (
     <nav>
       <div className="s1">
         <img src={logo} alt="logo" className="logo" />
-        
+
         <div className="s2">
           <Link to="/">
             <a>Home</a>
@@ -69,9 +50,8 @@ const Navbar = ({ reloadnavbar }) => {
         <div className="right">
           <div className="s2">
             <Dropdown>
-              <Dropdown.Toggle
-                variant="" id="language-dropdown" >
-                     <svg
+              <Dropdown.Toggle variant="" id="language-dropdown">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -85,7 +65,6 @@ const Navbar = ({ reloadnavbar }) => {
                     d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
                   />
                 </svg>
-
               </Dropdown.Toggle>
 
               <Dropdown.Menu>

@@ -8,19 +8,19 @@ const AccountSettings = () => {
 
       <div className='form'>
         <div className='form-group'>
-          <label htmlFor='name'>Your Name <span>*</span></label>
+          <label htmlFor='name'>Your Name </label>
           <input type='text' name='name' id='name' />
         </div>
 
         <div className='form-group'>
-          <label htmlFor='phone'>Phone/Mobile <span>*</span></label>
+          <label htmlFor='phone'>Phone/Mobile </label>
           <input type='text' name='phone' id='phone'
 
           />
         </div>
 
         <div className='form-group'>
-          <label htmlFor='email'>Email <span>*</span></label>
+          <label htmlFor='email'>NIC </label>
           <input type='email' name='email' id='email'
 
           />
