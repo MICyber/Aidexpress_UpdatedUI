@@ -16,13 +16,12 @@ const Navbar = () => {
           </Link>
           <Dropdown>
             <Dropdown.Toggle variant="" id="dropdown-basic">
-              Language
+              Donate Now
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="#/action-1">Fresh Vegetables</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Fresh Fruits</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">House Cleaning</Dropdown.Item>
+              <Dropdown.Item href="#/action-1">Donate </Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Evidence</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Link to="/about">
