@@ -82,7 +82,7 @@ const Navbar = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="/login">Login</Dropdown.Item>
+             <Dropdown.Item href="/AccessLevel">Login</Dropdown.Item>  {/* //MMainpage eke acces level ekt yana eka thawa ekk thiyenwa rule num=220 */}
               <Dropdown.Item href="/signup">Signup</Dropdown.Item>
               <Dropdown.Item href="/user/accountsettings">
                 Profile
@@ -180,7 +180,7 @@ const Navbar = () => {
 
             <li>
               <div className="cart">
-                <span className="qty">{cartquantity}</span>
+                
                 <Link to="/cart" className="stylenone">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
