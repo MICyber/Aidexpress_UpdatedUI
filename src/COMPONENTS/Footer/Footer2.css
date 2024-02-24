@@ -27,10 +27,17 @@
     flex-direction: column;
 }
 
-.footerin1 .f1 img {
+.footerin1 .f1 .logo {
     width: 200px;
     margin-bottom: 10px;
 }
+
+.footerin1 .f1 .social {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+
 
 .footerin1 .f1 p {
     font-size: 16px;
