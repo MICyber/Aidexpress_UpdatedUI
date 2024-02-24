@@ -7,8 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 import ProductPage from './PAGES/Product/ProductPage';
 import About from './PAGES/Extra/About';
 import Contact from './PAGES/Extra/Contact';
-import AccessLevel from  './PAGES/Extra/AccessLevel';
 
+import AccessLevel from  './PAGES/Extra/AccessLevel';
+import AccessLevelForSignIn from  './PAGES/Extra/AccessLevelForSignUp';
 
 import OfficerLogin from "./PAGES/AuthOfficer/OfficerLogin"; 
 import Officersignup from "./PAGES/AuthOfficer/OfficerSignup"; 
@@ -18,13 +19,17 @@ import OfficerForgotPassword from "./PAGES/AuthOfficer/OfficerForgotPassword";
 
 import LoginUser from "./PAGES/Auth/Login"; 
 import Login from './PAGES/Auth/Login';
-import Signup from './PAGES/Auth/Signup';
+
+import SignUpUser from './PAGES/Auth/Signup';
+import OfficerSignUp from './PAGES/AuthOfficer/OfficerSignup';
+
 import ForgotPassword from './PAGES/Auth/ForgotPassword';
 import Cart from './PAGES/Cart/Cart';
 import UserProfile from './PAGES/User/UserProfile';
 import FAQ from './PAGES/Extra/FAQ';
 import Termsandconditions from './PAGES/Extra/Termsandconditions';
 import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
+import AccessLevelForSignUp from './PAGES/Extra/AccessLevelForSignUp';
 const App = () => {';/'
   return (
     <BrowserRouter>
@@ -44,7 +49,11 @@ const App = () => {';/'
         <Route path="/OfficerLogin" element={<OfficerLogin/>} />
         <Route path="/Officersignup" element={<Officersignup/>} />
         <Route path="/OfficerForgotPassword" element={<OfficerForgotPassword/>} />
-        <Route path="/signup" element={<Signup/>} />
+
+        <Route path="/AccessLevelForSignUp" element={<AccessLevelForSignUp/>} />
+        <Route path="/SignUpUser" element={<SignUpUser/>} />
+        <Route path="/OfficerSignUp" element={<OfficerSignUp/>} />
+
         <Route path="/forgotpassword" element={<ForgotPassword/>} />
         <Route path="/cart" element={<Cart/>} />
         <Route path='/user/:activepage' element={<UserProfile/>} />

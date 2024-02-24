@@ -35,7 +35,7 @@ const OfficerLogin = () => {
                         <button className='btn'>Login</button>
                     </Link>
                     <h2 className='or'>OR</h2>
-                    <Link to='/Officersignup'
+                    <Link to='/OfficerSignup'
                         className='stylenone'
                     >
                         <button className='btn'>Signup</button>
