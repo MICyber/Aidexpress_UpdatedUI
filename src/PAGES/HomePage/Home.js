@@ -10,11 +10,12 @@ import img2 from '../../ASSETS/Images/2.png'
 import img3 from '../../ASSETS/Images/3.png'
 import img4 from '../../ASSETS/Images/4.png'
 import ProductsSlider from '../../COMPONENTS/Product/ProductsSlider'
+import Donation from '../../COMPONENTS/Donation/Donation'
 
 
 const Home = () => {
 
-  const products = [
+  /**const products = [
     {
         "ProductId": 1,
         "ProductName": "Product 1",
@@ -441,13 +442,13 @@ const Home = () => {
             }
         ]
     }
-]
+]**/
   return (
     <div>
       <Navbar reloadnavbar={false}/>
       <BannerSlider />
       <HomeCategories />
-      <Product_Sidebar />
+      <Donation/>
       <Footer1 />
 
       {/* <div className='slidercont'>

@@ -29,8 +29,7 @@ import UserProfile from './PAGES/User/UserProfile';
 import FAQ from './PAGES/Extra/FAQ';
 import Termsandconditions from './PAGES/Extra/Termsandconditions';
 import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
-import AccessLevelForSignUp from './PAGES/Extra/AccessLevelForSignUp';
-const App = () => {';/'
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -60,6 +59,7 @@ const App = () => {';/'
         <Route path="/FAQ" element={<FAQ/>} />
         <Route path="/termsandconditions" element={<Termsandconditions/>} />
         <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
+        <Route path="/Donation" element={<Donation/>} />
 
         
       </Routes>
