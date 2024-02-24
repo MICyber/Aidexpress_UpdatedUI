@@ -35,7 +35,7 @@ const Login = () => {
                         <button className='btn'>Login</button>
                     </Link>
                     <h2 className='or'>OR</h2>
-                    <Link to='/signup'
+                    <Link to='/SignUpUser'
                         className='stylenone'
                     >
                         <button className='btn'>Signup</button>
