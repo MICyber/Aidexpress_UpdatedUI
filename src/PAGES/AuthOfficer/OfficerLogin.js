@@ -28,7 +28,7 @@ const OfficerLogin = () => {
                     >
                         <p>Forgot password?</p>
                     </Link>
-                    <Link to='/'
+                    <Link to='/OfficerProfile/accountsettings'
                         className='stylenone'
 
                     >

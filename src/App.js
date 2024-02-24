@@ -27,10 +27,14 @@ import ForgotPassword from './PAGES/Auth/ForgotPassword';
 import Cart from './PAGES/Cart/Cart';
 
 import UserProfile from './PAGES/User/UserProfile';
+import OfficerProfile from './PAGES/Officer/UserProfile';
+
 
 import FAQ from './PAGES/Extra/FAQ';
 import Termsandconditions from './PAGES/Extra/Termsandconditions';
 import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
+
+
 const App = () => {';/'
   return (
     <BrowserRouter>
@@ -58,7 +62,8 @@ const App = () => {';/'
         <Route path="/forgotpassword" element={<ForgotPassword/>} />
         <Route path="/cart" element={<Cart/>} />
 
-        <Route path='/user/:activepage' element={<UserProfile/>} />
+        <Route path='/UserProfile/:activepage' element={<UserProfile/>} />
+        <Route path='/OfficerProfile/:activepage' element={<OfficerProfile/>} />
         
         <Route path="/FAQ" element={<FAQ/>} />
         <Route path="/termsandconditions" element={<Termsandconditions/>} />

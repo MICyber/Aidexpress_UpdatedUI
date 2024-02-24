@@ -29,7 +29,7 @@ const Login = () => {
                         <p>Forgot password?</p>
                     </Link>
 
-                    <Link to='/user/accountsettings'
+                    <Link to='/UserProfile/accountsettings'
                         className='stylenone'
                     >
                         <button className='btn'>Login</button>
