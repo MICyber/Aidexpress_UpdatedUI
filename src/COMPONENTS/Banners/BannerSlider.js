@@ -6,14 +6,14 @@ const BannerSlider = () => {
     const data = [
         {
             id: 1,
-            image: 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image: 'https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             title: 'Receive your incentives without any hassle.',
             description: 'Experience the ease of receiving your incentives with no unnecessarycomplications or hassles',
             button: 'htttps://www.google.com'
         },
         {
             id: 2,
-            image: 'https://images.unsplash.com/photo-1624963145509-5b52cba74cee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            image: 'https://images.pexels.com/photos/939702/pexels-photo-939702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             title: 'Receive your incentives without any hassle.',
             description: 'Experience the ease of receiving your incentives with no unnecessarycomplications or hassles',
             button: 'htttps://www.google.com'

@@ -40,14 +40,16 @@
 }
 
 .bannerslider .imagecont h1 {
-    font-size: 2.0rem;
-    font-weight: 200;
+    font-size: 4.0rem;
+    font-weight: 500;
     margin-bottom: 5px;
     width: 70%;
+    font: 700 normal 2.5em 'tahoma';
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
 .bannerslider .imagecont span {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 100;
     margin-bottom: 5px;
     width: 70%;
@@ -68,6 +70,7 @@
 .bannerslider .imagecont button:hover {
     background-color: var(--col1);
     color: white;
+   
 }
 
 
