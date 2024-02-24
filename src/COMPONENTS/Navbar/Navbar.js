@@ -85,10 +85,7 @@ const Navbar = () => {
 
             <Dropdown.Menu>
              <Dropdown.Item href="/AccessLevel">Login</Dropdown.Item> 
-              <Dropdown.Item href="/AccessLevelForSignUp">Signup</Dropdown.Item>
-              <Dropdown.Item href="/user/accountsettings">
-                Profile
-              </Dropdown.Item>
+              <Dropdown.Item href="/AccessLevelForSignUp">Signup</Dropdown.Item> 
               <Dropdown.Item href="#">Logout</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

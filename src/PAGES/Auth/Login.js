@@ -28,12 +28,13 @@ const Login = () => {
                     >
                         <p>Forgot password?</p>
                     </Link>
-                    <Link to='/'
-                        className='stylenone'
 
+                    <Link to='/user/accountsettings'
+                        className='stylenone'
                     >
                         <button className='btn'>Login</button>
                     </Link>
+
                     <h2 className='or'>OR</h2>
                     <Link to='/SignUpUser'
                         className='stylenone'

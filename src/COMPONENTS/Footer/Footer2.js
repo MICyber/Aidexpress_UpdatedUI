@@ -15,31 +15,7 @@ const Footer2 = () => {
             platform connecting donors and beneficiaries for impactful giving
             and a better world.
           </p>
-
-
           <img src={social} alt="social" className="social" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
         </div>
         <div className="f2">
           <h3>About Us</h3>
