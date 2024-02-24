@@ -21,7 +21,7 @@
 }
 
 .homecategories .container img{
-    width: 50%;
+    width: 40%;
 }
 .homecategories .container .content{
     width: 50%;
@@ -60,7 +60,7 @@
 
 
 .homecategories .container:nth-child(3){
-    background-color: #ffabe4;
+    background-color: #1de09f;
     color: rgb(0, 0, 0);
 }
 
