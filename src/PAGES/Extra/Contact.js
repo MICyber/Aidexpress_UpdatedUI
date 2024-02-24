@@ -15,24 +15,29 @@ const Contact = () => {
         <div className='extrapage'>
             <Navbar reloadnavbar={false}/>
             <SingleBanner
-                bannerimage='https://images.unsplash.com/photo-1495480137269-ff29bd0a695c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80'
+                bannerimage='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9uYXRpb258ZW58MHx8MHx8fDA%3D'
                 heading="Contact Us"
             />
             <div className='pgleft pgcommon'>
-                <img src='https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' alt='noimg' />
+                <img src='https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRvbmF0aW9uJTIwY29udGFjdHxlbnwwfHwwfHx8MA%3D%3D' alt='noimg' />
 
                 <div>
-                    <h1>Our Story</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <h1>START A NEW CASE</h1>
+                    <p>We'd love to hear from you! Whether you have questions about our service, want to provide feedback, or just want to say hello, feel free to reach out to us using the contact information below or by filling out the form. Just send us your questions or concerns by starting a new case and we will give you the help you need.</p>
 
                 </div>
             </div>
             <div className='pgright pgcommon'>
-                <img src='https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' alt='noimg' />
+                <img src='https://images.unsplash.com/photo-1577563820627-bc12aa2139de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D' alt='noimg' />
 
                 <div>
-                    <h1>Who are we</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <h1>Talk with Us</h1>
+                    <p> Address: No.01, Galle Road, Colombo 7, Sri Lanka.</p>
+                    <p>Phone: +94-113-568</p>  
+                    <p>Email: aidexpress@gmail.com</p>
+
+                    <h1>Send Us a Message</h1>
+                    <p>Fill the form below to send us a message.</p>
 
                 </div>
             </div>

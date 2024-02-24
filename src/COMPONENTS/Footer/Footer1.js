@@ -1,17 +1,19 @@
 import React from 'react'
-import wheel from '../../ASSETS/wheel.png'
+import manwithphone from '../../ASSETS/manwithphone.png'
 import './Footer1.css'
 const Footer1 = () => {
     return (
         <div className='footer1'>
             <div className='left'>
-                <img src={wheel} alt='threewheel' />
+                <img src={manwithphone} alt='manwithphone' />
             </div>
             <div className='right'>
-                <h1>Fresh Vegetables & Fruits at your doorstep
+                <h1>Putting the power of financial control in the hands of Samurdhi families. 
+                    Track, access, and manage your assistance seamlessly.
                 </h1>
-                <p>We deliver fresh vegetables & fruits at your doorstep.
-                    We deliver fresh vegetables & fruits at your doorstep.
+                <p>“Poverty isn’t a lack of character. It’s a lack of cash.” 
+                    —Rutger Bregman
+                   
                 </p>
             </div>
         </div>
