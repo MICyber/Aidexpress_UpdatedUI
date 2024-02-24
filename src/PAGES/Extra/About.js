@@ -15,10 +15,10 @@ const About = () => {
         <Navbar reloadnavbar={false}/>
         <SingleBanner
         heading="About Us"
-        bannerimage= 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fkidsandclays.com%2Fwp-content%2Fuploads%2F2016%2F11%2Fbigstock-Make-a-Donation-Charity-Donate-140880731.jpg&tbnid=o40VYeHc-USvdM&vet=12ahUKEwiOitOD1sOEAxVdcmwGHalUBPoQMygLegUIARCMAQ..i&imgrefurl=https%3A%2F%2Fkidsandclays.com%2Fproduct%2Fcredit-card-donation%2F&docid=vnWBTXf1Ty4G4M&w=700&h=450&q=donation&ved=2ahUKEwiOitOD1sOEAxVdcmwGHalUBPoQMygLegUIARCMAQ'
+        bannerimage= 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9uYXRpb258ZW58MHx8MHx8fDA%3D'
         />
         <div className='pgleft pgcommon'>
-            <img src='https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' alt='noimg' />
+            <img src='https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9uYXRpb258ZW58MHx8MHx8fDA%3D' alt='noimg' />
 
             <div>
                 <h1>Vision</h1>
@@ -33,7 +33,7 @@ const About = () => {
             
         </div>
         <div className='pgright pgcommon'>
-            <img src='https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' alt='noimg' />
+            <img src='https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9uYXRlfGVufDB8fDB8fHww' alt='noimg' />
 
             <div>
                 <h1>Our Story</h1>
@@ -44,7 +44,7 @@ const About = () => {
             
         </div>
         <div className='pgleft pgcommon'>
-            <img src='https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' alt='noimg' />
+            <img src='https://images.unsplash.com/photo-1599461149326-2e9dd1113a02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRvbmF0ZXxlbnwwfHwwfHx8MA%3D%3D' alt='noimg' />
 
             <div>
                 <h1>Objectives</h1>
