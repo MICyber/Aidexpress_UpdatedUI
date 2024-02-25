@@ -33,6 +33,7 @@ import OfficerProfile from './PAGES/Officer/UserProfile';
 import FAQ from './PAGES/Extra/FAQ';
 import Termsandconditions from './PAGES/Extra/Termsandconditions';
 import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
+import Application from './PAGES/Application/Application';
 
 
 const App = () => {';/'
@@ -68,6 +69,9 @@ const App = () => {';/'
         <Route path="/FAQ" element={<FAQ/>} />
         <Route path="/termsandconditions" element={<Termsandconditions/>} />
         <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
+
+        <Route path="/Application" element={<Application/>} />
+
 
         
       </Routes>
