@@ -44,7 +44,7 @@ const Donation = () => {
       </div>
       <div className="donation-image">
         <img
-          src="https://www.crowdfunder.co.uk/uploads/projects/852572.jpg?1670519733" // Replace with your actual image URL
+          src="https://www.crowdfunder.co.uk/uploads/projects/852572.jpg?1670519733" 
           alt="Donation"
         />
       </div>
