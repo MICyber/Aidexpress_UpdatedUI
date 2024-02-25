@@ -42,7 +42,7 @@ const BannerSlider = () => {
                                 <div className='content'>
                                     <h1>{item.title}</h1>
                                     <span>{item.description}</span>
-                                    <Link to='/Application'><button >Apply Now</button></Link>
+                                    <Link to='/ApplicationForm'><button >Apply Now</button></Link>
                                 </div>
                             </div>
                         )
@@ -53,4 +53,4 @@ const BannerSlider = () => {
     )
 }
 
-export default BannerSlider
+export default BannerSlider;
