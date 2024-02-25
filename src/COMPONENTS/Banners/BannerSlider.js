@@ -30,6 +30,14 @@ const BannerSlider = () => {
         slidesToScroll: 1
     };
 
+    const openGoogleForm = () => {
+        // Replace 'YOUR_GOOGLE_FORM_URL' with the actual URL of your Google Form
+        const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScPTGjoKfGktNIk4R8f4GzLtZ1EUpQ8_ET-tn4mvvmPNa1dGQ/viewform?usp=sf_link';
+    
+        // Open the Google Form in a new window
+        window.open(googleFormUrl, '_blank');
+      };
+
 
     return (
         <div className='bannerslider'>
@@ -42,7 +50,7 @@ const BannerSlider = () => {
                                 <div className='content'>
                                     <h1>{item.title}</h1>
                                     <span>{item.description}</span>
-                                    <Link to='/ApplicationForm'><button >Apply Now</button></Link>
+                                    <button onClick={openGoogleForm}>Apply Now</button>
                                 </div>
                             </div>
                         )
