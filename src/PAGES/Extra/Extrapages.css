@@ -6,6 +6,8 @@
 
 .pgleft{
     display: flex;
+   
+    width: 100px;
 }
 
 .pgright{

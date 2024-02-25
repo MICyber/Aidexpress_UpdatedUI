@@ -44,7 +44,7 @@ const Donation = () => {
       </div>
       <div className="donation-image">
         <img
-          src="https://qph.cf2.quoracdn.net/main-qimg-fbf9621efdc6cd1e5a1e56f0e41fd7ef" // Replace with your actual image URL
+          src="https://www.crowdfunder.co.uk/uploads/projects/852572.jpg?1670519733" // Replace with your actual image URL
           alt="Donation"
         />
       </div>

@@ -104,7 +104,7 @@ nav .s2{
 nav .s2 a{
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
 }
@@ -169,7 +169,7 @@ nav .s3 {
     }
     nav .s3 ul li{
         list-style: none;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 500;
         cursor: pointer;
         display: flex;

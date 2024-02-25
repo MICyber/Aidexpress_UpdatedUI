@@ -1,15 +1,16 @@
 import React from "react";
 import "./HomeCategories.css";
 import img1 from "../../ASSETS/Images/image_sms.png";
-import img2 from "../../ASSETS/Images/image_bank.png";
+import img2 from "../../ASSETS/Images/track.png";
 import img3 from "../../ASSETS/Images/image_language.png";
 import img4 from "../../ASSETS/Images/image_donate.png";
+import img5 from "../../ASSETS/Images/sms.png"
 
 const HomeCategories = () => {
   return (
     <div className="homecategories">
       <div className="container">
-        <img src={img1} alt="img1" />
+        <img src={img5} alt="img1" />
         <div className="content">
           <h1>SMS Services</h1>
           <p>Connect anytime, anywhere, no smartphone needed!</p>

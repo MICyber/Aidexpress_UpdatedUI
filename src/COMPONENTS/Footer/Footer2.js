@@ -1,7 +1,10 @@
 import React from "react";
 import payimg from "../../ASSETS/pay.png";
 import logo from "../../ASSETS/logo.png";
-import social from "../../ASSETS/social.png";
+import facebook from "../../ASSETS/facebook.png";
+import insta from "../../ASSETS/insta.png"
+import twitter from "../../ASSETS/twitter.png"
+import youtube from "../../ASSETS/youtube.png"
 import "./Footer2.css";
 import { Link } from "react-router-dom";
 const Footer2 = () => {
@@ -16,8 +19,22 @@ const Footer2 = () => {
             and a better world.
           </p>
 
+          <div>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src={facebook} alt="facebook" className="social" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src={insta} alt="insta" className="social" />
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src={twitter} alt="twitter" className="social" />
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src={youtube} alt="youtube" className="social" />
+            </a>
+          </div>
 
-          <img src={social} alt="social" className="social" />
+          
 
           
         </div>
