@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import './BannerSlider.css'
+import { Link } from 'react-router-dom'
 
 const BannerSlider = () => {
     const data = [
@@ -41,7 +42,7 @@ const BannerSlider = () => {
                                 <div className='content'>
                                     <h1>{item.title}</h1>
                                     <span>{item.description}</span>
-                                    <button>Apply now</button>
+                                    <Link to='/Application'><button >Apply Now</button></Link>
                                 </div>
                             </div>
                         )
