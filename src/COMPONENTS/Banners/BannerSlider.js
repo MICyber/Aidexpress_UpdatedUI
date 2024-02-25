@@ -7,7 +7,7 @@ const BannerSlider = () => {
     const data = [
         {
             id: 1,
-            image: 'https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            image: 'https://amichey.ca/wp-content/uploads/2020/04/iStock-1480574526-1536x1024.jpg',
             title: 'Receive your incentives without any hassle.',
             description: 'Experience the ease of receiving your incentives with no unnecessarycomplications or hassles',
             button: 'htttps://www.google.com'

@@ -3,12 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 80px;
+    margin: 60px;
   }
   
   .donation-content {
     flex: 1;
-    padding: 89.5px;
+    padding: 50px;
     margin-left: 50px;
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1); /* Add box shadow to the content */
     border-radius: 50px; /* Add border-radius to match the image */
@@ -26,7 +26,7 @@
   }
   
   .donation-image img {
-    max-width: 620px;
+    max-width: 500px;
     height: 430px;
     border-radius: 50px;
   }

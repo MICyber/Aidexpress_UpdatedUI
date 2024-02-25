@@ -48,24 +48,24 @@
 }
 
 .homecategories .container:nth-child(1){
-    background-color: #fbdc6e;
+    background-color: #c4b78b;
     color: rgb(0, 0, 0);
 }
 
 
 .homecategories .container:nth-child(2){
-    background-color: #ff9393;
+    background-color: #b08080;
     color: rgb(0, 0, 0);
 }
 
 
 .homecategories .container:nth-child(3){
-    background-color: #1de09f;
+    background-color: #88c1ae;
     color: rgb(0, 0, 0);
 }
 
 
 .homecategories .container:nth-child(4){
-    background-color: #a8d0e6;
+    background-color: #82a1b2;
     color: rgb(0, 0, 0);
 }
