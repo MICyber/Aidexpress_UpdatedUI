@@ -113,7 +113,7 @@ const Navbar = () => {
             </svg>
           </div>
 
-          <div className="searchbar">
+          {/* <div className="searchbar">
             <input
               typ="text"
               placeholder="Search for products and categries"
@@ -136,7 +136,7 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-          </div>
+          </div> */}
 
           <ul className="s32">
             <li>
@@ -148,17 +148,17 @@ const Navbar = () => {
             <li>
               <Dropdown>
                 <Dropdown.Toggle variant="" id="dropdown-basic">
-                  Categories
+                  Donate Now
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">
-                    Fresh Vegetables
+                    Donate
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Fresh Fruits</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
+                  <Dropdown.Item href="#/action-2">Evidence</Dropdown.Item>
+                  {/* <Dropdown.Item href="#/action-3">
                     House Cleaning
-                  </Dropdown.Item>
+                  </Dropdown.Item> */}
                 </Dropdown.Menu>
               </Dropdown>
             </li>
