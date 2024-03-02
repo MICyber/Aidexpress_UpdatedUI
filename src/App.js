@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import Home from './PAGES/HomePage/Home'
 import './App.css'
@@ -36,11 +36,24 @@ import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
 
 import ApplicationForm from './PAGES/Application/ApplicationForm';
 
+import './118n.js';
+
+
+
+
+function Loading() {
+  return (
+    <>Loading...</>
+  )
+}
 
 const App = () => {';/'
   return (
+    
+<Suspense fallback={<Loading/>}>
     <BrowserRouter>
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/product/:prodid" 
@@ -77,6 +90,7 @@ const App = () => {';/'
         
       </Routes>
     </BrowserRouter>
+    </Suspense>
   )
 }
 

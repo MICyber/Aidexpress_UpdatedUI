@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import BannerSlider from '../../COMPONENTS/Banners/BannerSlider'
 import HomeCategories from '../../COMPONENTS/Category/HomeCategories'
 import Footer1 from '../../COMPONENTS/Footer/Footer1'
@@ -11,6 +11,7 @@ import img3 from '../../ASSETS/Images/3.png'
 import img4 from '../../ASSETS/Images/4.png'
 import ProductsSlider from '../../COMPONENTS/Product/ProductsSlider'
 import Donation from '../../COMPONENTS/Donation/Donation'
+
 
 
 const Home = () => {
@@ -445,6 +446,7 @@ const Home = () => {
 ]**/
   return (
     <div>
+
       <Navbar reloadnavbar={false}/>
       <BannerSlider />
       <HomeCategories />
