@@ -12,10 +12,7 @@ const Footer1 = () => {
             </div>
             <div className='right'>
                 <h1>{t("footer1title1")}</h1>
-                <p>“Poverty isn’t a lack of character. It’s a lack of cash.” 
-                    —Rutger Bregman
-                   
-                </p>
+                <p>{t("footer1title2")}</p>
             </div>
         </div>
     )
