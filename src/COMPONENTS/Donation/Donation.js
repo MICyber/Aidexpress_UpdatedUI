@@ -27,8 +27,11 @@ export default Donation;**/
 // Donation.js
 import React from 'react';
 import './Donation.css'
+import { useTranslation } from 'react-i18next';
+
 
 const Donation = () => {
+  const { t } = useTranslation();
   return (
     <div className="donation-container">
       <div className="donation-content">

@@ -19,6 +19,18 @@
   padding: 0px;
 }
 
+.load {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+
 .goback{
   background-color: var(--col1);
   color: white;
