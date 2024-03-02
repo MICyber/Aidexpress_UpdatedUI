@@ -7,16 +7,18 @@ import twitter from "../../ASSETS/twitter.png"
 import youtube from "../../ASSETS/youtube.png"
 import "./Footer2.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
+
 const Footer2 = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer">
       <div className="footerin1">
         <div className="f1">
           <img src={logo} alt="logo" className="logo" />
           <p>
-            Aidexpress: Empowering lives with simplicity. A user-friendly
-            platform connecting donors and beneficiaries for impactful giving
-            and a better world.
+            {t("footer2title")}
           </p>
 
           <div>
