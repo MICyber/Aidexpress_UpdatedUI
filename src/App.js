@@ -38,10 +38,14 @@ import ApplicationForm from './PAGES/Application/ApplicationForm';
 import ApplicationForm2 from './PAGES/Application/ApplicationForm2.js';
 import ApplicationForm3 from './PAGES/Application/ApplicationForm3.js';
 import DocumentUploadPage from './PAGES/Application/DocumentUploadPage.js';
+import DonateForm from './COMPONENTS/Donation/DonateForm.js';
+
+
+
+
 
 import './118n.js';
 
-import donateform from './COMPONENTS/Donation/donateform.js';
 
 
 
@@ -91,6 +95,7 @@ const App = () => {';/'
         <Route path="/ApplicationForm2" element={<ApplicationForm2/>} />
         <Route path="/ApplicationForm3" element={<ApplicationForm3/>} />
         <Route path="/DocumentUploadPage" element={<DocumentUploadPage/>} />
+        <Route path="/DonateForm" element={<DonateForm/>} />
 
 
         

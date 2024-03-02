@@ -28,6 +28,7 @@ export default Donation;**/
 import React from 'react';
 import './Donation.css'
 import { useTranslation } from 'react-i18next';
+import { Link} from 'react-router-dom';
 
 
 const Donation = () => {
@@ -38,7 +39,9 @@ const Donation = () => {
         <div className="donation-text">
           <h2><center><b>{t("donation")}</b></center></h2>
           <p>{t("donationtitle")}</p>
-          <button className="donate-button">Donate Now</button>
+          <Link to="/DonateForm">
+                <button className="donate-button">Donate Now</button>
+          </Link>
         </div>
       </div>
       <div className="donation-image">

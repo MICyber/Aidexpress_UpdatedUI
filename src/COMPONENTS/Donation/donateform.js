@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import { Form, Col, Button, Modal } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import './donateform.css';
+import './DonateForm.css';
 
-const donateform = () => {
+const DonateForm = () => {
   return (
     <div className="donateform" id="donate_grid">
         <h1 style={{fontWeight:"900",textAlign: "center"}}>Donate for AidExpress</h1>
@@ -92,4 +92,4 @@ const donateform = () => {
     </div>
   );
 };
-export default donateform;
+export default DonateForm;
