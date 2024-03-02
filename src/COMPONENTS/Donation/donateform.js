@@ -1,10 +1,10 @@
 import React from "react";
 import { Form, Col, Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Navbar from '../../COMPONENTS/Navbar/Navbar'
+import Navbar from '../Navbar/Navbar'
 import "./DonateForm.css";
 
-const DonateForm = () => {
+const donateform = () => {
   return (
     <div className="donateform" id="donate_grid">
         <Navbar reloadnavbar={false}/>
@@ -12,4 +12,4 @@ const DonateForm = () => {
     </div>
   );
 };
-export default DonateForm;
+export default donateform;
