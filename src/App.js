@@ -41,6 +41,8 @@ import DocumentUploadPage from './PAGES/Application/DocumentUploadPage.js';
 
 import './118n.js';
 
+import donateform from './COMPONENTS/Donation/donateform.js';
+
 
 
 
