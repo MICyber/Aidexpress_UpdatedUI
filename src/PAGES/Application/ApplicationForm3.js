@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "../Application/ApplicationForm.css";
+import Navbar from "../../COMPONENTS/Navbar/Navbar";
+
 
 const ApplicationForm3 = () => {
   const [monthlyIncome, setMonthlyIncome] = useState("");
@@ -13,6 +16,8 @@ const ApplicationForm3 = () => {
   const [sanitaryFacilities, setSanitaryFacilities] = useState("");
 
   return (
+    <div className="Form3">
+      <Navbar reloadnavbar={false}/>
     <div className="application-form">
       <h1>Application Form</h1>
       <div className="form-section">
@@ -124,10 +129,14 @@ const ApplicationForm3 = () => {
       </div>
       {/* Connect to the next button */}
       <div className="next-button-container">
+      <Link to="/ApplicationForm">
+            <button className="back-button">Back</button>
+        </Link>
         <Link to="/DocumentUploadPage">
           <button className="next-button">Next</button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };
