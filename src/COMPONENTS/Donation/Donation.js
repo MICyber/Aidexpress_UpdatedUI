@@ -36,12 +36,8 @@ const Donation = () => {
     <div className="donation-container">
       <div className="donation-content">
         <div className="donation-text">
-          <h2><center><b>Support Our Cause</b></center></h2>
-          <p>
-            Your contribution helps us make a difference. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-            ullamcorper mattis, pulvinar dapibus leo.
-          </p>
+          <h2><center><b>{t("donation")}</b></center></h2>
+          <p>{t("donationtitle")}</p>
           <button className="donate-button">Donate Now</button>
         </div>
       </div>
