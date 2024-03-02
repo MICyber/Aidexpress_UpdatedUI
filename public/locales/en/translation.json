@@ -37,11 +37,36 @@
     "Story": "Our Story",
     "StoryDetails": "The Sri Lankan government launched its Samurdhi (or Prosperity) Programme in 1995 with the main goal of reducing poverty in Sri Lanka. It had a wide network of national and local level officials administering its activities and was led by its own Ministry and the Samurdhi Authority.",
     "Objective": "Objectives",
-    "ObjectiveDetails": " Creation of small groups and thereby identifying the potential of rural families through building up of Samurdhi societies, and the strengthening of such rural communities.Development of the urban, rural and estate sectors by the year 2013 through economic, physical and social development.Contribution to provincial development through the coordination of local and international government and non governmental organizations."
+    "ObjectiveDetails": " Creation of small groups and thereby identifying the potential of rural families through building up of Samurdhi societies, and the strengthening of such rural communities.Development of the urban, rural and estate sectors by the year 2013 through economic, physical and social development.Contribution to provincial development through the coordination of local and international government and non governmental organizations.",
 
 
 
 
 
+    "footer1title2":"Poverty isn’t a lack of character. It’s a lack of cash.” —Rutger Bregman",
+ 
+    "category1":"SMS Services",
+    "category1title2":"Connect anytime, anywhere, no smartphone needed!",
+    "category2":"Track Your Donations",
+    "category2title2":"Receive, track, collect at a bank or officer. Easy & secure.",
+    "category3":"Multilingual Support",
+    "category3title2":"Sinhala, Tamil, and English.",
+    "category4":"Support the Cause",
+    "category4title2":"Donate to help those in need",
 
+    "donationtitle":"",
+
+
+    "footer2title": "Aidexpress: Empowering lives with simplicity. A user-friendly platform connecting donors and beneficiaries for impactful givingand a better world.",
+
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us",
+    "AboutTeam": "About Team",
+    "CustomerSupport": "Customer Support",
+
+    "OurInformation": "Our Information",
+    "PrivacyPolicy": "Privacy Policy",
+    "TermsCondition": "Terms & Condition",
+    "ReturnPolicy": "Return Policy",
+    "SiteMap": "Site Map"
 }

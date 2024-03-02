@@ -12,13 +12,35 @@
   font-weight: 400;
 }
 
-
 #dropdown-basic {
   outline: none;
   border: none;
   margin: 0px;
   padding: 0px;
 }
+
+.load {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  /* color: conic-gradient(red, yellow, green, blue, black); */
+  background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+}
+
 
 .goback{
   background-color: var(--col1);

@@ -47,7 +47,9 @@ import './118n.js';
 
 function Loading() {
   return (
+    <div className='load'>
     <>Loading...</>
+    </div>
   )
 }
 
