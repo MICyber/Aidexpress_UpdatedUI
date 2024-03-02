@@ -26,9 +26,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
-  color: black;
+  font-style: italic;
+  /* color: conic-gradient(red, yellow, green, blue, black); */
+  background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
 }
 
 
