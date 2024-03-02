@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import './BannerSlider.css'
 import { Link } from 'react-router-dom'
+
 import { useTranslation } from 'react-i18next';
 
 
@@ -54,7 +55,7 @@ const BannerSlider = () => {
                                 <div className='content'>
                                     <h1>{item.title}</h1>
                                     <span>{item.description}</span>
-                                    <button onClick={openGoogleForm}>Apply Now</button>
+                                    <button onClick={openGoogleForm}>{t("Applynow")}</button>
                                 </div>
                             </div>
                         )
