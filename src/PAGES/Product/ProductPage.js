@@ -112,7 +112,6 @@ const ProductPage = () => {
 
     const [rating, setrating] = React.useState(0)
 
-
     const products = [
         {
             "ProductId": 1,
