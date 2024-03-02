@@ -41,26 +41,26 @@ const Footer2 = () => {
           
         </div>
         <div className="f2">
-          <h3>About Us</h3>
+          <h3>{t("AboutUs")}</h3>
           <Link to="/about" className="stylenone">
-            <p>About us</p>
+            <p>{t("AboutUs")}</p>
           </Link>
           <Link to="/contact" className="stylenone">
-            <p>Contact us</p>
+            <p>{t("ContactUs")}</p>
           </Link>
-          <p>About team</p>
-          <p>Customer Support</p>
+          <p>{t("AboutTeam")}</p>
+          <p>{t("CustomerSupport")}</p>
         </div>
         <div className="f2">
-          <h3>Our Information</h3>
+          <h3>{t("OurInformation")}</h3>
           <Link to="/privacypolicy" className="stylenone">
-            <p>Privacy policy</p>
+            <p>{t("PrivacyPolicy")}</p>
           </Link>
           <Link to="/termsandconditions" className="stylenone">
-            <p>Terms & conditions</p>
+            <p>{t("TermsCondition")}</p>
           </Link>
-          <p>Return Policy</p>
-          <p>Site Map</p>
+          <p>{t("ReturnPolicy")}</p>
+          <p>{t("SiteMap")}</p>
         </div>
         <div className="f2">
           <h3>Community</h3>

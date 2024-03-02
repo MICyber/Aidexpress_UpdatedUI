@@ -19,6 +19,7 @@
     "Applynow":"Apply Now",
     
     "footer1title1":"Putting the power of financial control in the hands of Samurdhi families.Track, access, and manage your assistance seamlessly.",
+<<<<<<< HEAD
     "footer1title2":"Poverty isn’t a lack of character. It’s a lack of cash.” —Rutger Bregman",
  
     "category1":"SMS Services",
@@ -32,5 +33,19 @@
 
     "donationtitle":""
 
+=======
+>>>>>>> f07516067f922c9fe8f5916a4f65e7207e5098af
 
+    "footer2title": "Aidexpress: Empowering lives with simplicity. A user-friendly platform connecting donors and beneficiaries for impactful givingand a better world.",
+
+    "AboutUs": "About Us",
+    "ContactUs": "Contact Us",
+    "AboutTeam": "About Team",
+    "CustomerSupport": "Customer Support",
+
+    "OurInformation": "Our Information",
+    "PrivacyPolicy": "Privacy Policy",
+    "TermsCondition": "Terms & Condition",
+    "ReturnPolicy": "Return Policy",
+    "SiteMap": "Site Map"
 }
