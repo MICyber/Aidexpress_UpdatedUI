@@ -48,13 +48,13 @@
 }
 
 .homecategories .container:nth-child(1){
-    background-color: #c4b78b;
+    background-color: #699bb1;
     color: rgb(0, 0, 0);
 }
 
 
 .homecategories .container:nth-child(2){
-    background-color: #b08080;
+    background-color: #d28484;
     color: rgb(0, 0, 0);
 }
 
@@ -66,6 +66,6 @@
 
 
 .homecategories .container:nth-child(4){
-    background-color: #82a1b2;
+    background-color: #ce9d75;
     color: rgb(0, 0, 0);
 }
