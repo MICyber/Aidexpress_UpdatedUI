@@ -4,7 +4,7 @@ import img1 from "../../ASSETS/Images/image_sms.png";
 import img2 from "../../ASSETS/Images/track.png";
 import img3 from "../../ASSETS/Images/image_language.png";
 import img4 from "../../ASSETS/Images/image_donate.png";
-import img5 from "../../ASSETS/Images/sms.png"
+import img5 from "../../ASSETS/Images/image_sms.png"
 
 const HomeCategories = () => {
   return (
