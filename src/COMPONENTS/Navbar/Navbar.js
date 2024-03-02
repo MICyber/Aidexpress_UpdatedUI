@@ -1,96 +1,113 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useTransition } from "react";
 import "./Navbar.css";
 import logo from "../../ASSETS/logo.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
 import { GrLanguage } from "react-icons/gr";
+
+import { useTranslation } from "react-i18next";
+import LocalContext from '../../LocalContext';
+import i18n from "../../118n";
+
 const Navbar = () => {
   const [shows3, setshows3] = useState(false);
+  const { t } = useTranslation();
+
+  const [locale, setLocale] = useState(i18n.language);
+  i18n.on("languageChanged", (lng) => setLocale(i18n.language));
+
+  const handleChange = (event) => {
+    i18n.changeLanguage(event.target.value);
+  };
+
   return (
-    <nav>
-      <div className="s1">
-        <img src={logo} alt="logo" className="logo" />
+    <LocalContext.Provider value={{ locale, setLocale }}>
+      <nav>
+        <div className="s1">
+          <img src={logo} alt="logo" className="logo" />
 
-        <div className="s2">
-          <Link to="/">
-            <a>Home</a>
-          </Link>
-          <Dropdown>
-            <Dropdown.Toggle variant="" id="dropdown-basic">
-              Donate Now
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-            
-              <Dropdown.Item href="/Donation">Donate</Dropdown.Item>
-            
-              <Dropdown.Item href="#/action-2">Evidence</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-          <Link to="/about">
-            <a>AboutUs</a>
-          </Link>
-          <Link to="/contact">
-            <a>ContactUs</a>
-          </Link>
-          <Dropdown>
-            <Dropdown.Toggle variant="" id="dropdown-basic">
-              More
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-              <Dropdown.Item href="/FAQ">FAQ</Dropdown.Item>
-              <Dropdown.Item href="/privacypolicy">
-                Privacy Policy
-              </Dropdown.Item>
-              <Dropdown.Item href="/termsandconditions">
-                Terms & Conditions
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </div>
-        <div className="right">
           <div className="s2">
+            <Link to="/">
+              <a>{t("Home")}</a>
+            </Link>
             <Dropdown>
-              <Dropdown.Toggle variant="" id="language-dropdown">
-                <GrLanguage className="w-6 h-6" />
+              <Dropdown.Toggle variant="" id="dropdown-basic">
+                {t("Donatenow")}
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item>සිංහල</Dropdown.Item>
-                <Dropdown.Item>தமிழ்</Dropdown.Item>
-                <Dropdown.Item>English</Dropdown.Item>
+                <Dropdown.Item href="/Donation">{t("Donate")}</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">{t("Evidence")}</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
+            <Link to="/about">
+              <a>{t("Aboutus")}</a>
+            </Link>
+            <Link to="/contact">
+              <a>{t("Contactus")}</a>
+            </Link>
+            <Dropdown>
+              <Dropdown.Toggle variant="" id="dropdown-basic">
+                {t("More")}
+              </Dropdown.Toggle>
 
-            {/* ... existing code ... */}
+              <Dropdown.Menu>
+                <Dropdown.Item href="/FAQ">{t("FAQ")}</Dropdown.Item>
+                <Dropdown.Item href="/privacypolicy">
+                  {t("Privacy Policy")}
+                </Dropdown.Item>
+                <Dropdown.Item href="/termsandconditions">
+                  {t("Terms and Condition")}
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
-          <Dropdown>
-            <Dropdown.Toggle variant="" id="dropdown-basic">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                />
-              </svg>
-            </Dropdown.Toggle>
+          <div className="right">
+            <div className="s2">
+              <Dropdown>
+                <Dropdown.Toggle variant="" id="language-dropdown">
+                  <GrLanguage className="w-6 h-6" />
+                </Dropdown.Toggle>
 
-            <Dropdown.Menu>
-             <Dropdown.Item href="/AccessLevel">Login</Dropdown.Item> 
-              <Dropdown.Item href="/AccessLevelForSignUp">Signup</Dropdown.Item> 
-              <Dropdown.Item href="#">Logout</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+                <Dropdown.Menu>
+                  <Dropdown.Item onClick={() => handleChange({ target: { value: "sin" } })}>
+                  සිංහල
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleChange({ target: { value: "tm" } })}>
+                  தமிழ்
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => handleChange({ target: { value: "en" } })}>
+                    English
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
+            <Dropdown>
+              <Dropdown.Toggle variant="" id="dropdown-basic">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                  />
+                </svg>
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item href="/AccessLevel">{t("Login")}</Dropdown.Item>
+                <Dropdown.Item href="/AccessLevelForSignUp">{t("Signup")}</Dropdown.Item>
+                <Dropdown.Item href="#">{t("Logout")}</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </div>
         </div>
-      </div>
 
       {shows3 ? (
         <div className="s3">
@@ -141,21 +158,21 @@ const Navbar = () => {
           <ul className="s32">
             <li>
               <Link to="/" className="stylenone">
-                Home
+              {t("Home")}
               </Link>
             </li>
 
             <li>
               <Dropdown>
                 <Dropdown.Toggle variant="" id="dropdown-basic">
-                  Donate Now
+                {t("Donate Now")}
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
                   <Dropdown.Item href="#/action-1">
-                    Donate
+                  {t("Donate")}
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Evidence</Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">{t("Evidence")}</Dropdown.Item>
                   {/* <Dropdown.Item href="#/action-3">
                     House Cleaning
                   </Dropdown.Item> */}
@@ -166,14 +183,14 @@ const Navbar = () => {
             <li>
               {" "}
               <Link to="/about" className="stylenone">
-                <a>About Us</a>
+                <a>{t("AboutUs")}</a>
               </Link>
             </li>
 
             <li>
               {" "}
               <Link to="/contact" className="stylenone">
-                <a>Contact Us</a>
+                <a>{t("ContactUs")}</a>
               </Link>
             </li>
 
@@ -220,16 +237,16 @@ const Navbar = () => {
             <li>
               <Dropdown>
                 <Dropdown.Toggle variant="" id="dropdown-basic">
-                  More
+                {t("More")}
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
                   <Dropdown.Item href="/FAQ">FAQ</Dropdown.Item>
                   <Dropdown.Item href="/privacypolicy">
-                    Privacy Policy
+                  {t("Privacy Policy")}
                   </Dropdown.Item>
                   <Dropdown.Item href="/termsandconditions">
-                    Terms & Conditions
+                  {t("Terms & Conditions")}
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -258,7 +275,9 @@ const Navbar = () => {
           </div>
         </div>
       )}
+    
     </nav>
+    </LocalContext.Provider>
   );
 };
 
