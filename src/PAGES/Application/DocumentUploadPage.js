@@ -1,8 +1,12 @@
 import React from "react";
-import "../Styles/DocumentUploadPage.css";
+import "./DocumentUploadPage.css";
+import { Link } from "react-router-dom";
+import Navbar from "../../COMPONENTS/Navbar/Navbar";
 
 const DocumentUploadPage = () => {
   return (
+    <div className="DocumentUpload">
+      <Navbar reloadnavbar={false}/>
     <div className="document-upload-container">
       <h1>Document Upload</h1>
       <div className="document-box">
@@ -69,6 +73,7 @@ const DocumentUploadPage = () => {
         <input type="file" />
       </div>
       <button className="submit-button">Submit</button>
+    </div>
     </div>
   );
 };

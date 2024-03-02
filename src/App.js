@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import Home from './PAGES/HomePage/Home'
 import './App.css'
@@ -33,13 +33,31 @@ import OfficerProfile from './PAGES/Officer/UserProfile';
 import FAQ from './PAGES/Extra/FAQ';
 import Termsandconditions from './PAGES/Extra/Termsandconditions';
 import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
-import ApplicationForm from './PAGES/Application/ApplicationForm';
 
+import ApplicationForm from './PAGES/Application/ApplicationForm';
+import ApplicationForm2 from './PAGES/Application/ApplicationForm2.js';
+import ApplicationForm3 from './PAGES/Application/ApplicationForm3.js';
+import DocumentUploadPage from './PAGES/Application/DocumentUploadPage.js';
+
+import './118n.js';
+
+
+
+
+
+function Loading() {
+  return (
+    <>Loading...</>
+  )
+}
 
 const App = () => {';/'
   return (
+    
+<Suspense fallback={<Loading/>}>
     <BrowserRouter>
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/product/:prodid" 
@@ -71,11 +89,15 @@ const App = () => {';/'
         <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
 
         <Route path="/ApplicationForm" element={<ApplicationForm/>} />
+        <Route path="/ApplicationForm2" element={<ApplicationForm2/>} />
+        <Route path="/ApplicationForm3" element={<ApplicationForm3/>} />
+        <Route path="/DocumentUploadPage" element={<DocumentUploadPage/>} />
 
 
         
       </Routes>
     </BrowserRouter>
+    </Suspense>
   )
 }
 
