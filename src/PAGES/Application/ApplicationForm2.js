@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../../COMPONENTS/Navbar/Navbar";
 
 
 const ApplicationForm2 = () => {
@@ -19,6 +20,8 @@ const ApplicationForm2 = () => {
   };
 
   return (
+    <div className="Form2">
+    <Navbar reloadnavbar={false}/>
     <div className="application-form">
       <h1>Application Form</h1>
       <div className="form-section">
@@ -82,10 +85,14 @@ const ApplicationForm2 = () => {
         </div>
       </div>
       <div className="next-button-container">
+        <Link to="/ApplicationForm">
+            <button className="back-button">Back</button>
+        </Link>
         <Link to="/ApplicationForm3">
           <button className="next-button">Next</button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };

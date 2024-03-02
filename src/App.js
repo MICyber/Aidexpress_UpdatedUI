@@ -33,8 +33,8 @@ import OfficerProfile from './PAGES/Officer/UserProfile';
 import FAQ from './PAGES/Extra/FAQ';
 import Termsandconditions from './PAGES/Extra/Termsandconditions';
 import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
+
 import ApplicationForm from './PAGES/Application/ApplicationForm';
-// import donateform from './COMPONENTS/pages/DonateForm';
 
 import './118n.js';
 
@@ -85,7 +85,6 @@ const App = () => {';/'
         <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
 
         <Route path="/ApplicationForm" element={<ApplicationForm/>} />
-        {/* <Route path="/donationform" element={<donationform/>}/> */}
 
 
         

@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Navbar from '../../COMPONENTS/Navbar/Navbar'
+import './ApplicationForm.css';
+
 
 const ApplicationForm = () => {
   const [maritalStatus, setMaritalStatus] = useState("");
   const [isSingleParent, setIsSingleParent] = useState(false);
 
   return (
+    <div className="Form1">
+      <Navbar reloadnavbar={false}/>
     <div className="application-form">
+    
       <h1>Application Form</h1>
       <div className="form-section">
         <div className="purple-box">Name of Householder:</div>
@@ -88,6 +94,7 @@ const ApplicationForm = () => {
           <button className="next-button">Next</button>
         </Link>
       </div>
+    </div>
     </div>
   );
 };
