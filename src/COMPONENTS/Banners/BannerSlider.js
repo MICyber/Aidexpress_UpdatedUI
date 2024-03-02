@@ -2,7 +2,6 @@ import React from 'react'
 import Slider from 'react-slick'
 import './BannerSlider.css'
 import { Link } from 'react-router-dom'
-
 import { useTranslation } from 'react-i18next';
 
 
@@ -56,7 +55,7 @@ const BannerSlider = () => {
                                     <h1>{item.title}</h1>
                                     <span>{item.description}</span>
                                     <Link to="/ApplicationForm">
-                                        <button>Apply Now</button>
+                                        <button>{t("Applynow")}</button>
                                     </Link>
                                 </div>
                             </div>

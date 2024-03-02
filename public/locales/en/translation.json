@@ -13,8 +13,11 @@
     "Login": "Login",
     "Signup": "Signup",
     "Logout": "Logout",
-    "1":"english",
+
     "title":"Receive your incentives without any hassle.",
     "description":"Experience the ease of receiving your incentives with no unnecessarycomplications or hassles",
-    "Applynow":"Apply Now"
+    "Applynow":"Apply Now",
+    
+    "footer1title1":"Putting the power of financial control in the hands of Samurdhi families.Track, access, and manage your assistance seamlessly."
+
 }
