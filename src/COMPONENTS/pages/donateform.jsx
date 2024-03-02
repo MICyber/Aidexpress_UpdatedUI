@@ -71,17 +71,17 @@ const donateform = () => {
                     </Modal.Header>
                     <Modal.Body style={{ fontSize: "9px" }}>
                         <p>
-                            This Gift/ Donation Agreement (“Agreement”) is made this ____ day of _______ between [Donor’s Names] and their assignee (hereinafter referred to as “the Donor”), and [Your Organization] an [arts nonprofit organization located in Indianapolis, Indiana]. The Donor and [Your Organization] agree as follows:
+                            This Donation Agreement AidExpress is made this 30 day of March between AidExpress and their assignee (hereinafter referred to as “the Donor”), and [AidExpress] an [AidExpress organization located in Colombo, SriLanka]. The Donor and [AidExpress] agree as follows:
                             </p>
                         <p>
 
-                            Donor Commitment. The Donor hereby pledges to [Your Organization] the sum of [insert amount] or more, which as provided for herein is designated for the benefit of [Fund Name] Endowment.
+                            Donor Commitment. The Donor hereby pledges to [AidExpress] the sum of [1000/=] or more, which as provided for herein is designated for the benefit of [AidExpress] Endowment.
                             Donor Purpose.
-                            Purpose. It is understood and agreed that the gift will be used for the following purpose or purposes: To establish an endowment from which the annual interest earnings will be used to [state purpose].
-                            Payment. It is further understood and agreed that the gift will be paid in full on or before [insert date].
+                            Purpose. It is understood and agreed that the gift will be used for the following purpose or purposes: To establish an endowment from which the annual interest earnings will be used to [empowering low-incommers].
+                            Payment. It is further understood and agreed that the gift will be paid in full on or before [1st week on every month].
                             </p>
                         <p>
-                            It is also understood and agreed that the gift funds as received may be invested by a third-party that shall best determine investment options for this endowment fund (see item #4 below). The spending policy for the endowment will be the policy set forth and approved by [Your Organization] Board of Directors which will likely include the use of annual interest earnings only and not invade the principal of the fund to protect and perpetuate growth.
+                            It is also understood and agreed that the gift funds as received may be invested by a third-party that shall best determine investment options for this endowment fund (see item #4 below). The spending policy for the endowment will be the policy set forth and approved by [AidExpress] Board of Directors which will likely include the use of annual interest earnings only and not invade the principal of the fund to protect and perpetuate growth.
                             </p>
 
 
