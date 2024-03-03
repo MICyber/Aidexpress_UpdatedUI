@@ -1,8 +1,32 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Navbar from '../../COMPONENTS/Navbar/Navbar'
-import './OfficerAuthPage.css'
+import React, {useState} from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
+import Navbar from '../../COMPONENTS/Navbar/Navbar';
+import './OfficerAuthPage.css';
+import firebase from './firebaseConfig';
+
 const OfficerLogin = () => {
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+
+    const submit = async (e) => {
+        e.preventDefault();
+        try {
+        const userCredential = await firebase.auth().signInWithEmailAndPassword(email, password);
+        const user = userCredential.user;
+        
+        if (user) {
+            alert("Login Successful");
+            // Redirect to UserProfile page
+            navigate('/OfficerProfile/AccountSettings'); // Change the path as needed
+        }
+        } catch (error) {
+        alert(error.message);
+        }
+    };
+
     return (
         <div className='authpage'>
             <Navbar reloadnavbar={false}/>
@@ -15,12 +39,12 @@ const OfficerLogin = () => {
                     <h1>Login Auth</h1>
                     <div className='formgroup'>
                         <label htmlFor='email'>Email</label>
-                        <input type='email' id='email' />
+                        <input type='email' id='email' onChange={(e) => setEmail(e.target.value)} />
                     </div>
 
                     <div className='formgroup'>
                         <label htmlFor='password'>Password</label>
-                        <input type='password' id='password' />
+                        <input type='password' id='password' onChange={(e) => setPassword(e.target.value)} />
                     </div>
 
                     <Link to='/OfficerForgotPassword'
@@ -28,12 +52,9 @@ const OfficerLogin = () => {
                     >
                         <p>Forgot password?</p>
                     </Link>
-                    <Link to='/OfficerProfile/accountsettings'
-                        className='stylenone'
-
-                    >
-                        <button className='btn'>Login</button>
-                    </Link>
+                    
+                        <button className='btn' onClick={submit}>Login</button>
+                    
                     <h2 className='or'>OR</h2>
                     <Link to='/OfficerSignup'
                         className='stylenone'
