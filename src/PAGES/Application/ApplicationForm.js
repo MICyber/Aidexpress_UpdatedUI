@@ -14,6 +14,7 @@ const ApplicationForm = () => {
     <div className="application-form">
     
       <h1>Application Form</h1>
+      <form>
       <div className="form-section">
         <div className="purple-box">Name of Householder:</div>
         <div className="input-field">
@@ -94,6 +95,7 @@ const ApplicationForm = () => {
           <button className="next-button">Next</button>
         </Link>
       </div>
+      </form>
     </div>
     </div>
   );
