@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../../COMPONENTS/Navbar/Navbar';
 import './AuthPage.css';
 import firebase from './firebaseConfig';
@@ -7,13 +7,18 @@ import firebase from './firebaseConfig';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [pass, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const submit = async (e) => {
     e.preventDefault();
     try {
-      const user = await firebase.auth().signInWithEmailAndPassword(email, pass);
+      const userCredential = await firebase.auth().signInWithEmailAndPassword(email, pass);
+      const user = userCredential.user;
+      
       if (user) {
-        alert("Login Successfully");
+        alert("Login Successful");
+        // Redirect to UserProfile page
+        navigate('/UserProfile/accountsettings'); // Change the path as needed
       }
     } catch (error) {
       alert(error.message);
