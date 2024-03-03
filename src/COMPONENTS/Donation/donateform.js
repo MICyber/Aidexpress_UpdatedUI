@@ -2,7 +2,8 @@ import React from "react";
 import { Form, Col, Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Navbar from '../Navbar/Navbar'
-import "./donateform.css";
+import './donateform.css';
+
 
 const donateform = () => {
   return (
