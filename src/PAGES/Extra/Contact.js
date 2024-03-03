@@ -30,7 +30,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className='pgright pgcommon'>
-                <img src='https://mortgagebrain.com/wp-content/uploads/2023/02/AdobeStock_554066192-Contact-us-Resized.png' alt='noimg' />
+                <img src='https://images.unsplash.com/photo-1603714228681-b399854b8f80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fENvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D' alt='noimg' />
 
                 <div>
                     <h1>{t("TalkWithUs")}</h1>
