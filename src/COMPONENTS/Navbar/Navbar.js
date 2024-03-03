@@ -69,7 +69,7 @@ const Navbar = () => {
               </Dropdown>
             </div>
             <Dropdown>
-              <Dropdown.Toggle variant="" id="dropdown-basic">
+              <Dropdown.Toggle variant="" id="user-dropdown">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -116,31 +116,6 @@ const Navbar = () => {
             </svg>
           </div>
 
-          {/* <div className="searchbar">
-            <input
-              typ="text"
-              placeholder="Search for products and categries"
-              className="search"
-            />
-
-            <button>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                />
-              </svg>
-            </button>
-          </div> */}
-
           <ul className="s32">
             <li>
               <Link to="/" className="stylenone">
@@ -150,7 +125,7 @@ const Navbar = () => {
 
             <li>
               <Dropdown>
-                <Dropdown.Toggle variant="" id="dropdown-basic">
+                <Dropdown.Toggle variant="" id="donate-dropdown">
                 {t("Donate Now")}
                 </Dropdown.Toggle>
 
@@ -159,9 +134,6 @@ const Navbar = () => {
                   {t("Donate")}
                   </Dropdown.Item>
                   <Dropdown.Item href="#/action-2">{t("Evidence")}</Dropdown.Item>
-                  {/* <Dropdown.Item href="#/action-3">
-                    House Cleaning
-                  </Dropdown.Item> */}
                 </Dropdown.Menu>
               </Dropdown>
             </li>
@@ -183,89 +155,83 @@ const Navbar = () => {
             <li>
               
             <Dropdown>
-                <Dropdown.Toggle variant="" id="dropdown-basic">
-                language
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
+              <Dropdown.Toggle variant="" id="language-dropdown">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-5.238 0-9-3.762-9-9s3.762-9 9-9 9 3.762 9 9-3.762 9-9 9zM12 7v3M12 17h0"
+                  />
+                </svg>
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
                 <Dropdown.Item onClick={() => handleChange({ target: { value: "sin" } })}>සිංහල</Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleChange({ target: { value: "tm" } })}>தமிழ்</Dropdown.Item>
-                  <Dropdown.Item onClick={() => handleChange({ target: { value: "en" } })}>English</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-
-
-
-              <Dropdown>
-                <Dropdown.Toggle variant="" id="dropdown-basic">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                    />
-                  </svg>
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                <Dropdown.Item href="/AccessLevel">{t("Login")}</Dropdown.Item>
-                <Dropdown.Item href="/AccessLevelForSignUp">{t("Signup")}</Dropdown.Item>
-                <Dropdown.Item href="#">{t("Logout")}</Dropdown.Item>
+                <Dropdown.Item onClick={() => handleChange({ target: { value: "tm" } })}>தமிழ்</Dropdown.Item>
+                <Dropdown.Item onClick={() => handleChange({ target: { value: "en" } })}>English</Dropdown.Item>
               </Dropdown.Menu>
-              </Dropdown>
-            </li>
-
-            <li>
-              <Dropdown>
-                <Dropdown.Toggle variant="" id="dropdown-basic">
-                {t("More")}
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  <Dropdown.Item href="/FAQ">FAQ</Dropdown.Item>
-                  <Dropdown.Item href="/privacypolicy">
-                  {t("Privacy Policy")}
-                  </Dropdown.Item>
-                  <Dropdown.Item href="/termsandconditions">
-                  {t("Terms & Conditions")}
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </li>
-          </ul>
+            </Dropdown>
+            
+            <Dropdown>
+              <Dropdown.Toggle variant="" id="more-dropdown">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                  />
+                </svg>
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="/FAQ">FAQ</Dropdown.Item>
+                <Dropdown.Item href="/privacypolicy">
+                {t("Privacy Policy")}
+                </Dropdown.Item>
+                <Dropdown.Item href="/termsandconditions">
+                {t("Terms & Conditions")}
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </li>
+        </ul>
+      </div>
+    ) : (
+      <div className="s3">
+        <div className="s31">
+          <img src={logo} alt="logo" className="logo" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+            onClick={() => setshows3(!shows3)}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
         </div>
-      ) : (
-        <div className="s3">
-          <div className="s31">
-            <img src={logo} alt="logo" className="logo" />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-              onClick={() => setshows3(!shows3)}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </div>
-        </div>
-      )}
-    
-    </nav>
-    </LocalContext.Provider>
-  );
+      </div>
+    )}
+  </nav>
+</LocalContext.Provider>
+);
 };
 
 export default Navbar;
