@@ -12,7 +12,7 @@ const Donation = () => {
         <div className="donation-text">
           <h2><center><b>{t("donation")}</b></center></h2>
           <p>{t("donationtitle")}</p>
-          <Link to="/DonateForm">
+          <Link to="/DonationForm">
                 <button className="donate-button">Donate Now</button>
           </Link>
         </div>
