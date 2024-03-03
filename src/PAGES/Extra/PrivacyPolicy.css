@@ -1,0 +1,26 @@
+/* PrivacyPolicy.css */
+
+.pgcont1 strong {
+    color: #008080; /* Change color as desired */
+  }
+  
+  .pgcont1 p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif; /* Change font family as desired */
+    text-align: justify; /* Justify the text */
+  }
+  
+  .pgcont1 h3 {
+    color: #333; /* Change color as desired */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center; /* Align heading in the middle */
+    font-family: 'Arial', sans-serif; /* Change font family as desired */
+  }
+  
+  .single-banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
