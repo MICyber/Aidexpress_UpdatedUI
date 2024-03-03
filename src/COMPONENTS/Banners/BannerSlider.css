@@ -45,7 +45,8 @@
     margin-bottom: 5px;
     width: 70%;
     font: 700 normal 2.5em 'tahoma';
-  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    color: rgb(240, 238, 175);
+  text-shadow: 5px 2px #46494b, 2px 4px #373d43, 3px 5px #2b2e31;
 }
 
 .bannerslider .imagecont span {
