@@ -21,7 +21,7 @@ const Contact = () => {
                 heading={t("ContactUs")}
             />
             <div className='pgleft pgcommon'>
-                <img src='https://www.cbc.ca/kids/images/families_header1140.jpg' />
+                <img src='https://images.unsplash.com/photo-1527563427650-2fa0b1558cba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGZhbWlseSUyMGhlbHB8ZW58MHx8MHx8fDA%3D' />
 
                 <div>
                     <h1>{t("StartANewCase")}</h1>
