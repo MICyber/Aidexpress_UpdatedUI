@@ -9,6 +9,7 @@ const DocumentUploadPage = () => {
       <Navbar reloadnavbar={false}/>
     <div className="document-upload-container">
       <h1>Document Upload</h1>
+      <form>
       <div className="document-box">
         <h2>Proof of Income</h2>
         <p>
@@ -73,6 +74,7 @@ const DocumentUploadPage = () => {
         <input type="file" />
       </div>
       <button className="submit-button">Submit</button>
+      </form>
     </div>
     </div>
   );
