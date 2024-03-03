@@ -4,9 +4,11 @@ import Footer1 from '../../COMPONENTS/Footer/Footer1'
 import Footer2 from '../../COMPONENTS/Footer/Footer2'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import './Extrapages.css'
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
     const [rating, setrating] = React.useState(0)
+    const { t } = useTranslation();
 
     useEffect(() => {
         window.scrollTo(0,0)
@@ -16,14 +18,14 @@ const Contact = () => {
             <Navbar reloadnavbar={false}/>
             <SingleBanner
                 bannerimage='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9uYXRpb258ZW58MHx8MHx8fDA%3D'
-                heading="Contact Us"
+                heading={t("ContactUs")}
             />
             <div className='pgleft pgcommon'>
                 <img src='https://www.cbc.ca/kids/images/families_header1140.jpg' />
 
                 <div>
-                    <h1>START A NEW CASE</h1>
-                    <p>We'd love to hear from you! Whether you have questions about our service, want to provide feedback, or just want to say hello, feel free to reach out to us using the contact information below or by filling out the form. Just send us your questions or concerns by starting a new case and we will give you the help you need.</p>
+                    <h1>{t("StartANewCase")}</h1>
+                    <p>{t("StartANewCaseDetails")}</p>
 
                 </div>
             </div>
@@ -31,36 +33,36 @@ const Contact = () => {
                 <img src='https://mortgagebrain.com/wp-content/uploads/2023/02/AdobeStock_554066192-Contact-us-Resized.png' alt='noimg' />
 
                 <div>
-                    <h1>Talk with Us</h1>
-                    <p> Address: No.01, Galle Road, Colombo 7, Sri Lanka.</p>
-                    <p>Phone: +94-113-568</p>  
-                    <p>Email: aidexpress@gmail.com</p>
+                    <h1>{t("TalkWithUs")}</h1>
+                    <p> {t("Address")}</p>
+                    <p>{t("Phone")}</p>  
+                    <p>{t("Email")}</p>
 
-                    <h1>Send Us a Message</h1>
-                    <p>Fill the form below to send us a message.</p>
+                    <h1>{t("Message")}</h1>
+                    <p>{t("Form")}</p>
 
                 </div>
             </div>
 
             <form className='extrapageform'>
-                <h1 className='formheading'>Get in Touch</h1>
+                <h1 className='formheading'>{t("Get")}</h1>
                 <div className='fromgroup'>
-                    <label htmlFor="">Name</label>
+                    <label htmlFor="">{t("Name")}</label>
                     <input type="text" />
                 </div>
 
                 <div className='fromgroup'>
-                    <label htmlFor="">Email</label>
+                    <label htmlFor="">{t("Email")}</label>
                     <input type="email" />
                 </div>
 
                 <div className='fromgroup'>
-                    <label htmlFor="">Message</label>
+                    <label htmlFor="">{t("Message")}</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
 
                 <div className='fromgroup'>
-                    <label htmlFor="">Rating</label>
+                    <label htmlFor="">{t("Rating")}</label>
                     <div className='rating'>
                         <div className='star'
                             onClick={() => {
@@ -143,7 +145,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <button>Submit</button>
+                <button>{t("Submit")}</button>
             </form>
 
             <Footer1 />
