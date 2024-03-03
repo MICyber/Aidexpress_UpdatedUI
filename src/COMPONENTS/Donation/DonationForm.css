@@ -1,0 +1,45 @@
+.Form1 {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .Donation-form {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .Form-row {
+    margin-bottom: 15px;
+  }
+  
+  .Form-group {
+    margin-bottom: 15px;
+  }
+  
+  .Form-label {
+    font-weight: bold;
+  }
+  
+  .Form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .Button {
+    margin-top: 20px;
+  }
+  
+  .Form-check {
+    margin-top: 10px;
+  }
+  
+  .Link {
+    text-decoration: none;
+  }
+  
