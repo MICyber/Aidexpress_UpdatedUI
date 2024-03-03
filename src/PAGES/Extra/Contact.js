@@ -52,12 +52,12 @@ const Contact = () => {
                 </div>
 
                 <div className='fromgroup'>
-                    <label htmlFor="">{t("Email")}</label>
+                    <label htmlFor="">{t("EmailButton")}</label>
                     <input type="email" />
                 </div>
 
                 <div className='fromgroup'>
-                    <label htmlFor="">{t("Message")}</label>
+                    <label htmlFor="">{t("MessageButton")}</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
 

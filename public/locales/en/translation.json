@@ -60,7 +60,6 @@
     "donationtitle":"Empower change on a global scale. Your contribution, no matter the size, is a beacon of hope for those in need. By sharing your story and intentions, you magnify the impact, creating a ripple effect of compassion that reaches far beyond the act of giving. Join us in the journey to uplift lives and build a world where kindness knows no bounds.",
 
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us",
     "AboutTeam": "About Team",
     "CustomerSupport": "Customer Support",
 
@@ -80,8 +79,8 @@
     "Form":"Fill out the form below to send us a message.",
     "Get":"Stay in touch",
     "Name": "Name",
-    "Email":"Email",
-    "Message":"Message",
+    "EmailButton":"Email",
+    "MessageButton":"Message",
     "Rating":"Rating",
     "Submit":"Submit",
     "ContactUs":"Contact Us"
