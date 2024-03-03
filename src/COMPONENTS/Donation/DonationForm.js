@@ -5,17 +5,16 @@ import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import './DonationForm.css';
 
 const DonationForm = () => {
-  const [maritalStatus, setMaritalStatus] = useState("");
-  const [isSingleParent, setIsSingleParent] = useState(false);
+ 
 
   return (
     <div className="Form1">
       <Navbar reloadnavbar={false}/>
     <div className="Donation-form">
     
-      <h1 style={{ fontWeight: "900", textAlign: "center" }}>Donation Form</h1>
+      <h1>Donation Form</h1>
       <Form>
-        <Form.Row>
+        {/* <Form.Row>
             <Form.Group as={Col} controlId="formName">
                 <Form.Label>Full Name</Form.Label>
                 <Form.Control type="text" placeholder="Name"/>
@@ -55,7 +54,7 @@ const DonationForm = () => {
             <Link to = "/Donation" > 
             Submit
             </Link>
-        </Button>
+        </Button> */}
                         
       </Form>
 
