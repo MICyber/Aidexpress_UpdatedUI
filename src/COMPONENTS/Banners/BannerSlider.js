@@ -11,14 +11,15 @@ const BannerSlider = () => {
     const data = [
         {
             id: 1,
-            image: 'https://amichey.ca/wp-content/uploads/2020/04/iStock-1480574526-1536x1024.jpg',
+            image: 'https://img.freepik.com/premium-photo/poor-people-generative-ai_61243-7770.jpg',
+           
             title: t("title"),
             description: t("description"),
             button: 'htttps://www.google.com'
         },
         {
             id: 2,
-            image: 'https://images.pexels.com/photos/939702/pexels-photo-939702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            image: 'https://img.freepik.com/premium-photo/portrait-happy-indian-family_883088-1970.jpg',
             title: t("title"),
             description: t("description"),
             button: 'htttps://www.google.com'

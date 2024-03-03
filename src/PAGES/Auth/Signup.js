@@ -9,7 +9,7 @@ const Signup = () => {
             <Navbar reloadnavbar={false}/>
 
             <div className='authcont'>
-                <img src='https://images.unsplash.com/photo-1495480137269-ff29bd0a695c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80'
+                <img src='https://i.pinimg.com/564x/b3/a9/8d/b3a98deb7de1be503be0d6279153a881.jpg'
                     alt='signup' />
 
                 <form className='authform'>

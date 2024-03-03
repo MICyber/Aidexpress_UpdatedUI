@@ -19,7 +19,7 @@ const Contact = () => {
                 heading="Contact Us"
             />
             <div className='pgleft pgcommon'>
-                <img src='https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRvbmF0aW9uJTIwY29udGFjdHxlbnwwfHwwfHx8MA%3D%3D' alt='noimg' />
+                <img src='https://www.cbc.ca/kids/images/families_header1140.jpg' />
 
                 <div>
                     <h1>START A NEW CASE</h1>
@@ -28,7 +28,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className='pgright pgcommon'>
-                <img src='https://images.unsplash.com/photo-1577563820627-bc12aa2139de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D' alt='noimg' />
+                <img src='https://mortgagebrain.com/wp-content/uploads/2023/02/AdobeStock_554066192-Contact-us-Resized.png' alt='noimg' />
 
                 <div>
                     <h1>Talk with Us</h1>
