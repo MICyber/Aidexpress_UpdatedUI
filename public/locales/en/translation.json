@@ -62,7 +62,23 @@
     "PrivacyPolicy": "Privacy Policy",
     "TermsCondition": "Terms & Condition",
     "ReturnPolicy": "Return Policy",
-    "SiteMap": "Site Map"
+    "SiteMap": "Site Map",
+
+    "StartANewCase": "Start A New Case",
+    "StartANewCaseDetails": "We'd love to hear from you! If you have any questions about our service, want to leave a comment, or just want to say hello, don't hesitate to contact us using the contact information below or by filling out the form. Send us your questions or concerns by opening a new case and we'll get you the help you need.",
+    "TalkWithUs": "Talk With Us",
+    "Address": "Address: No. 01, Galle Road, Colombo 7, Sri Lanka.",
+    "Phone": "Phone: +94-113-568",
+    "Email": "Email: aidexpress@gmail.com",
+    "Message":"Send us a message",
+    "Form":"Fill out the form below to send us a message.",
+    "Get":"Stay in touch",
+    "Name": "Name",
+    "Email":"Email",
+    "Message":"Message",
+    "Rating":"Rating",
+    "Submit":"Submit",
+    "ContactUs":"Contact Us"
 
     
 }
