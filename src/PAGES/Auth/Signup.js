@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import './AuthPage.css'
+import { } from "./firebase"
 
 const Signup = () => {
     return (
