@@ -3,6 +3,7 @@ import SingleBanner from '../../COMPONENTS/Banners/SingleBanner'
 import Footer1 from '../../COMPONENTS/Footer/Footer1'
 import Footer2 from '../../COMPONENTS/Footer/Footer2'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
+import { useTranslation } from 'react-i18next';
 
 const FAQ = () => {
   useEffect(() => {
@@ -11,33 +12,34 @@ const FAQ = () => {
 
 
   const [activesection, setactivesection] = useState(0)
+  const { t } = useTranslation();
 
 
   const faq = [
     {
       id: 1,
-      question: 'What is the AidExpress system?',
-      answer: 'The AidExpress system is a government-led initiative in Sri Lanka designed to uplift low-income families by providing them with financial assistance, skills training, and other forms of support.'
+      question: <h1>{t("question1")}</h1>,
+      answer: <p>{t("answer1")}</p>
     },
     {
       id: 2,
-      question: 'Who is eligible for AidExpress benefits?',
-      answer: 'Eligibility for AidExpress benefits is based on the household income and other criteria set by the government. Typically, households with low incomes or those identified as economically disadvantaged are eligible.'
+      question: <h1>{t("question2")}</h1> ,
+      answer: <p>{t("answer2")}</p>
     },
     {
       id: 3,
-      question: 'What benefits does the AidExpress system offer?',
-      answer: 'The AidExpress system offers a range of benefits, including financial assistance in the form of cash grants, access to skills training programs, subsidized loans for income-generating activities, and various other social welfare services.'
+      question: <h1>{t("question3")}</h1> ,
+      answer: <p>{t("answer3")}</p>
     },
     {
       id: 4,
-      question: 'What is the goal of the AidExpress system?',
-      answer: 'The primary goal of the AidExpress system is to alleviate poverty and promote socio-economic empowerment among low-income families in Sri Lanka. By providing targeted assistance and support, the program aims to improve the living standards and overall well-being of beneficiaries.'
+      question: <h1>{t("question4")}</h1> ,
+      answer: <p>{t("answer4")}</p>
     },
     {
       id: 5,
-      question: 'How can individuals apply for the AidExpress program?',
-      answer: 'Individuals interested in applying for the AidExpress program can typically do so through their local government authorities or AidExpress officers who can provide information on eligibility criteria and the application process.'
+      question: <h1>{t("question5")}</h1> ,
+      answer: <p>{t("answer5")}</p>
     }
   ]
 
@@ -45,7 +47,7 @@ const FAQ = () => {
     <div className='extrapage'>
       <Navbar />
       <SingleBanner
-        heading="FAQs"
+        heading= {t("FAQs")}
         bannerimage='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9uYXRpb258ZW58MHx8MHx8fDA%3D'
       />
       {/* <p>faq</p> */}

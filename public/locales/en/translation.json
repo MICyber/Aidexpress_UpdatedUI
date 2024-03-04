@@ -7,7 +7,7 @@
     "Aboutus": "Aboutus",
     "Contactus": "Contactus",
     "More": "More",
-    "FAQ":"FAQ",
+    
     "Privacy Policy": "Privacy Policy",
     "Terms and Condition": "Terms & Conditions",
     "Login": "Login",
@@ -83,7 +83,37 @@
     "MessageButton":"Message",
     "Rating":"Rating",
     "Submit":"Submit",
-    "ContactUs":"Contact Us"
+    "ContactUs":"Contact Us",
 
-    
+
+
+    "FAQs":"FAQs",
+
+    "question1":"What is the AidExpress system?",
+    "answer1":"The AidExpress system is a government-led initiative in Sri Lanka designed to uplift low-income families by providing them with financial assistance, skills training, and other forms of support.",
+
+    "question2":"Who is eligible for AidExpress benefits?",
+    "answer2":"Eligibility for AidExpress benefits is based on the household income and other criteria set by the government. Typically, households with low incomes or those identified as economically disadvantaged are eligible.",
+
+    "question3":"What benefits does the AidExpress system offer?",
+    "answer3":"The AidExpress system offers a range of benefits, including financial assistance in the form of cash grants, access to skills training programs, subsidized loans for income-generating activities, and various other social welfare services.",
+
+    "question4":"What is the goal of the AidExpress system?",
+    "answer4":"The primary goal of the AidExpress system is to alleviate poverty and promote socio-economic empowerment among low-income families in Sri Lanka. By providing targeted assistance and support, the program aims to improve the living standards and overall well-being of beneficiaries.",
+
+    "question5":"How can individuals apply for the AidExpress program?",
+    "answer5":"Individuals interested in applying for the AidExpress program can typically do so through their local government authorities or AidExpress officers who can provide information on eligibility criteria and the application process.",
+
+    "PrivacyPolicyOverview":"Privacy Policy Overview",
+    "PrivacyPolicyOverviewDetails1":"Aidexpress maintains a variety of websites (including https://iitaidexpress.000webhostapp.com/) and provides its services in relation to donations, both online and offline (altogether, the “Services”), as well as interactions with you. The Privacy Policy below applies to visitors to our Services, donors, individuals working for our non-profit and corporate partners, suppliers and job applicants (altogether, “you”) and governs how we handle personal information in connection with Services and our interactions with you. This Privacy Policy describes what personal information we collect, how we use it, and your choices.",
+    "PrivacyPolicyOverviewDetails2":"We collect information from you when you visit and take actions on our Services. We use this information to provide and manage our Services. We use cookies and similar technologies to provide a better experience, improve our website track usage patterns and conduct marketing.",
+    "PrivacyPolicyOverviewDetails3":"You can access your data, edit your preferences, download your data, request deletion of your data, or revoke consent by visiting your account. Except for the purposes outlined below, we will not trade, share, or sell your personal information with anyone. Refer to the Privacy Policy below for complete details.",
+    "PrivacyPolicyOverviewDetails4":"If you have any questions about our Privacy Policy please contact us at",
+
+    "InformationWeCollect":"Information We Collect",
+    "Information":"Information you provide to us includes:",
+    "ContactDetails":"Contact details such as your first and last name, organisation name (if applicable), address, email, phone number, electricity bill and family details. You may choose to provide additional information, such as your mailing address, a photo, etc., if you create a profile or create a Aidexpress fundraiser. Account data such as the username, email, password or photo that you use to establish an online account with us directly."
+
+   
+
 }
