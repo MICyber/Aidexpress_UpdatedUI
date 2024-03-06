@@ -35,20 +35,20 @@ const Login = () => {
         <form className='authform'>
           <h1>{t("Login")}</h1>
           <div className='formgroup'>
-            <label htmlFor='email'>Email</label>
+            <label htmlFor='email'>{t("Email1")}</label>
             <input type='email' id='email' onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div className='formgroup'>
-            <label htmlFor='password'>Password</label>
+            <label htmlFor='password'>{t("Password")}</label>
             <input type='password' id='pass' onChange={(e) => setPassword(e.target.value)} />
           </div>
           <Link to='/forgotpassword' className='stylenone'>
-            <p>Forgot password?</p>
+            <p>{t("Forgotpassword?")}</p>
           </Link>
-          <button onClick={submit}>Login</button>
-          <h2 className='or'>OR</h2>
+          <button onClick={submit}>{t("Login")}</button>
+          <h2 className='or'>{t("OR")}</h2>
           <Link to='/SignUpUser' className='stylenone'>
-            <button className='btn'>Signup</button>
+            <button className='btn'>{t("Signup")}</button>
           </Link>
         </form>
       </div>

@@ -131,7 +131,11 @@
     "AccessLevel":"Are you a user or an authority?",
     "User":"User",
     "OR":"OR",
-    "Officer":"Officer"
+    "Officer":"Officer",
+
+    "Email1":"Email",
+    "Password":"Password",
+    "Forgotpassword?":"Forgot password?"
 
     
 
