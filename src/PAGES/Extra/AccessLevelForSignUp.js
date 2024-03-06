@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../COMPONENTS/Navbar/Navbar"; 
 import "./AccessLevelForSignUp.css";
+import { useTranslation } from 'react-i18next';
 
 
 const AccessLevelForSignUp = () => {
+  const { t } = useTranslation();
   return (
     <div className="authpage">
       <Navbar reloadnavbar={false} />
@@ -14,13 +16,13 @@ const AccessLevelForSignUp = () => {
           alt="AccessLevel"
         />
         <div className="authform">
-          <h1>Are you a user or an authority SignUp?</h1>
+          <h1>{t("SigupDetail")}</h1>
           <Link to="/SignUpUser" className="stylenone">
-            <button>User</button>
+            <button>{t("User")}</button>
           </Link>
-          <h2 className="or">OR</h2>
+          <h2 className="or">{t("OR")}</h2>
           <Link to="/OfficerSignUp" className="stylenone">
-            <button>Authority</button>
+            <button>{t("Officer")}</button>
           </Link>
         </div>
       </div>
