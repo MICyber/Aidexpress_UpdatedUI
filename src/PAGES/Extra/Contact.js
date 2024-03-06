@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
     const [userData, setUserData] = useState({
-        Name: '', Email: '', Subject: '', Message: ''
+        Name: '', Email: '', Rating: '', Message: ''
     });
     
     const data = (e) => {
@@ -19,13 +19,13 @@ const Contact = () => {
 
     const send = async (e) => {
         e.preventDefault();
-        const {Name, Email, Subject, Message} = userData;
+        const {Name, Email, Rating, Message} = userData;
         const options = {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
             },
-            body: JSON.stringify({Name, Email, Subject, Message})
+            body: JSON.stringify({Name, Email, Rating, Message})
         };
         const res = await fetch('https://aidexpress-1fe47-default-rtdb.firebaseio.com/Meaasges.json', options);
         console.log(res);
@@ -68,8 +68,8 @@ const Contact = () => {
                 <div className='contact_box'>
                     <input type='text' name='Name' value={userData.Name} placeholder={t("Name")} autoComplete='off' onChange={data}/>
                     <input type='email' name='Email' value={userData.Email} placeholder={t("EmailButton")} autoComplete='off' onChange={data}/>
-                    <input type='text' name='Subject' value={userData.Subject} placeholder={t("MessageButton")} autoComplete='off' onChange={data}/>
                     <textarea value={userData.Message} name="Message" placeholder={t("MessageButton")} cols="30" rows="10" autoComplete='off' onChange={data}></textarea>
+                    
                 </div>
                 <div className='fromgroup'>
                     <label htmlFor=''>{t("Rating")}</label>
