@@ -3,11 +3,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../../COMPONENTS/Navbar/Navbar';
 import './AuthPage.css';
 import firebase from './firebaseConfig';
+import { useTranslation } from 'react-i18next';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [pass, setPassword] = useState('');
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const submit = async (e) => {
     e.preventDefault();
@@ -31,7 +33,7 @@ const Login = () => {
       <div className='authcont'>
         <img src='https://i.pinimg.com/564x/80/37/8c/80378c968a1dbd5eefaff4c102a89205.jpg' alt='login' />
         <form className='authform'>
-          <h1>Login</h1>
+          <h1>{t("Login")}</h1>
           <div className='formgroup'>
             <label htmlFor='email'>Email</label>
             <input type='email' id='email' onChange={(e) => setEmail(e.target.value)} />
