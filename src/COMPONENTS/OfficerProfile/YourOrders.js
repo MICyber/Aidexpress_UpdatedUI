@@ -35,28 +35,28 @@ const YourOrders = () => {
             buttons: ['Received', 'Checking', 'Error Found - Resend']
         },
         {
-            id: 112345,
+            id: 112349,
             date: '12/12/2021',
             status: 'Received',
             total: 1000,
             buttons: ['Received', 'Checking', 'Error Found - Resend']
         },
         {
-            id: 112346,
+            id: 112350,
             date: '12/12/2021',
             status: 'On the way',
             total: 1600,
             buttons: ['Received', 'Checking', 'Error Found - Resend']
         },
         {
-            id: 112347,
+            id: 112351,
             date: '12/12/2021',
             status: 'Received',
             total: 2000,
             buttons: ['Received', 'Checking', 'Error Found - Resend']
         },
         {
-            id: 112348,
+            id: 112352,
             date: '12/12/2021',
             status: 'Cancelled',
             total: 100,
@@ -75,11 +75,11 @@ const YourOrders = () => {
             <table className='yourorderstable'>
                 <thead>
                     <tr>
-                        <th scope='col'>ID</th>
+                        <th scope='col'>Application ID</th>
                         <th scope='col'>Date</th>
                         <th scope='col'>Status</th>
                         <th scope='col'>Total</th>
-                        <th scope='col'>Bank Statemnet</th>
+                        <th scope='col'>Application Form</th>
                     </tr>
                 </thead>
 
@@ -87,15 +87,9 @@ const YourOrders = () => {
                     {data.map((item, index) => {
                         return (
                             <tr key={index}>
-                                <td data-label='ID'>{item.id}</td>
+                                <td data-label='Application ID'>{item.id}</td>
                                 <td data-label='Date'>{item.date}</td>
                                 <td data-label='Received Status'>
-                                    <div>
-                                        {item.status === 'Received' && <span className='greendot'></span>}
-                                        {item.status === 'On the way' && <span className='yellowdot'></span>}
-                                        {item.status === 'Cancelled' && <span className='reddot'></span>}
-                                        {item.status}
-                                    </div>
                                     <div className='status-buttons'>
                                         {item.buttons.map((button, btnIndex) => (
                                             <button
@@ -111,7 +105,7 @@ const YourOrders = () => {
                                     </div>
                                 </td>
                                 <td data-label='Total'>RS.{item.total}</td>
-                                <td data-label='Invoice'>
+                                <td data-label='Application Form'>
                                     <button
                                         className='mainbutton1'
                                         onClick={() => {

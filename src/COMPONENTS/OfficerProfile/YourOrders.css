@@ -122,3 +122,19 @@
         content:attr(data-label);
     }
 }
+
+.status-buttons {
+    display: flex;
+    flex-direction: column; /* Display buttons in a column */
+    align-items: center;
+     /* Center buttons horizontally */
+}
+
+.status-button {
+    margin-bottom: 10px; /* Add margin between buttons for spacing */
+    width: 140px;
+    border-radius: 8%;
+    border-color: #ccc;
+    background-color:#e4e1e1;
+    
+}
