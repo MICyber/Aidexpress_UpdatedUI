@@ -1,63 +1,100 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Form, Col, Button } from 'react-bootstrap'; // Import Form, Col, and Button from react-bootstrap
-import Navbar from '../../COMPONENTS/Navbar/Navbar'
+import { Form, Col, Button } from 'react-bootstrap';
+import Navbar from "../Navbar/Navbar";
 import './DonationForm.css';
 
 const DonationForm = () => {
- 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    address: "",
+    amount: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted:", formData);
+  };
 
   return (
-    <div className="Form1">
-      <Navbar reloadnavbar={false}/>
-    <div className="Donation-form">
-    
+    <div className="Donate">
+      <Navbar reloadnavbar={false} />
+    <div className="donation-form">
       <h1>Donation Form</h1>
-      <Form>
-        {/* <Form.Row>
-            <Form.Group as={Col} controlId="formName">
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control type="text" placeholder="Name"/>
-
-            </Form.Group>
-            <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email"/>
-            </Form.Group>
-        </Form.Row>
-        <Form.Group controlId="formGridAddress">
-            <Form.Label>Address</Form.Label>
-            <Form.Control placeholder="1234 Main St"/>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group controlId="formName">
+          <Form.Label>Full Name</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
         </Form.Group>
 
-        <Form.Row>
-            <Form.Group as={Col} controlId="formGridCity" >
-                <Form.Label>City</Form.Label>
-                <Form.Control/>
-            </Form.Group>
-            <Form.Group as={Col} controlId="formGridCity" >
-                <Form.Label>Province</Form.Label>
-                <Form.Control />
-            </Form.Group>
-        </Form.Row>
+        <Form.Group controlId="formEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="email"
+            placeholder="Enter email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </Form.Group>
+
+        <Form.Group controlId="formPhoneNumber">
+          <Form.Label>Phone Number</Form.Label>
+          <Form.Control
+            type="tel"
+            placeholder="Phone Number"
+            name="phoneNumber"
+            value={formData.phoneNumber}
+            onChange={handleChange}
+            required
+          />
+        </Form.Group>
+
+        <Form.Group controlId="formAddress">
+          <Form.Label>Address</Form.Label>
+          <Form.Control
+            placeholder="1234 Main St"
+            name="address"
+            value={formData.address}
+            onChange={handleChange}
+            required
+          />
+        </Form.Group>
+
         <Form.Group controlId="formAmount">
-            <Form.Label>Amount</Form.Label>
-            <Form.Control placeholder="RS." />
+          <Form.Label>Amount</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="$ USD"
+            name="amount"
+            value={formData.amount}
+            onChange={handleChange}
+            required
+          />
         </Form.Group>
 
-        <Form.Group id="formGridCheckbox">
-            <Button variant="outline-primary" onClick={() =>{this.handleModal()}}>View Agreement</Button>
-            <Form.Check type="checkbox" label="I read the Disclosure and Agreed to the Terms"/>
-        </Form.Group>
-
-        <Button variant="outline-dark" type="submit">
-            <Link to = "/Donation" > 
-            Submit
-            </Link>
-        </Button> */}
-                        
+        <Button variant="primary" type="submit" className="submit-button">
+          Submit
+        </Button>
       </Form>
-
     </div>
     </div>
   );

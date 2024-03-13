@@ -45,6 +45,8 @@ import DonationForm from './COMPONENTS/Donation/DonationForm.js';
 
 
 import './118n.js';
+import DonateEvidence from './COMPONENTS/Donation/DonateEvidence.js';
+
 
 
 
@@ -96,6 +98,8 @@ const App = () => {';/'
         <Route path="/ApplicationForm3" element={<ApplicationForm3/>} />
         <Route path="/DocumentUploadPage" element={<DocumentUploadPage/>} />
         <Route path="/DonationForm" element={<DonationForm/>} />
+        <Route path="/DonateEvidence" element={<DonateEvidence/>} />
+
 
 
         
