@@ -103,7 +103,7 @@ const DonationForm = () => {
 export default DonationForm;*/
 
 import React, { useState } from "react";
-import { Form, Col, Button,Modal } from 'react-bootstrap';
+import { Form, Col, Button } from 'react-bootstrap';
 import Navbar from "../Navbar/Navbar";
 import './DonationForm.css';
 
@@ -215,7 +215,7 @@ const DonationForm = () => {
           />
         </Form.Group>
 
-          {/* ... (other form groups unchanged) */}
+          
 
           <Form.Group controlId="formPaymentMethod">
             <Form.Label>Payment Method</Form.Label>
@@ -239,7 +239,7 @@ const DonationForm = () => {
             </div>
           </Form.Group>
 
-          {/* Credit Card Fields */}
+          
           {formData.paymentMethod === "creditCard" && (
             <>
               <Form.Group controlId="formCardNumber">
@@ -278,7 +278,7 @@ const DonationForm = () => {
             </>
           )}
 
-          {/* Bank Transfer Fields */}
+          
           {formData.paymentMethod === "bankTransfer" && (
             <>
                
@@ -326,13 +326,6 @@ const DonationForm = () => {
                   required
                 />
               </Form.Group>
-              <Form.Group id="formGridCheckbox">
-                <Button variant= "outline-primary" onClick={handleModal}>View Agreement</Button>
-                <Form.Check type="checkbox" label="I read the Disclosure and Agreed to the Terms"/>
-
-              </Form.Group>
-
-            
             </>
           )}
 
@@ -370,5 +363,6 @@ const DonationForm = () => {
 };
 
 export default DonationForm;
+
 
 
