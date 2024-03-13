@@ -123,3 +123,44 @@
     }
 }
 
+.yourorders form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+  }
+  
+  .yourorders .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .yourorders label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .yourorders input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .yourorders button.mainbutton1 {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .yourorders button.mainbutton1:hover {
+    background-color: #2d6b9b;
+  }
