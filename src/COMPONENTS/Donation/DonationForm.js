@@ -215,7 +215,7 @@ const DonationForm = () => {
           <Form.Label>Amount</Form.Label>
           <Form.Control
             type="text"
-            placeholder="$ USD"
+            placeholder="RS"
             name="amount"
             value={formData.amount}
             onChange={handleChange}
