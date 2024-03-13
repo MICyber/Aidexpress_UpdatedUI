@@ -410,16 +410,37 @@ const DonationForm = () => {
           )}
 
           {/* Slip Upload Field */}
-          <Form.Group controlId="formSlip">
-            <Form.Label>Upload Slip</Form.Label>
-            <Form.Control
-              type="file"
-              accept=".pdf, .jpg, .png"
-              name="slip"
-              onChange={handleSlipChange}
-              required
-            />
-          </Form.Group>
+          {formData.paymentMethod === "bankTransfer" && (
+            <>
+            {/* Additional Information for Bank Transfer */}
+            <div>
+              <p>
+                <strong>Bank name:</strong> People's Bank
+              </p>
+              <p>
+                <strong>Branch:</strong> Colombo
+              </p>
+              <p>
+                <strong>Account Number:</strong> 1234567890
+              </p>
+              <p>
+                <strong>Account Name:</strong> S W Fernando
+              </p>
+            </div>
+        
+            {/* Slip Upload Field */}
+            <Form.Group controlId="formSlip">
+              <Form.Label>Upload Slip</Form.Label>
+              <Form.Control
+                type="file"
+                accept=".pdf, .jpg, .png"
+                name="slip"
+                onChange={handleSlipChange}
+                required
+              />
+            </Form.Group>
+          </>
+          )}
 
           <Button variant="primary" type="submit" className="submit-button">
             Submit
