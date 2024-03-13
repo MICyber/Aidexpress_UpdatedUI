@@ -103,7 +103,37 @@ const YourOrders = () => {
                     })}
                 </tbody>
             </table>
+            <div>
+                
+                <form>
+                <div>
+                    <h1 className='mainhead1'>Get Monthly allowance</h1>
+                    <form>
+                        <div className="form-group">
+                            <label htmlFor="bank">Bank:</label>
+                            <input type="text" id="bank" name="bank" placeholder="Enter your bank name" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="branch">Branch:</label>
+                            <input type="text" id="branch" name="branch" placeholder="Enter your branch name" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="accountNumber">Account Number:</label>
+                            <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter your account number" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="accountName">Account Name:</label>
+                            <input type="text" id="accountName" name="accountName" placeholder="Enter your account name" />
+                        </div>
+                        <button type="submit" className="mainbutton1">Submit</button>
+                    </form>
+                </div>  
+                </form>
+
+            </div>
         </div>
+
+       
     )
 }
 
