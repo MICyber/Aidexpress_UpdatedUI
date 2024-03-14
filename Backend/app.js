@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const userController = require('./src/controllers/userController');
@@ -47,4 +47,6 @@ app.get('/api/applications', applicationController.listAllApplications);
 app.get('/api/applications/:applicationId', applicationController.getApplicationById);
 
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(3000, () => console.log('Server running on port 3000'));*/
+
+
