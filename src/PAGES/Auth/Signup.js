@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../COMPONENTS/Navbar/Navbar';
 import firebase from './firebaseConfig';
+import { useTranslation } from 'react-i18next';
 
 
 const Signup = () => {
@@ -10,6 +11,8 @@ const Signup = () => {
   const [email, setEmail] = useState('');
   const [pass, setPassword] = useState('');
   const [confpass, setConfirmPassword] = useState('');
+  const { t } = useTranslation();
+
 
   const submit = async (e) => {
     e.preventDefault();
