@@ -34,8 +34,8 @@ const Navbar = () => {
             <Dropdown>
               <Dropdown.Toggle variant="" id="dropdown-basic">{t("Donatenow")}</Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="/Donation">{t("Donate")}</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">{t("Evidence")}</Dropdown.Item>
+                <Dropdown.Item href="/DonationForm">{t("Donate")}</Dropdown.Item>
+                <Dropdown.Item href="/DonateEvidence">{t("Evidence")}</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 

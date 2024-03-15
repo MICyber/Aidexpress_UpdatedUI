@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../COMPONENTS/Navbar/Navbar';
 import firebase from './firebaseConfig';
-import { useTranslation } from 'react-i18next';
 
 
 const Signup = () => {
@@ -11,7 +10,6 @@ const Signup = () => {
   const [email, setEmail] = useState('');
   const [pass, setPassword] = useState('');
   const [confpass, setConfirmPassword] = useState('');
-  const { t } = useTranslation();
 
   const submit = async (e) => {
     e.preventDefault();
@@ -33,7 +31,7 @@ const Signup = () => {
           src='https://i.pinimg.com/564x/b3/a9/8d/b3a98deb7de1be503be0d6279153a881.jpg'
           alt='signup'
         />
-        <form className='authform' method='post'>
+        <form className='authform'>
           <h1>{t("Signup")}</h1>
           <div className='form-group-row'>
             <div className='formgroup'>
