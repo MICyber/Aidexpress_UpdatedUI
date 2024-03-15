@@ -33,7 +33,7 @@ const Signup = () => {
           src='https://i.pinimg.com/564x/b3/a9/8d/b3a98deb7de1be503be0d6279153a881.jpg'
           alt='signup'
         />
-        <form className='authform'>
+        <form className='authform' method='post'>
           <h1>{t("Signup")}</h1>
           <div className='form-group-row'>
             <div className='formgroup'>
