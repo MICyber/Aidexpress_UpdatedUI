@@ -100,7 +100,23 @@
     "answer4":"The primary goal of the AidExpress system is to alleviate poverty and promote socio-economic empowerment among low-income families in Sri Lanka. By providing targeted assistance and support, the program aims to improve the living standards and overall well-being of beneficiaries.",
 
     "question5":"How can individuals apply for the AidExpress program?",
-    "answer5":"Individuals interested in applying for the AidExpress program can typically do so through their local government authorities or AidExpress officers who can provide information on eligibility criteria and the application process."
+    "answer5":"Individuals interested in applying for the AidExpress program can typically do so through their local government authorities or AidExpress officers who can provide information on eligibility criteria and the application process.",
+
+    "ContactDetails":"Contact details such as your first and last name, organisation name (if applicable), address, email, phone number, electricity bill and family details. You may choose to provide additional information, such as your mailing address, a photo, etc., if you create a profile or create a Aidexpress fundraiser. Account data such as the username, email, password or photo that you use to establish an online account with us directly.",
+
+
+    "EligibilityCriteria":"Eligibility Criteria",
+    "EligibilityCriteriaDetails":"Clearly state the criteria that determine eligibility for AidExpress benefits, such as income thresholds, family size, and residency requirements.",
+    "ApplicationProcess":"Application Process",
+    "ApplicationProcessDetails":"Provide details on how individuals can apply for AidExpress benefits, including required documentation and submission procedures.",
+    "BenefitCalculation":"Benefit Calculation",
+    "BenefitCalculationDetails":"Explain how the amount of assistance is determined based on the applicant's income, household composition, and other relevant factors.",
+    "RightsAndResponsibilities":"Rights And Responsibilities",
+    "RightsAndResponsibilitiesDetails":"Outline the rights and responsibilities of both beneficiaries and the AidExpress program, including obligations to report changes in income or family circumstances.",
+    "PaymentSchedule":"Payment Schedule",
+    "PaymentScheduleDetails":"Specify the frequency and method of benefit payments, whether it's monthly, quarterly, or otherwise, and how payments are disbursed (e.g., direct deposit, cash, voucher).",
+    "ComplianceWithLaws":"Compliance With Laws",
+    "ComplianceWithLawsDetails":"Affirm the program's commitment to comply with all applicable laws, regulations, and government policies governing social welfare programs."
 
     
 }
