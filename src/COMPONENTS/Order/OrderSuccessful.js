@@ -12,7 +12,11 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
         maritalStatus: "",
         singleParent: "",
         divisionalSecretariat: "",
-        gramaSevakaDivision: ""
+        gramaSevakaDivision: "",
+        bankName: "",
+        accountHolderName: "",
+        accountNumber: "",
+        branchName: ""
     });
 
     const handleChange = (e) => {
@@ -69,6 +73,25 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
                             <tr>
                                 <td>Grama Sevaka Division:</td>
                                 <td><input type="text" name="gramaSevakaDivision" value={orderdata.gramaSevakaDivision} onChange={handleChange} /></td>
+                            </tr>
+                            <tr>
+                                <td colSpan="2"><center><h2>Bank Details</h2></center></td>
+                            </tr>
+                            <tr>
+                                <td>Bank Name:</td>
+                                <td><input type="text" name="bankName" value={orderdata.bankName} onChange={handleChange} /></td>
+                            </tr>
+                            <tr>
+                                <td>Account Holder Name:</td>
+                                <td><input type="text" name="accountHolderName" value={orderdata.accountHolderName} onChange={handleChange} /></td>
+                            </tr>
+                            <tr>
+                                <td>Account Number:</td>
+                                <td><input type="text" name="accountNumber" value={orderdata.accountNumber} onChange={handleChange} /></td>
+                            </tr>
+                            <tr>
+                                <td>Branch Name:</td>
+                                <td><input type="text" name="branchName" value={orderdata.branchName} onChange={handleChange} /></td>
                             </tr>
                         </tbody>
                     </table>
