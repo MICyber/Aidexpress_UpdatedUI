@@ -26,7 +26,16 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
       [name]: value,
     }));
   };
-
+  // Define the handleFileChange function to handle file input changes
+  const handleFileChange = (e) => {
+    const { name, files } = e.target;
+    // Assuming you want to store the file in the state, you can do something like this
+    // Note: You may need to handle file uploads appropriately based on your requirements
+    setorderdata(prevState => ({
+        ...prevState,
+        [name]: files[0] // Assuming you only allow single file uploads
+    }));
+};
   return (
     <div className="OrdersSuccessful">
       <div className="confirmationcont">
@@ -305,6 +314,44 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
               </tr>
             </tbody>
           </table>
+          <center><h2>Proof of Documents</h2></center>
+<table>
+    <tbody>
+        <tr>
+            <td>Proof of Income:</td>
+            <td><input type="file" accept=".pdf,.jpg" name="proofOfIncome" onChange={handleFileChange} /></td>
+        </tr>
+        <tr>
+            <td>Tax Returns:</td>
+            <td><input type="file" accept=".pdf,.jpg" name="taxReturns" onChange={handleFileChange} /></td>
+        </tr>
+        <tr>
+            <td>Bank Statements:</td>
+            <td><input type="file" accept=".pdf,.jpg" name="bankStatements" onChange={handleFileChange} /></td>
+        </tr>
+        <tr>
+            <td>Proof of Assets:</td>
+            <td><input type="file" accept=".pdf,.jpg" name="proofOfAssets" onChange={handleFileChange} /></td>
+        </tr>
+        <tr>
+            <td>Proof of Expenses:</td>
+            <td><input type="file" accept=".pdf,.jpg" name="proofOfExpenses" onChange={handleFileChange} /></td>
+        </tr>
+        <tr>
+            <td>Identification:</td>
+            <td><input type="file" accept=".pdf,.jpg" name="identification" onChange={handleFileChange} /></td>
+        </tr>
+        <tr>
+            <td>Proof of Household Size:</td>
+            <td><input type="file" accept=".pdf,.jpg" name="proofOfHouseholdSize" onChange={handleFileChange} /></td>
+        </tr>
+        <tr>
+            <td>Other Documents to Support:</td>
+            <td><input type="file" accept=".pdf,.jpg" name="otherDocuments" onChange={handleFileChange} /></td>
+        </tr>
+    </tbody>
+</table>
+
         </div>
       </div>
     </div>
