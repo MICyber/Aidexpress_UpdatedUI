@@ -1,35 +1,10 @@
 import React, { useState } from 'react'
 import './OrderSuccessful.css'
-import { useRecoilState } from 'recoil'
-import { orderSuccessfulProvider } from '../../Providers/OrderSuccessfulProvider'
 
 const OrderSuccessful = ({ orderid, message, redirecto }) => {
 
-    const [ordersuccesscont, setordersuccesscont] = useRecoilState(orderSuccessfulProvider)
     const [orderdata, setorderdata] = useState({
-        OrderNo: orderid,
-        OrderDate: '12/12/2021',
-        OrderStatus: 'Delivered',
-        CustomerName: 'Harshal Jain',
-        CustomerShipToAddress: 'B-101, Shreeji Apartment, Near Shreeji Hospital, Kalyan West, Thane, Maharashtra 421301',
-        CustomerEmail: 'virajj014@gmail.com',
-        OrderItems: [
-            {
-                ProductName: 'Product 1',
-                Price: 100,
-                Quantity: 2,
-            },
-            {
-                ProductName: 'Product 2',
-                Price: 5000,
-                Quantity: 5,
-            }
-        ],
-        SubTotal: 25200,
-        Tax: 100,
-        ShippingCharges: 80,
-        Total: 25380,
-        PaymentType: 'Cash on Delivery'
+      
     })
     return (
         <div
@@ -41,7 +16,7 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
                     if(redirecto == 'userorders'){
                         window.location.href = '/user/yourorders'
                     }
-                    setordersuccesscont(false)
+                    
                 }}
             >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
