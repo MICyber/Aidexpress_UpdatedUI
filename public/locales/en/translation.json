@@ -83,7 +83,34 @@
     "MessageButton":"Message",
     "Rating":"Rating",
     "Submit":"Submit",
-    "ContactUs":"Contact Us"
+    "ContactUs":"Contact Us",
+
+    "Applica_Name": "Name of Householder:",
+    "Enter Name" :   "Enter Name" ,
+
+    "Addre:" : "",
+    "Enter Address": "",
+    "NIC Number:": "",
+    "Enter NIC Number": "",
+    "Telephone Number:": "",
+    "Enter Telephone Number": "",
+    "Appli_age": "",
+    "Enter Age": "",
+    "Names of Family Members:": "",
+    "Enter Names" : "",
+    "Marital Status:": "",
+    "Select Marital Status": "",
+    "Single": "",
+    "Married": "",
+    "Divorced": "",
+    "Widowed": "",
+    "Single Parent:": "",
+    "Is a Single Parent": "",
+    "Divisional_Secretariat": "",
+    "Enter": "",
+    "Grama Sevaka Division": "",
+    "Information": "",
+    "Next" : ""
 
     
 }
