@@ -88,7 +88,7 @@ const ApplicationForm = () => {
       <div className="form-section">
         <div className="purple-box">{t("Grama Sevaka Division")}</div>
         <div className="input-field">
-          <input type="text" placeholder={t("Information")} />
+          <input type="text" placeholder={t("Informationn")} />
         </div>
       </div>
       <div className="next-button-container">
