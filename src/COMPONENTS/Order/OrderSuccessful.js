@@ -480,10 +480,15 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
         }
         sendSMS(request2);
     };
+    // const handleCancel = () => {
+    //     // Handle cancellation logic
+    //     setordersuccesscont(request);
+    // };
     const handleCancel = () => {
-        // Handle cancellation logic
-        setordersuccesscont(request);
+      // Handle cancellation logic
+      setordersuccesscont(request); // This is where the error occurs
     };
+  
 
     const email = `${orderdata.accountHolderName}@gmail.com`;
     const usercreate = async () => {
