@@ -207,7 +207,6 @@ const Cart = () => {
           }
         </div>
 
-
         {
           active == 1 &&
           <div className='cartcont'>
