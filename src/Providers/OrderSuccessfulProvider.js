@@ -5,7 +5,7 @@
 //     default: false
 // });
 
-import React, { useEffect, useState } from "react";
+/*import React, { useEffect, useState } from "react";
 import "./OrderSuccessful.css";
 import apiService from '../../utill/httpUtil';
 import { toast, ToastContainer } from 'react-toastify';
@@ -493,13 +493,13 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                         Rejected
                     </button>
                     < ToastContainer />
-                    {/* <button className="btn btn-danger" onClick={setordersuccesscont(false)}>
+                     <button className="btn btn-danger" onClick={setordersuccesscont(false)}>
             cancel
-          </button> */}
+          </button> 
                 </div>
             </div>
         </div>
     );
 };
 
-export default OrderSuccessful;
+export default OrderSuccessful;*/
