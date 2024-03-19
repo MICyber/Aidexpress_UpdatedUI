@@ -20,18 +20,27 @@ mongoose.connect('mongodb+srv://user:abcd123@cluster0.wlsh9wk.mongodb.net/Aidexp
 .catch((err) => console.error('Could not connect to MongoDB...', err));
 
 
+
 // User Registration Route
 app.post('/api/users', userController.registerUser);
 app.get('/api/users/:id', userController.getUser);
 app.put('/api/users/:id', userController.updateUserEligibility);
 app.delete('/api/users/:id', userController.removeUser);
 
+
 app.post('/api/applications/:applicationId/track', applicationController.trackApplication);
 app.post('/api/applications', applicationController.createApplication);
 app.delete('/api/applications/:applicationId', applicationController.removeApplication);
 app.get('/api/applications', applicationController.listAllApplications);
 app.get('/api//applications/:_id', applicationController.getApplicationById);
+app.post('/api/send-sms', smsController.sendNotification);
 
+app.post('/api/payments/make-payment', paymentController.processPaymentReq);
+app.post('/api/payments', paymentController.create);
+app.get('/api/payments', paymentController.getAll);
+app.get('/api/payments/:id', paymentController.getById);
+app.put('/api/payments/:id', paymentController.update);
+app.delete('/api/payments/:id', paymentController.remove);
 
 
 
