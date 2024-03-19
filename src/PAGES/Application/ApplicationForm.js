@@ -1,104 +1,104 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar from '../../COMPONENTS/Navbar/Navbar'
+import Navbar from '../../COMPONENTS/Navbar/Navbar';
 import './ApplicationForm.css';
-import { useTranslation } from 'react-i18next';
-
 
 const ApplicationForm = () => {
+  // State hooks for each form input
+  const [name, setName] = useState("");
+  const [address, setAddress] = useState("");
+  const [nicNumber, setNicNumber] = useState("");
+  const [telephone, setTelephone] = useState("");
+  const [age, setAge] = useState("");
+  const [familyMembers, setFamilyMembers] = useState("");
   const [maritalStatus, setMaritalStatus] = useState("");
   const [isSingleParent, setIsSingleParent] = useState(false);
-  const { t } = useTranslation();
+  const [divisionalSecretariat, setDivisionalSecretariat] = useState("");
+  const [gramaSevakaDivision, setGramaSevakaDivision] = useState("");
 
+  // Create the request object with form data
+  const request = {
+    nameOfHousehold: name,
+    address: address,
+    nicNumber: nicNumber,
+    telephoneNumber: telephone,
+    age: age,
+    namesOfFamilyMembers: familyMembers,
+    maritalStatus: maritalStatus,
+    singleParent: isSingleParent,
+    divisionalSecretariat: divisionalSecretariat,
+    gramaSevakaDivision: gramaSevakaDivision
+  };
+
+  console.log(request);
   return (
     <div className="Form1">
-      <Navbar reloadnavbar={false}/>
-    <div className="application-form">
-    
-      <h1>{t("Application Form")}</h1>
-      <form>
-      <div className="form-section">
-        <div className="purple-box">Name of Householder:</div>
-        <div className="input-field">
-          <input type="text" placeholder={t("Enter Name" )}/>
-        </div>
+      <Navbar reloadnavbar={false} />
+      <div className="application-form">
+        <h1>Application Form</h1>
+        <form>
+          <div className="form-section">
+            <div className="purple-box">Name of Householder:</div>
+            <div className="input-field">
+              <input type="text" placeholder="Enter Name"  onChange={(e) => {setName(e.target.value); console.log(name)}} />
+            </div>
+          </div>
+          <div className="form-section">
+            <div className="purple-box">Address:</div>
+            <div className="input-field">
+              <input type="text" placeholder="Enter Address"  onChange={(e) => setAddress(e.target.value)} />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <div className="purple-box">NIC Number:</div>
+            <div className="input-field">
+              <input type="text" placeholder="Enter NIC Number"  onChange={(e) => setNicNumber(e.target.value)} />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <div className="purple-box">Telephone Number:</div>
+            <div className="input-field">
+              <input type="tel" placeholder="Enter Telephone Number"  onChange={(e) => setTelephone(e.target.value)} />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <div className="purple-box">Age:</div>
+            <div className="input-field">
+              <input type="number" placeholder="Enter Age"  onChange={(e) => setAge(e.target.value)} />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <div className="purple-box">Names of Family Members:</div>
+            <div className="input-field">
+              <input type="text" placeholder="Enter Names"  onChange={(e) => setFamilyMembers(e.target.value)} />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <div className="purple-box">Divisional Secretariat:</div>
+            <div className="input-field">
+              <input type="text" placeholder="Enter" onChange={(e) => setDivisionalSecretariat(e.target.value)} />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <div className="purple-box">Grama Sevaka Division:</div>
+            <div className="input-field">
+              <input type="text" placeholder="Information"  onChange={(e) => setGramaSevakaDivision(e.target.value)} />
+            </div>
+          </div>
+
+          <div className="next-button-container">
+            <Link to="/ApplicationForm2"state={{request }} >
+              <button className="next-button" >Next</button>
+            </Link>
+          </div>
+        </form>
       </div>
-      <div className="form-section">
-        <div className="purple-box">Address:</div>
-        <div className="input-field">
-          <input type="text" placeholder={t("Enter Address" )}/>
-        </div>
-      </div>
-      <div className="form-section">
-        <div className="purple-box">{t("NIC Number:")}</div>
-        <div className="input-field">
-          <input type="text" placeholder={t("Enter NIC Number")} />
-        </div>
-      </div>
-      <div className="form-section">
-        <div className="purple-box">{t("Telephone Number:")}</div>
-        <div className="input-field">
-          <input type="tel" placeholder={t("Enter Telephone Number")} />
-        </div>
-      </div>
-      <div className="form-section">
-        <div className="purple-box">{t("Appli_age")}</div>
-        <div className="input-field">
-          <input type="number" placeholder={t("Enter Age")}/>
-        </div>
-      </div>
-      <div className="form-section">
-        <div className="purple-box">{t("Names of Family Members:")}</div>
-        <div className="input-field">
-          <input type="text" placeholder={t("Enter Names" )}/>
-        </div>
-      </div>
-      <div className="form-section">
-        <div className="purple-box">{t("Marital Status:")}</div>
-        <div className="input-field">
-          <select
-            value={maritalStatus}
-            onChange={(e) => setMaritalStatus(e.target.value)}
-          >
-            <option value="">{t("Select Marital Status")}</option>
-            <option value="single">{t("Single")}</option>
-            <option value="married">{t("Married")}</option>
-            <option value="divorced">{t("Divorced")}</option>
-            <option value="widowed">{t("Widowed")}</option>
-          </select>
-        </div>
-      </div>
-      <div className="form-section">
-        <div className="purple-box">{t("Single Parent:")}</div>
-        <div className="input-field">
-          <input
-            type="checkbox"
-            id="singleParent"
-            checked={isSingleParent}
-            onChange={() => setIsSingleParent(!isSingleParent)}
-          />
-          <label htmlFor="singleParent">{t("Is a Single Parent")}</label>
-        </div>
-      </div>
-      <div className="form-section">
-        <div className="purple-box">{t("Divisional_Secretariat")}</div>
-        <div className="input-field">
-          <input type="text" placeholder={t("Enter")} />
-        </div>
-      </div>
-      <div className="form-section">
-        <div className="purple-box">{t("Grama Sevaka Division")}</div>
-        <div className="input-field">
-          <input type="text" placeholder={t("Informationn")} />
-        </div>
-      </div>
-      <div className="next-button-container">
-        <Link to="/ApplicationForm2">
-          <button className="next-button">{t("Next")}</button>
-        </Link>
-      </div>
-      </form>
-    </div>
     </div>
   );
 };
