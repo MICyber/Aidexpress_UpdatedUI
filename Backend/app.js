@@ -35,6 +35,12 @@ app.get('/api/applications', applicationController.listAllApplications);
 app.get('/api//applications/:_id', applicationController.getApplicationById);
 app.post('/api/send-sms', smsController.sendNotification);
 
+app.post('/api/payments/make-payment', paymentController.processPaymentReq);
+app.post('/api/payments', paymentController.create);
+app.get('/api/payments', paymentController.getAll);
+app.get('/api/payments/:id', paymentController.getById);
+app.put('/api/payments/:id', paymentController.update);
+app.delete('/api/payments/:id', paymentController.remove);
 
 
 
