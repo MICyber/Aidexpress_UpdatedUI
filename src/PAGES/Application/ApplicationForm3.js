@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
 import "../Application/ApplicationForm.css";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
-
+import { useLocation } from 'react-router-dom';
 
 const ApplicationForm3 = () => {
+  
+  const location = useLocation();
+  const { request } = location.state || {};
+  
+  useEffect(() => {
+
+    console.log("data=>", request);
+
+  }, []);
+
+
   const [monthlyIncome, setMonthlyIncome] = useState("");
   const [livelihoodAssets, setLivelihoodAssets] = useState("");
   const [cultivableLand, setCultivableLand] = useState("");
@@ -15,6 +26,16 @@ const ApplicationForm3 = () => {
   const [drinkingWater, setDrinkingWater] = useState("");
   const [sanitaryFacilities, setSanitaryFacilities] = useState("");
 
+  request.monthlyPerCapitaIncome = monthlyIncome;
+  request.numberOfLivelihoodAssets=  livelihoodAssets;
+  request.numberOfAcresOfCultivablePaddyLand= cultivableLand;
+  request.numberOfResidentialHousesAndLandOwned= residentialHouses;
+  request.numberOfOtherHousesOrBuildingsOwned= otherBuildings;
+  request.numberOfTransportAssets= transportAssets;
+  request.totalFloorArea= totalFloorArea
+  request.nonAvailabilityOfDrinkingWater= drinkingWater;
+  request.absenceOfNecessarySanitaryFacilities= sanitaryFacilities;
+  
   return (
     <div className="Form3">
       <Navbar reloadnavbar={false}/>
@@ -130,10 +151,10 @@ const ApplicationForm3 = () => {
       </div>
       {/* Connect to the next button */}
       <div className="next-button-container">
-      <Link to="/ApplicationForm">
+      <Link to="/ApplicationForm" >
             <button className="back-button">Back</button>
         </Link>
-        <Link to="/DocumentUploadPage">
+        <Link to="/DocumentUploadPage" state={{ request }}>
           <button className="next-button">Next</button>
         </Link>
       </div>
