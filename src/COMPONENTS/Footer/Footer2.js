@@ -41,9 +41,9 @@ const Footer2 = () => {
           
         </div>
         <div className="f2">
-          <h3>{t("AboutUs")}</h3>
+          <h3>{t("Aboutus")}</h3>
           <Link to="/about" className="stylenone">
-            <p>{t("AboutUs")}</p>
+            <p>{t("Aboutus")}</p>
           </Link>
           <Link to="/contact" className="stylenone">
             <p>{t("ContactUs")}</p>
@@ -63,17 +63,16 @@ const Footer2 = () => {
           <p>{t("SiteMap")}</p>
         </div>
         <div className="f2">
-          <h3>Community</h3>
-          <p>Announcements</p>
-          <p>Answer center</p>
-          <p>Discussion boards</p>
-          <p>Giving works</p>
+          <h3>{t("Community")}</h3>
+          <p>{t("Announcements")}</p>
+          <p>{t("AnswerCenter")}</p>
+          <p>{t("DiscussionBoards")}</p>
+          <p>{t("GivingWorks")}</p>
         </div>
         <div className="f2">
-          <h3>Subscribe Now</h3>
+          <h3>{t("SiteMap")}</h3>
           <p>
-            Subscribe your email for newsletter and featured news based on your
-            interest
+          {t("SubscribeDetails")}
           </p>
           <div className="inputcontainer">
             <span className="icon1">

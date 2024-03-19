@@ -20,6 +20,7 @@ const ApplicationForm3 = () => {
       <Navbar reloadnavbar={false}/>
     <div className="application-form">
       <h1>Application Form</h1>
+      <form>
       <div className="form-section">
         <div className="purple-box">Monthly Per Capita Income:</div>
         <div className="input-field">
@@ -136,6 +137,7 @@ const ApplicationForm3 = () => {
           <button className="next-button">Next</button>
         </Link>
       </div>
+      </form>
     </div>
     </div>
   );

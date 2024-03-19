@@ -16,11 +16,11 @@ const About = () => {
     <div className='extrapage'>
         <Navbar reloadnavbar={false}/>
         <SingleBanner
-        heading="About Us"
+        heading={t("About us")} 
         bannerimage= 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9uYXRpb258ZW58MHx8MHx8fDA%3D'
         />
         <div className='pgleft pgcommon'>
-            <img src='https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9uYXRpb258ZW58MHx8MHx8fDA%3D' alt='noimg' />
+            <img src='https://i0.wp.com/allthingstalent.org/wp-content/uploads/2023/01/Vision-Mission.jpg?fit=750%2C563&ssl=1' alt='noimg' />
 
             <div>
                 <h1>{t("Vison")}</h1>
@@ -35,7 +35,7 @@ const About = () => {
             
         </div>
         <div className='pgright pgcommon'>
-            <img src='https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9uYXRlfGVufDB8fDB8fHww' alt='noimg' />
+            <img src='https://t4.ftcdn.net/jpg/01/58/97/65/360_F_158976569_z5DaIxsxlztkq8yks97DLZmE5uF8G3I6.jpg' alt='noimg' />
 
             <div>
                 <h1>{t("Story")}</h1>
@@ -46,7 +46,7 @@ const About = () => {
             
         </div>
         <div className='pgleft pgcommon'>
-            <img src='https://images.unsplash.com/photo-1599461149326-2e9dd1113a02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRvbmF0ZXxlbnwwfHwwfHx8MA%3D%3D' alt='noimg' />
+            <img src='https://media.istockphoto.com/id/537311780/photo/unity-of-indian-children-asia.jpg?s=612x612&w=0&k=20&c=MaI8mTFkStJHG4ZyKXNbynkdSCObejk73qutdW7vS7k=' alt='noimg' />
 
             <div>
                 <h1>{t("Objective")}</h1>

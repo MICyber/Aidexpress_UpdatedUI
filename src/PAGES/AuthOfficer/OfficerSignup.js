@@ -1,14 +1,33 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import './OfficerAuthPage.css'
+import firebase from './firebaseConfig';
+
 const OfficerSignup = () => {
+    const [fname, setName] = useState('');
+    const [lname, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [cpassword, setConfirmPassword] = useState('');
+
+    const submit = async (e) => {
+        e.preventDefault();
+        try {
+        const user = await firebase.auth().createUserWithEmailAndPassword(email, password,fname,lname,cpassword);
+        if (user) {
+            alert("Account Created Successfully");
+        }
+        } catch (error) {
+        alert(error.message);
+        }
+    };
     return (
         <div className='authpage'>
             <Navbar reloadnavbar={false}/>
 
             <div className='authcont'>
-                <img src='https://images.unsplash.com/photo-1495480137269-ff29bd0a695c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80'
+                <img src='https://i.pinimg.com/564x/b3/a9/8d/b3a98deb7de1be503be0d6279153a881.jpg'
                     alt='signup' />
 
                 <form className='authform'>
@@ -16,26 +35,26 @@ const OfficerSignup = () => {
                     <div className='form-group-row'>
                         <div className='formgroup'>
                             <label htmlFor='fname'>First Name</label>
-                            <input type='text' id='fname' />
+                            <input type='text' id='fname' onChange={(e) => setName(e.target.value)} />
                         </div>
                         <div className='formgroup'>
                             <label htmlFor='lname'>Last Name</label>
-                            <input type='text' id='lname' />
+                            <input type='text' id='lname' onChange={(e) => setLastName(e.target.value)}  />
                         </div>
                     </div>
                     <div className='formgroup'>
                         <label htmlFor='email'>Email</label>
-                        <input type='email' id='email' />
+                        <input type='email' id='email' onChange={(e) => setEmail(e.target.value)}  />
                     </div>
 
                     <div className='form-group-row'>
                         <div className='formgroup'>
                             <label htmlFor='password'>Password</label>
-                            <input type='password' id='password' />
+                            <input type='password' id='password'  onChange={(e) => setPassword(e.target.value)}/>
                         </div>
                         <div className='formgroup'>
                         <label htmlFor='cpassword'>Confirm Password</label>
-                        <input type='password' id='cpassword' />
+                        <input type='password' id='cpassword' onChange={(e) => setConfirmPassword(e.target.value)} />
                     </div>
                     </div>
 
@@ -47,7 +66,7 @@ const OfficerSignup = () => {
                     <Link to='/Officersignup'
                         className='stylenone'
                     >
-                        <button className='btn'>Signup</button>
+                        <button className='btn' onClick={submit}>Signup</button>
                     </Link>
                 </form>
             </div>

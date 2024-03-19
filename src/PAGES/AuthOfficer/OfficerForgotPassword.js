@@ -8,7 +8,7 @@ const OfficerForgotPassword = () => {
             <Navbar reloadnavbar={false}/>
 
             <div className='authcont'>
-                <img src='https://images.unsplash.com/photo-1495480137269-ff29bd0a695c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80'
+                <img src='https://i.pinimg.com/564x/42/77/7f/42777faf7dbd89f6bf2a65ec223b6824.jpg'
                     alt='signup' />
 
                 <form className='authform'>

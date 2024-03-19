@@ -13,6 +13,12 @@
     "Login": "Login",
     "Signup": "Signup",
     "Logout": "Logout",
+    "Community":"Community",
+    "Announcements":"Announcements",
+    "AnswerCenter":"Answer Center",
+    "DiscussionBoards":"Discussion Boards",
+    "GivingWorks":"Giving Works",
+    "SubscribeDetails":"Subscribe your email for newsletter and featured news based on your interest",
 
     "title":"Receive your incentives without any hassle.",
     "description":"Experience the ease of receiving your incentives with no unnecessarycomplications or hassles",
@@ -50,10 +56,10 @@
     "category4":"Support the Cause",
     "category4title2":"Donate to help those in need",
 
-    "donationtitle":"",
+    "donation":"Support Our Cause",
+    "donationtitle":"Empower change on a global scale. Your contribution, no matter the size, is a beacon of hope for those in need. By sharing your story and intentions, you magnify the impact, creating a ripple effect of compassion that reaches far beyond the act of giving. Join us in the journey to uplift lives and build a world where kindness knows no bounds.",
 
     "AboutUs": "About Us",
-    "ContactUs": "Contact Us",
     "AboutTeam": "About Team",
     "CustomerSupport": "Customer Support",
 
@@ -62,5 +68,4 @@
     "TermsCondition": "Terms & Condition",
     "ReturnPolicy": "Return Policy",
     "SiteMap": "Site Map"
-
 }
