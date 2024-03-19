@@ -13,7 +13,6 @@ import ProductsSlider from '../../COMPONENTS/Product/ProductsSlider'
 import Donation from '../../COMPONENTS/Donation/Donation'
 
 
-
 const Home = () => {
 
   /**const products = [
