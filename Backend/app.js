@@ -19,8 +19,12 @@ mongoose.connect('mongodb+srv://user:abcd123@cluster0.wlsh9wk.mongodb.net/Aidexp
 .then(() => console.log('Connected to MongoDB...'))
 .catch((err) => console.error('Could not connect to MongoDB...', err));
 
-// User Registration Route
 
+// User Registration Route
+app.post('/api/users', userController.registerUser);
+app.get('/api/users/:id', userController.getUser);
+app.put('/api/users/:id', userController.updateUserEligibility);
+app.delete('/api/users/:id', userController.removeUser);
 
 app.post('/api/applications/:applicationId/track', applicationController.trackApplication);
 app.post('/api/applications', applicationController.createApplication);
