@@ -105,7 +105,7 @@ const YourOrders = () => {
 
     const sendSMS = async (request) => {
         try {
-            const response = apiService.post("/send-sms", request);
+            const response = apiService.post(`/send-sms`, request);
             console.log(response.subscribe(response => console.log(response)));
             response.subscribe(response => {
                 if (response) {
@@ -122,6 +122,7 @@ const YourOrders = () => {
             throw error;
         }
     };
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -181,7 +182,6 @@ const YourOrders = () => {
             progress: undefined,
         });
     }
-
 
     return (
         <div className='yourorders'>

@@ -63,9 +63,29 @@ const DonationForm = () => {
     // }));
   };
 
+  // const sendSMS = async (request) => {
+  //   try {
+  //     const response = apiService.post("/send-sms", request);
+  //     console.log(response.subscribe(response => console.log(response)));
+  //     response.subscribe(response => {
+  //       if (response) {
+  //       //  showToastSuccess("Successfully saved ");
+  //       } else {
+  //         showToastError("Failed to send SMS ");
+  //       }
+  //     });
+
+
+  //   } catch (error) {
+  //     showToastError(error);
+  //     console.error('Error submitting service name:', error);
+  //     throw error;
+  //   }
+  // };
+
   const sendSMS = async (request) => {
     try {
-      const response = apiService.post("/send-sms", request);
+      const response = apiService.post(`/send-sms`, request);
       console.log(response.subscribe(response => console.log(response)));
       response.subscribe(response => {
         if (response) {
