@@ -21,6 +21,12 @@ mongoose.connect('mongodb+srv://user:abcd123@cluster0.wlsh9wk.mongodb.net/Aidexp
 
 // User Registration Route
 
+app.post('/api/donations', donationController.createDonation);
+app.get('/api/donations', donationController.getAll);
+app.get('/api/donations/:id', donationController.getById);
+app.put('/api/donations/:id', donationController.update);
+app.delete('/api/donations/:id', donationController.remove);
+
 
 app.post('/api/applications/:applicationId/track', applicationController.trackApplication);
 app.post('/api/applications', applicationController.createApplication);
