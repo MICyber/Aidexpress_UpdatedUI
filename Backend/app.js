@@ -27,6 +27,7 @@ app.post('/api/applications', applicationController.createApplication);
 app.delete('/api/applications/:applicationId', applicationController.removeApplication);
 app.get('/api/applications', applicationController.listAllApplications);
 app.get('/api//applications/:_id', applicationController.getApplicationById);
+app.post('/api/send-sms', smsController.sendNotification);
 
 
 
