@@ -42,6 +42,12 @@ app.get('/api/payments/:id', paymentController.getById);
 app.put('/api/payments/:id', paymentController.update);
 app.delete('/api/payments/:id', paymentController.remove);
 
+app.post('/api/donations', donationController.createDonation);
+app.get('/api/donations', donationController.getAll);
+app.get('/api/donations/:id', donationController.getById);
+app.put('/api/donations/:id', donationController.update);
+app.delete('/api/donations/:id', donationController.remove);
+
 
 
 
