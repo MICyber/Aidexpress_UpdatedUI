@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 const ApplicationForm = () => {
   const [maritalStatus, setMaritalStatus] = useState("");
   const [isSingleParent, setIsSingleParent] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div className="Form1">
