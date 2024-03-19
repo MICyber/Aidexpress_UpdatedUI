@@ -8,22 +8,23 @@ import { useTranslation } from 'react-i18next';
 const ApplicationForm = () => {
   const [maritalStatus, setMaritalStatus] = useState("");
   const [isSingleParent, setIsSingleParent] = useState(false);
- const { t } = useTranslation();
+  const { t } = useTranslation();
+
   return (
     <div className="Form1">
       <Navbar reloadnavbar={false}/>
     <div className="application-form">
     
-      <h1>Application Form</h1>
+      <h1>{t("Application Form")}</h1>
       <form>
       <div className="form-section">
-        <div className="purple-box">{t("Applica_Name")}</div>
+        <div className="purple-box">Name of Householder:</div>
         <div className="input-field">
           <input type="text" placeholder={t("Enter Name" )}/>
         </div>
       </div>
       <div className="form-section">
-        <div className="purple-box">{t("Addre")}</div>
+        <div className="purple-box">Address:</div>
         <div className="input-field">
           <input type="text" placeholder={t("Enter Address" )}/>
         </div>
