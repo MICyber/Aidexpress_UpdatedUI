@@ -58,8 +58,8 @@ const Contact = () => {
                     <h1>{t("TalkWithUs")}</h1>
                     <p> {t("Address")}</p>
                     <p>{t("Phone")}</p>  
-                    <p>{t("Email")}</p>
-                    <h1>{t("Message")}</h1>
+                    <p>{t("Email1")}</p>
+                    <h1>{t("Message1")}</h1>
                     <p>{t("Form")}</p>
                 </div>
             </div>
