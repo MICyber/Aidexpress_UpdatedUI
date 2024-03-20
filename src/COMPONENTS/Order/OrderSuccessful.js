@@ -180,6 +180,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="nameOfHouseholder"
                                         value={orderdata.accountHolderName}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -191,6 +192,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="address"
                                         value={orderdata.address}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -202,6 +204,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="nicNumber"
                                         value={orderdata.nicNumber}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -213,6 +216,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="telephoneNumber"
                                         value={orderdata.telephoneNumber}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -224,6 +228,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="age"
                                         value={orderdata.age}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -235,6 +240,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="familyMembers"
                                         value={orderdata.namesOfFamilyMembers}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -246,6 +252,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="maritalStatus"
                                         value={orderdata.maritalStatus}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -257,6 +264,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="singleParent"
                                         value={orderdata.singleParent}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -268,6 +276,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="divisionalSecretariat"
                                         value={orderdata.divisionalSecretariat}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -279,6 +288,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="gramaSevakaDivision"
                                         value={orderdata.gramaSevakaDivision}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -297,6 +307,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="bankName"
                                         value={orderdata.bankName}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -308,6 +319,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="accountHolderName"
                                         value={orderdata.accountHolderName}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -319,6 +331,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="accountNumber"
                                         value={orderdata.accountNumber}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -330,6 +343,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="branchName"
                                         value={orderdata.branchName}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -348,6 +362,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="monthlyPerCapitaIncome"
                                         value={orderdata.monthlyPerCapitaIncome}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -359,6 +374,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="numOfLivelihoodAssets"
                                         value={orderdata.numberOfLivelihoodAssets}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -370,6 +386,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="numOfAcresOfCultivablePaddyLand"
                                         value={orderdata.numberOfAcresOfCultivablePaddyLand}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -381,6 +398,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="numOfResidentialHousesAndLandOwned"
                                         value={orderdata.numberOfResidentialHousesAndLandOwned}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -392,6 +410,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="numOfOtherHousesOrBuildingsOwned"
                                         value={orderdata.numberOfOtherHousesOrBuildingsOwned}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -403,6 +422,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="numOfTransportAssets"
                                         value={orderdata.numberOfTransportAssets}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -414,6 +434,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="totalFloorArea"
                                         value={orderdata.totalFloorArea}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -425,6 +446,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="nonAvailabilityOfDrinkingWater"
                                         value={orderdata.nonAvailabilityOfDrinkingWater}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>
@@ -436,6 +458,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                         name="absenceOfNecessarySanitaryFacilities"
                                         value={orderdata.absenceOfNecessarySanitaryFacilities}
                                         onChange={handleChange}
+                                        disabled
                                     />
                                 </td>
                             </tr>

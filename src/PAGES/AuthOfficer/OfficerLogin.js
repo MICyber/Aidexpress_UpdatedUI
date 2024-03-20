@@ -1,16 +1,12 @@
 import React, {useState} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-
 import Navbar from '../../COMPONENTS/Navbar/Navbar';
 import './OfficerAuthPage.css';
 import firebase from '../Auth/firebaseConfig';
-
 const OfficerLogin = () => {
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-
     const submit = async (e) => {
         e.preventDefault();
         try {
