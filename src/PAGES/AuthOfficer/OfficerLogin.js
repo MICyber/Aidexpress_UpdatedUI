@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import Navbar from '../../COMPONENTS/Navbar/Navbar';
 import './OfficerAuthPage.css';
-import firebase from './firebaseConfig';
+import firebase from '../Auth/firebaseConfig';
 
 const OfficerLogin = () => {
 
@@ -66,6 +66,5 @@ const OfficerLogin = () => {
         </div>
     )
 }
-
 
 export default OfficerLogin
