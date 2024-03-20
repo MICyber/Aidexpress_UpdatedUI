@@ -49,7 +49,7 @@ const YourOrders = () => {
             } else {
               showToastError("Failed to send SMS ");
             }
-          }).error(response =showToastError(error));
+          });
     
     
         } catch (error) {

@@ -12,6 +12,10 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const DonateEvidence = () => {
     const   [data,setData] = useState([]);
+    
+    const showToastError = (message) => {
+        toast.error(message);
+    };
       
     const getDonation = async () => {
         try {
