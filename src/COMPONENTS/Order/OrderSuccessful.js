@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import firebase from '../../PAGES/Auth/firebaseConfig';
 const OrderSuccessful = ({ order, setordersuccesscont }) => {
     const [orderdata, setorderdata] = useState({});
+    const [redirecto, setRedirecto] = useState(false);
 
 
 
@@ -150,6 +151,20 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
     }
     return (
         <div className="OrdersSuccessful">
+             <button className='popup__close-btn'
+                onClick={() => {
+
+                    if(redirecto == 'userorders'){
+                        window.location.href = '/user/yourorders'
+                    }
+                    setordersuccesscont(false)
+                }}
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
             <div className="cancel-icon" onClick={handleCancel}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
