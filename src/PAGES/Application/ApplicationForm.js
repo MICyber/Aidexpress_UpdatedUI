@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from '../../COMPONENTS/Navbar/Navbar';
-import './ApplicationForm.css';
+import './ApplicationForm.css';                                   
 
 const ApplicationForm = () => {
   // State hooks for each form input
@@ -40,7 +40,7 @@ const ApplicationForm = () => {
           <div className="form-section">
             <div className="purple-box">Name of Householder:</div>
             <div className="input-field">
-              <input type="text" placeholder="Enter Name"  onChange={(e) => {setName(e.target.value); console.log(name)}} />
+              <input type="text" placeholder="Enter Name"  onChange={(e) => {setName(e.target.value)}} />
             </div>
           </div>
           <div className="form-section">
@@ -49,58 +49,63 @@ const ApplicationForm = () => {
               <input type="text" placeholder="Enter Address"  onChange={(e) => setAddress(e.target.value)} />
             </div>
           </div>
-
+  
           <div className="form-section">
             <div className="purple-box">NIC Number:</div>
             <div className="input-field">
-              <input type="text" placeholder="Enter NIC Number"  onChange={(e) => setNicNumber(e.target.value)} />
+              <input type="number" placeholder="Enter NIC Number"  onChange={(e) => setNicNumber(e.target.value)} />
             </div>
           </div>
-
+  
           <div className="form-section">
             <div className="purple-box">Telephone Number:</div>
             <div className="input-field">
-              <input type="tel" placeholder="Enter Telephone Number"  onChange={(e) => setTelephone(e.target.value)} />
+              <input type="tel" placeholder="+94|"  onChange={(e) => setTelephone(e.target.value)} />
             </div>
           </div>
-
+  
           <div className="form-section">
             <div className="purple-box">Age:</div>
             <div className="input-field">
               <input type="number" placeholder="Enter Age"  onChange={(e) => setAge(e.target.value)} />
             </div>
           </div>
-
+  
           <div className="form-section">
             <div className="purple-box">Names of Family Members:</div>
             <div className="input-field">
               <input type="text" placeholder="Enter Names"  onChange={(e) => setFamilyMembers(e.target.value)} />
             </div>
           </div>
-
+  
           <div className="form-section">
             <div className="purple-box">Divisional Secretariat:</div>
             <div className="input-field">
               <input type="text" placeholder="Enter" onChange={(e) => setDivisionalSecretariat(e.target.value)} />
             </div>
           </div>
-
+  
           <div className="form-section">
             <div className="purple-box">Grama Sevaka Division:</div>
             <div className="input-field">
               <input type="text" placeholder="Information"  onChange={(e) => setGramaSevakaDivision(e.target.value)} />
             </div>
           </div>
-
+  
           <div className="next-button-container">
-            <Link to="/ApplicationForm2"state={{request }} >
-              <button className="next-button" >Next</button>
+            <Link to="/ApplicationForm2" state={{request }} >
+              <button className="next-button" disabled={!name || !address || !nicNumber || !telephone || !age || !familyMembers || !divisionalSecretariat || !gramaSevakaDivision}>Next</button>
             </Link>
+            {(!name || !address || !nicNumber || !telephone || !age || !familyMembers || !divisionalSecretariat || !gramaSevakaDivision) && <p className="error-message">Please fill in all fields.</p>}
           </div>
         </form>
       </div>
     </div>
   );
+  
 };
 
 export default ApplicationForm;
+
+
+

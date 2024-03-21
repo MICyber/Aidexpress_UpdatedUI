@@ -258,10 +258,10 @@ const ApplicationForm3 = () => {
         <h1>Application Form</h1>
         <form>
           <div className="form-section">
-            <div className="purple-box">Monthly Per Capita Income:</div>
+            <div className="purple-box">Monthly Per Capital Income:</div>
             <div className="input-field">
               <input
-                type="text"
+                type="number"
                 name="monthlyIncome"
                 placeholder="Enter Monthly Per Capita Income"
                 value={monthlyIncome}
@@ -274,7 +274,7 @@ const ApplicationForm3 = () => {
             <div className="purple-box">Number of Livelihood Assets:</div>
             <div className="input-field">
               <input
-                type="text"
+                type="number"
                 name="livelihoodAssets"
                 placeholder="Enter Number of Livelihood Assets"
                 value={livelihoodAssets}
@@ -289,7 +289,7 @@ const ApplicationForm3 = () => {
             </div>
             <div className="input-field">
               <input
-                type="text"
+                type="number"
                 name="cultivableLand"
                 placeholder="Enter Number of Acres of Cultivable Paddy Land"
                 value={cultivableLand}
@@ -303,7 +303,7 @@ const ApplicationForm3 = () => {
             </div>
             <div className="input-field">
               <input
-                type="text"
+                type="number"
                 name="residentialHouses"
                 placeholder="Enter Number of Residential Houses and Land Owned"
                 value={residentialHouses}
@@ -318,7 +318,7 @@ const ApplicationForm3 = () => {
             </div>
             <div className="input-field">
               <input
-                type="text"
+                type="number"
                 name="otherBuildings"
                 placeholder="Enter Number of Other Houses or Buildings Owned"
                 value={otherBuildings}
@@ -330,7 +330,7 @@ const ApplicationForm3 = () => {
             <div className="purple-box">Number of Transport Assets:</div>
             <div className="input-field">
               <input
-                type="text"
+                type="number"
                 name="transportAssets"
                 placeholder="Enter Number of Transport Assets"
                 value={transportAssets}
@@ -343,7 +343,7 @@ const ApplicationForm3 = () => {
             <div className="purple-box">Total Floor Area:</div>
             <div className="input-field">
               <input
-                type="text"
+                type="number"
                 name="totalFloorArea"
                 placeholder="Enter Less Than 5000 Sq Ft Total Floor Area"
                 value={totalFloorArea}
@@ -356,7 +356,7 @@ const ApplicationForm3 = () => {
             <div className="purple-box">Non-Availability of Drinking Water:</div>
             <div className="input-field">
               <input
-                type="text"
+                type="number"
                 name="drinkingWater"
                 placeholder="Enter Non-Availability of Drinking Water"
                 value={drinkingWater}
@@ -371,7 +371,7 @@ const ApplicationForm3 = () => {
             </div>
             <div className="input-field">
               <input
-                type="text"
+                type="number"
                 name="sanitaryFacilities"
                 placeholder="Enter Absence of Necessary Sanitary Facilities"
                 value={sanitaryFacilities}
@@ -379,11 +379,6 @@ const ApplicationForm3 = () => {
               />
             </div>
           </div>
-
-
-
-          {/* Add similar sections for other fields */}
-
           {/* Connect to the next button */}
           <div className="next-button-container">
             <Link to="/ApplicationForm" >
@@ -392,6 +387,7 @@ const ApplicationForm3 = () => {
             <Link to="/DocumentUploadPage" state={{ request }}>
               <button className="next-button" disabled={!formValid}>Next</button>
             </Link>
+            <p className="error-message"  >Please fill in all fields with Numbers.(Ex:01,001..) </p>
           </div>
         </form>
       </div>
