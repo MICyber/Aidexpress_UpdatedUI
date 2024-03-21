@@ -8,7 +8,11 @@ import app from '../../PAGES/Auth/firebaseConfig';
 import { getStorage } from 'firebase/storage';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from 'react-i18next';
+
+
 const DonationForm = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -232,7 +236,7 @@ const DonationForm = () => {
     <div className="Donate">
       <Navbar reloadnavbar={false} />
       <div className="donation-form">
-        <h1>Donation Form</h1>
+        <h1>{t("Donation Form")}</h1>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formName">
             <Form.Label>Full Name</Form.Label>
