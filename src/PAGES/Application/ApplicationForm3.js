@@ -128,25 +128,19 @@ const ApplicationForm3 = () => {
       <div className="form-section">
         <div className="purple-box">Non-Availability of Drinking Water:</div>
         <div className="input-field">
-          <input
-            type="text"
-            placeholder="Enter Non-Availability of Drinking Water"
-            value={drinkingWater}
-            onChange={(e) => setDrinkingWater(e.target.value)}
-          />
+          <select value={drinkingWater} onChange={(e) => setDrinkingWater(e.target.value)}>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
         </div>
       </div>
       <div className="form-section">
-        <div className="purple-box">
-          Absence of Necessary Sanitary Facilities:
-        </div>
+        <div className="purple-box">Absence of Necessary Sanitary Facilities:</div>
         <div className="input-field">
-          <input
-            type="text"
-            placeholder="Enter Absence of Necessary Sanitary Facilities"
-            value={sanitaryFacilities}
-            onChange={(e) => setSanitaryFacilities(e.target.value)}
-          />
+          <select value={sanitaryFacilities} onChange={(e) => setSanitaryFacilities(e.target.value)}>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
         </div>
       </div>
       {/* Connect to the next button */}

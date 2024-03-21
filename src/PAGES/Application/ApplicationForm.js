@@ -77,7 +77,29 @@ const ApplicationForm = () => {
               <input type="text" placeholder="Enter Names"  onChange={(e) => setFamilyMembers(e.target.value)} />
             </div>
           </div>
+
+          <div className="form-section">
+            <div className="purple-box">Marital Status:</div>
+            <div className="input-field">
+              <select onChange={(e) => setMaritalStatus(e.target.value)}>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+              </select>
+            </div>
+          </div>
+
+          <div className="form-section">
+            <div className="purple-box">Is a Single Parent:</div>
+            <div className="input-field">
+              <select value={isSingleParent} onChange={(e) => setIsSingleParent(e.target.value)}>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
   
+
           <div className="form-section">
             <div className="purple-box">Divisional Secretariat:</div>
             <div className="input-field">
