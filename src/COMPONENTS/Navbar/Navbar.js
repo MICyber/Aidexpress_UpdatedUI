@@ -141,7 +141,7 @@ const Navbar = () => {
             <li>
               {" "}
               <Link to="/about" className="stylenone">
-                <a>{t("AboutUs")}</a>
+                <a>{t("About us")}</a>
               </Link>
             </li>
 

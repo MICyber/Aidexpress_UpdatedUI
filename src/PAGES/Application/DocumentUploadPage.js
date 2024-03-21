@@ -232,6 +232,12 @@ const DocumentUploadPage = () => {
       </div>
     </div>
   );
+
+  
+
+
+
+
 };
 
 export default DocumentUploadPage;

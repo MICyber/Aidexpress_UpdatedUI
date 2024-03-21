@@ -4,8 +4,6 @@ import './BannerSlider.css'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
 
-
-
 const BannerSlider = () => {
     const { t } = useTranslation();
     const data = [
@@ -26,7 +24,6 @@ const BannerSlider = () => {
         }
     ]
 
-
     var settings = {
         dots: true,
         infinite: true,
@@ -34,16 +31,6 @@ const BannerSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1
     };
-
-    /*const openGoogleForm = () => {
-        // Replace 'YOUR_GOOGLE_FORM_URL' with the actual URL of your Google Form
-        const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScPTGjoKfGktNIk4R8f4GzLtZ1EUpQ8_ET-tn4mvvmPNa1dGQ/viewform?usp=sf_link';
-    
-        // Open the Google Form in a new window
-        window.open(googleFormUrl, '_blank');
-      };*/
-
-
     return (
         <div className='bannerslider'>
             <Slider className='bannerslider' {...settings}>

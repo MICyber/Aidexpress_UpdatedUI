@@ -1,15 +1,8 @@
-import React, { Suspense } from 'react'
 import BannerSlider from '../../COMPONENTS/Banners/BannerSlider'
 import HomeCategories from '../../COMPONENTS/Category/HomeCategories'
 import Footer1 from '../../COMPONENTS/Footer/Footer1'
 import Footer2 from '../../COMPONENTS/Footer/Footer2'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
-import Product_Sidebar from '../../COMPONENTS/Product/Product_Sidebar'
-import img1 from '../../ASSETS/Images/1.png'
-import img2 from '../../ASSETS/Images/2.png'
-import img3 from '../../ASSETS/Images/3.png'
-import img4 from '../../ASSETS/Images/4.png'
-import ProductsSlider from '../../COMPONENTS/Product/ProductsSlider'
 import Donation from '../../COMPONENTS/Donation/Donation'
 
 

@@ -75,7 +75,7 @@ const ApplicationForm2 = () => {
             <div className="input-field">
               <label htmlFor="accountNumber" className="label-style">
                 <input
-                  type="text"
+                  type="number"
                   id="accountNumber"
                   name="accountNumber"
                   placeholder="Enter Account Number"
@@ -105,13 +105,15 @@ const ApplicationForm2 = () => {
               <button className="back-button">Back</button>
             </Link>
             <Link to="/ApplicationForm3" state={{ request }}>
-              <button className="next-button">Next</button>
+              <button className="next-button" disabled={!bankDetails.bankName || !bankDetails.accountHolderName || !bankDetails.accountNumber || !bankDetails.branchName}>Next</button>
             </Link>
+            {(!bankDetails.bankName || !bankDetails.accountHolderName || !bankDetails.accountNumber || !bankDetails.branchName) && <p className="error-message">Please fill in all fields.</p>}
           </div>
         </form>
       </div>
     </div>
   );
+  
 };
 
 export default ApplicationForm2;
