@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from '../../COMPONENTS/Navbar/Navbar';
-import './ApplicationForm.css';                                   /////////git code ekaaaa
+import './ApplicationForm.css';                                   
 
 const ApplicationForm = () => {
   // State hooks for each form input
