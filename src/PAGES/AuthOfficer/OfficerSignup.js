@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import './OfficerAuthPage.css'
-import firebase from './firebaseConfig';
+import firebase from '../Auth/firebaseConfig';
 
 const OfficerSignup = () => {
     const [fname, setName] = useState('');
@@ -73,6 +73,5 @@ const OfficerSignup = () => {
         </div>
     )
 }
-
 
 export default OfficerSignup
