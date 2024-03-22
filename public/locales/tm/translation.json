@@ -166,6 +166,7 @@
     
 
     "Application Form":"விண்ணப்ப படிவம்",
+<<<<<<< HEAD
     "Monthly Per Capital Income:":"மாதாந்திர மூலதன வருமானம்:",
     "Enter Monthly Per Capital Income":"மாதாந்திர மூலதன வருமானத்தை உள்ளிடவும்",
     "Number of Livelihood Assets:":"வாழ்வாதார சொத்துக்களின் எண்ணிக்கை:",
@@ -186,6 +187,50 @@
     
 
 
+=======
+
+    "BankName" : "பாங்கு பெயர்",
+    "AccountName": "கிணும் உரிமையாளரின் பெயர்",
+    "AccNumber": "கிணும் எண்",
+    "BranchName": "ஷாகா பெயர்",
+
+    "EnterBankName" : "வங்கி பெயரை உள்ளிடவும்",
+    "EnterAccountName": "கணக்கு வைத்திருப்பவரின் பெயரை உள்ளிடவும்",
+    "EnterAccNumber": "கணக்கு எண்ணை உள்ளிடவும்",
+    "EnterBranchName": "கிளை பெயரை உள்ளிடவும்",
+
+    "DonationForm":"நன்கொடைப் படிவம்",
+    "FullName": "முழுப்பெயர்",
+    "DonateEmail": "மின்னஞ்சல்",
+    "DonatePhoneNum": "தொலைபேசி எண்",
+    "DonateAddress": "முகவரி",
+    "Amount": "தொகை",
+    "PaymentMethod": "கட்டண முறை",
+    "CreditCard": "கிரெடிட் கார்டு",
+    "CardNumber": "அட்டை எண்",
+    "ExpireDate": "காலாவதி தேதி",
+    "BankTransfer": "வங்கி பரிமாற்றம்",
+    "BankNameDonation" : "வங்கி பெயர்",
+    "Branch": "கிளை",
+    "AccountNum": "கணக்கு எண்",
+    "AccName": "கணக்கின் பெயர்",
+    "UploadSlip": "பதிவேற்ற சீட்டு",
+    "ChooseFile": "கோப்பை தேர்ந்தெடுக்கவும்",
+    "NoFileChoose": "கோப்பு எதுவும் தேர்ந்தெடுக்கப்படவில்லை",
+    "agrre": "பார்வை ஒப்பந்தம்",
+    "Line": "நான் வெளிப்படுத்துதலைப் படித்தேன் மற்றும் விதிமுறைகளை ஒப்புக்கொண்டேன்",
+    "SubmitDonate": "சமர்ப்பி",
+
+    "DonateName":"பெயர்",
+    "DonateMail": " மின்னஞ்சலை உள்ளிடவும்",
+    "DonatePhoneNumber": "தொலைபேசி எண் (+94)",
+    "DoanteAddress": "முகவரியை உள்ளிடவும்",
+    "DonateAmount": "ரூ",
+    "people's Bank": "மக்கள் வங்கி",
+    "Colombo": "கொழும்பு",
+    "S W Fernando": "எஸ் டபிள்யூ பெர்னாண்டோ",
+    "Aggrement": "நன்கொடை ஒப்பந்தம்"
+>>>>>>> fd3cb5929a666c21195e908843f9eaee46d67e7c
 
     
 
