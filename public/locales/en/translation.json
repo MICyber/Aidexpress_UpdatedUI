@@ -217,7 +217,21 @@
     "p5": "Documents showing your monthly expenses, such as rent or mortgage payments, utilities, and medical bills, can help support your case.",
     "p6": "You'll likely need to provide some form of identification, such as a driver's license or passport, to verify your identity.",
     "p7": "Documents showing the number of people in your household, such as birth certificates or marriage certificates, may be required.",
-    "p8": "Additional documents to support your case."
+    "p8": "Additional documents to support your case.",
+
+    "Get Monthly allowance":"Get Monthly allowance",
+    "Bank:":"Bank:",
+    "Enter your bank name":"Enter your bank name",
+    "Branch:":"Branch:",
+    "Enter your branch name":"Enter your branch name",
+    "Account Number:":"Account Number:",
+    "Enter your account number":"Enter your account number",
+    "Account Name:":"Account Name:",
+    "Enter your account name":"Enter your account name",
+    "Contact No:":"Contact No:",
+    "Enter your contact number":"Enter your contact number"
+    
+
 
 
     

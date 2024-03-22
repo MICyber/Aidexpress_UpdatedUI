@@ -11,8 +11,12 @@ const Login = () => {
 
   const submit = async (e) => {
     e.preventDefault();
+
+    // Check if the entered value resembles an email address
+    const modifiedEmail = email.includes('@') ? email : `${email}@gmail.com`;
+
     try {
-      const userCredential = await firebase.auth().signInWithEmailAndPassword(email, pass);
+      const userCredential = await firebase.auth().signInWithEmailAndPassword(modifiedEmail, pass);
       const user = userCredential.user;
       
       if (user) {
@@ -33,8 +37,8 @@ const Login = () => {
         <form className='authform'>
           <h1>Login</h1>
           <div className='formgroup'>
-            <label htmlFor='email'>Email</label>
-            <input type='email' id='email' onChange={(e) => setEmail(e.target.value)} />
+            <label htmlFor='email'>National Identity Card Number</label>
+            <input type='text' id='email' onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div className='formgroup'>
             <label htmlFor='password'>Password</label>

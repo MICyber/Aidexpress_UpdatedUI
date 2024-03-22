@@ -105,7 +105,7 @@ const YourOrders = () => {
                         return (
                             <tr key={index}>
                                 <td data-label='Application ID'>{item._id}</td>
-                                <td data-label='user'>{item.accountHolderName}</td>
+                                <td data-label='user'>{item.nameOfHouseholder}</td>
                                 <td data-label='Received Status'>
                                     <div className='status-buttons'>
                                      
