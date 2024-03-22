@@ -108,8 +108,6 @@
     "Donation Form":"පරිත්යාග පෝරමය",
 
 
-<<<<<<< HEAD
-    "Application Form":"අයදුම්පත",
     "Monthly Per Capital Income:":"මාසික ඒකපුද්ගල ප්‍රාග්ධන ආදායම:",
     "Enter Monthly Per Capital Income":"මාසික ඒකපුද්ගල ප්‍රාග්ධන ආදායමක් ඇතුලත් කරන්න",
     "Number of Livelihood Assets:":"ජීවනෝපාය වත්කම් ගණන:",
@@ -125,29 +123,8 @@
     "Total Floor Area:":"මුළු බිම් ප්‍රදේශය:",
     "Enter Less Than 5000 Sq Ft Total Floor Area":"වර්ග අඩි 5000ට අඩු මුළු බිම් ප්‍රදේශය ඇතුළු කරන්න",
     "Non-Availability of Drinking Water:":"පානීය ජලය නොමැතිකම:",
-    "Absence of Necessary Sanitary Facilities:":"අවශ්ය සනීපාරක්ෂක පහසුකම් නොමැතිකම:"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
+    "Absence of Necessary Sanitary Facilities:":"අවශ්ය සනීපාරක්ෂක පහසුකම් නොමැතිකම:",
+    
     "BankName" : "බැංකු නම",
     "AccountName": "ගිණුම් හිමියාගේ නම",
     "AccNumber": "ගිණුම් අංකය",
@@ -189,7 +166,6 @@
     "Colombo": "කොළඹ",
     "S W Fernando": "එස් ඩබ්ලිව් ප්‍රනාන්දු",
     "Aggrement": "පරිත්‍යාග ගිවිසුම"
->>>>>>> fd3cb5929a666c21195e908843f9eaee46d67e7c
 
 
 
