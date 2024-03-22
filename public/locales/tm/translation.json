@@ -161,9 +161,33 @@
 
 
 
+
+
     
 
     "Application Form":"விண்ணப்ப படிவம்",
+<<<<<<< HEAD
+    "Monthly Per Capital Income:":"மாதாந்திர மூலதன வருமானம்:",
+    "Enter Monthly Per Capital Income":"மாதாந்திர மூலதன வருமானத்தை உள்ளிடவும்",
+    "Number of Livelihood Assets:":"வாழ்வாதார சொத்துக்களின் எண்ணிக்கை:",
+    "Enter Number of Livelihood Assets":"வாழ்வாதார சொத்துக்களின் எண்ணிக்கையை உள்ளிடவும்",
+    "Number of Acres of Cultivable Paddy Land:":"பயிரிடக்கூடிய நெல் நிலத்தின் எண்ணிக்கை:",
+    "Enter Number of Acres of Cultivable Paddy Land":"பயிரிடக்கூடிய நெல் நிலத்தின் ஏக்கர் எண்ணிக்கையை உள்ளிடவும்",
+    "Number of Residential Houses and Land Owned:":"சொந்தமான குடியிருப்பு வீடுகள் மற்றும் நிலங்களின் எண்ணிக்கை:",
+    "Enter Number of Residential Houses and Land Owned":"சொந்தமான குடியிருப்பு வீடுகள் மற்றும் நிலத்தின் எண்ணிக்கையை உள்ளிடவும்",
+    "Number of Other Houses or Buildings Owned:":"சொந்தமான பிற வீடுகள் அல்லது கட்டிடங்களின் எண்ணிக்கை:",
+    "Enter Number of Other Houses or Buildings Owned":"சொந்தமான பிற வீடுகள் அல்லது கட்டிடங்களின் எண்ணிக்கையை உள்ளிடவும்",
+    "Number of Transport Assets:":"போக்குவரத்து சொத்துக்களின் எண்ணிக்கை:",
+    "Enter Number of Transport Assets":"போக்குவரத்து சொத்துக்களின் எண்ணிக்கையை உள்ளிடவும்",
+    "Total Floor Area:":"மொத்த மாடி பகுதி:",
+    "Enter Less Than 5000 Sq Ft Total Floor Area":"5000 சதுர அடிக்கும் குறைவான மொத்த தரைப் பகுதியை உள்ளிடவும்",
+    "Non-Availability of Drinking Water:":"குடிநீர் கிடைக்காமை:",
+    
+    "Absence of Necessary Sanitary Facilities:":"தேவையான சுகாதார வசதிகள் இல்லாதது:"
+    
+
+
+=======
 
     "BankName" : "பாங்கு பெயர்",
     "AccountName": "கிணும் உரிமையாளரின் பெயர்",
@@ -206,6 +230,7 @@
     "Colombo": "கொழும்பு",
     "S W Fernando": "எஸ் டபிள்யூ பெர்னாண்டோ",
     "Aggrement": "நன்கொடை ஒப்பந்தம்"
+>>>>>>> fd3cb5929a666c21195e908843f9eaee46d67e7c
 
     
 
