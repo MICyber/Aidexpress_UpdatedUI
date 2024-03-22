@@ -126,7 +126,39 @@
     "ComplianceWithLaws":"Compliance With Laws",
     "ComplianceWithLawsDetails":"Affirm the program's commitment to comply with all applicable laws, regulations, and government policies governing social welfare programs.",
 
-    "Donation Form":"Donation Form"
+    "Donation Form":"Donation Form",
+
+
+    "Application Form":"Application Form",
+    "Applica_Name": "Applicant Name",
+    "Enter Name" :   "Enter Name",
+    "Addre" : "Address",
+    "Enter Address": "Enter Address",
+    "NIC Number:": "NIC Number",
+    "Enter NIC Number": "Enter NIC Number",
+    "Telephone Number:": "Telephone Number",
+    "Enter Telephone Number": "Enter Telephone Number",
+    "Appli_age": "Age",
+    "Enter Age": "Enter Age",
+    "Names of Family Members:": "Names of Family Members",
+    "Enter Names" : "Enter Names",
+    "Marital Status:": "Marital Status",
+    "Select Marital Status": "Select Marital Status",
+    "Single": "Single",
+    "Married": "Married",
+    "Divorced": "Divorced",
+    "Widowed": "Widowed",
+    "Single Parent:": "Single Parent",
+    "Is a Single Parent": "Is a Single Parent",
+    "Divisional_Secretariat": "Divisional Secretariat",
+    "Enter": "Enter",
+    "Grama Sevaka Division": "Grama Sevaka Division",
+    "Informationn": "Information",
+    "Next" : "ext",
+    "Yes":"Yes",
+    "No":"No",
+    "Please fill in all fields":"Please fill in all fields"
+
 
 
 
