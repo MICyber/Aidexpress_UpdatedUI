@@ -102,7 +102,32 @@
     "Informationn": "විස්තර",
     "Next" : "ඊළඟ",
 
-    "Donation Form":"පරිත්යාග පෝරමය"
+    "Donation Form":"පරිත්යාග පෝරමය",
+
+    "Application Form": "අයදුම්පත",
+    "Monthly Per Capital Income:":"මාසික ඒකපුද්ගල ප්‍රාග්ධන ආදායම",
+    "Enter Monthly Per Capital Income":"මාසික ඒකපුද්ගල ප්‍රාග්ධන ආදායම ඇතුලත් කරන්න",
+    "Number of Livelihood Assets:":"ජීවනෝපාය වත්කම් ගණන:",
+    "Enter Number of Livelihood Assets":"ජීවනෝපාය වත්කම් ගණන ඇතුලත් කරන්න",
+    "Number of Acres of Cultivable Paddy Land:":"වගා කළ හැකි කුඹුරු ඉඩම් අක්කර ගණන:",
+    "Enter Number of Acres of Cultivable Paddy Land":"වගා කළ හැකි කුඹුරු ඉඩම් අක්කර ගණන ඇතුලත් කරන්න",
+    "Number of Residential Houses and Land Owned:":"නේවාසික නිවාස සහ ඉඩම් හිමි සංඛ්‍යාව:",
+    "Enter Number of Residential Houses and Land Owned":"නේවාසික නිවාස සහ ඉඩම් හිමි සංඛ්‍යාව ඇතුළත් කරන්න",
+    "Number of Other Houses or Buildings Owned:":"හිමිකම් ඇති වෙනත් නිවාස හෝ ගොඩනැගිලි ගණන:",
+    "Enter Number of Other Houses or Buildings Owned":"අනෙකුත් නිවාස හෝ ගොඩනැගිලි හිමිකාරීත්වය ඇතුළත් කරන්න",
+    "Number of Transport Assets:":"ප්රවාහන වත්කම් සංඛ්යාව:",
+    "Enter Number of Transport Assets":"ප්රවාහන වත්කම් සංඛ්යාව ඇතුළත් කරන්න",
+    "Total Floor Area:":"මුළු බිම් ප්‍රදේශය:",
+    "Enter Less Than 5000 Sq Ft Total Floor Area":"වර්ග අඩි 5000ට අඩු මුළු බිම් ප්‍රදේශය ඇතුළු කරන්න",
+    "Non-Availability of Drinking Water:":"පානීය ජලය නොමැතිකම:",
+    "Yes":"ඔව්",
+    "No":"නැත",
+    "Absence of Necessary Sanitary Facilities:":"අවශ්ය සනීපාරක්ෂක පහසුකම් නොමැතිකම:",
+    "Yes":"ඔව්",
+    "No":"නැත",
+    "Back":"ආපසු",
+    "Next":"ඊළඟ"
+
 
 
 

@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import "../Application/ApplicationForm.css";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const ApplicationForm3 = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const { t } = useTranslation();
   
   const location = useLocation();
   const { request } = location.state || {};
@@ -40,25 +45,25 @@ const ApplicationForm3 = () => {
     <div className="Form3">
       <Navbar reloadnavbar={false}/>
     <div className="application-form">
-      <h1>Application Form</h1>
+      <h1>{t("Application Form")}</h1>
       <form>
       <div className="form-section">
-        <div className="purple-box">Monthly Per Capita Income:</div>
+        <div className="purple-box">{t("Monthly Per Capital Income:")}</div>
         <div className="input-field">
           <input
             type="text"
-            placeholder="Enter Monthly Per Capita Income"
+            placeholder={t("Enter Monthly Per Capital Income")}
             value={monthlyIncome}
             onChange={(e) => setMonthlyIncome(e.target.value)}
           />
         </div>
       </div>
       <div className="form-section">
-        <div className="purple-box">Number of Livelihood Assets:</div>
+        <div className="purple-box">{t("Number of Livelihood Assets:")}</div>
         <div className="input-field">
           <input
             type="text"
-            placeholder="Enter Number of Livelihood Assets"
+            placeholder={t("Enter Number of Livelihood Assets")}
             value={livelihoodAssets}
             onChange={(e) => setLivelihoodAssets(e.target.value)}
           />
@@ -66,12 +71,12 @@ const ApplicationForm3 = () => {
       </div>
       <div className="form-section">
         <div className="purple-box">
-          Number of Acres of Cultivable Paddy Land:
+          {t("Number of Acres of Cultivable Paddy Land:")}
         </div>
         <div className="input-field">
           <input
             type="text"
-            placeholder="Enter Number of Acres of Cultivable Paddy Land"
+            placeholder={t("Enter Number of Acres of Cultivable Paddy Land")}
             value={cultivableLand}
             onChange={(e) => setCultivableLand(e.target.value)}
           />
@@ -79,12 +84,12 @@ const ApplicationForm3 = () => {
       </div>
       <div className="form-section">
         <div className="purple-box">
-          Number of Residential Houses and Land Owned:
+          {t("Number of Residential Houses and Land Owned:")}
         </div>
         <div className="input-field">
           <input
             type="text"
-            placeholder="Enter Number of Residential Houses and Land Owned"
+            placeholder={t("Enter Number of Residential Houses and Land Owned")}
             value={residentialHouses}
             onChange={(e) => setResidentialHouses(e.target.value)}
           />
@@ -92,64 +97,64 @@ const ApplicationForm3 = () => {
       </div>
       <div className="form-section">
         <div className="purple-box">
-          Number of Other Houses or Buildings Owned:
+          {t("Number of Other Houses or Buildings Owned:")}
         </div>
         <div className="input-field">
           <input
             type="text"
-            placeholder="Enter Number of Other Houses or Buildings Owned"
+            placeholder={t("Enter Number of Other Houses or Buildings Owned")}
             value={otherBuildings}
             onChange={(e) => setOtherBuildings(e.target.value)}
           />
         </div>
       </div>
       <div className="form-section">
-        <div className="purple-box">Number of Transport Assets:</div>
+        <div className="purple-box">{t("Number of Transport Assets:")}</div>
         <div className="input-field">
           <input
             type="text"
-            placeholder="Enter Number of Transport Assets"
+            placeholder={t("Enter Number of Transport Assets")}
             value={transportAssets}
             onChange={(e) => setTransportAssets(e.target.value)}
           />
         </div>
       </div>
       <div className="form-section">
-        <div className="purple-box">Total Floor Area:</div>
+        <div className="purple-box">{t("Total Floor Area:")}</div>
         <div className="input-field">
           <input
             type="text"
-            placeholder="Enter Less Than 5000 Sq Ft Total Floor Area"
+            placeholder={t("Enter Less Than 5000 Sq Ft Total Floor Area")}
             value={totalFloorArea}
             onChange={(e) => setTotalFloorArea(e.target.value)}
           />
         </div>
       </div>
       <div className="form-section">
-        <div className="purple-box">Non-Availability of Drinking Water:</div>
+        <div className="purple-box">{t("Non-Availability of Drinking Water:")}</div>
         <div className="input-field">
           <select value={drinkingWater} onChange={(e) => setDrinkingWater(e.target.value)}>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="yes">{t("Yes")}</option>
+            <option value="no">{t("No")}</option>
           </select>
         </div>
       </div>
       <div className="form-section">
-        <div className="purple-box">Absence of Necessary Sanitary Facilities:</div>
+        <div className="purple-box">{t("Absence of Necessary Sanitary Facilities:")}</div>
         <div className="input-field">
           <select value={sanitaryFacilities} onChange={(e) => setSanitaryFacilities(e.target.value)}>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="yes">{t("Yes")}</option>
+            <option value="no">{t("No")}</option>
           </select>
         </div>
       </div>
       {/* Connect to the next button */}
       <div className="next-button-container">
       <Link to="/ApplicationForm" >
-            <button className="back-button">Back</button>
+            <button className="back-button">{t("Back")}</button>
         </Link>
         <Link to="/DocumentUploadPage" state={{ request }}>
-          <button className="next-button">Next</button>
+          <button className="next-button">{t("Next")}</button>
         </Link>
       </div>
       </form>
