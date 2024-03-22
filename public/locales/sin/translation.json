@@ -12,7 +12,6 @@
     "Login": "ඇතුල් වන්න",
     "Logout": "ඉවත් වන්න",
     "Signup": "ලියාපදිංචි වන්න",
-    "Logout": "ඉවත් වන්න",
     "Community": "සමාජය",
     "Announcements": "විස්තර",
     "AnswerCenter": "ප්‍රශ්න මධ්‍යස්ථානය",
@@ -76,6 +75,7 @@
     "Objective": "අරමුණු",
     "ObjectiveDetails": "සමෘද්ධි සමිති ගොඩ නැගීම හරහා කුඩා කණ්ඩායම් ඇති කිරීම සහ එමගින් ග්‍රාමීය පවුල්වල හැකියාවන් හඳුනා ගැනීම සහ එවැනි ග්‍රාමීය ප්‍රජාවන් ශක්තිමත් කිරීම. 2013 වසර වන විට නාගරික, ග්‍රාමීය සහ වතු ක්ෂේත්‍ර ආර්ථික, භෞතික සහ සමාජ සංවර්ධනය. ප්‍රාදේශීය හා ජාත්‍යන්තර රාජ්‍ය සහ රාජ්‍ය නොවන සංවිධාන සම්බන්ධීකරණය තුළින් පළාත් සංවර්ධනයට දායක වීම.",
 
+    "Application Form":"අයදුම්පත",
     "Applica_Name": "ගෘහ හිමියාගේ නම:",
     "Enter Name" :   "නම ඇතුලත් කරන්න",
     "Addre": "ලිපිනය:",
@@ -101,53 +101,13 @@
     "Grama Sevaka Division": "ග්‍රාම සේවක වසම",
     "Informationn": "විස්තර",
     "Next" : "ඊළඟ",
+    "Yes":"ඔව්",
+    "No":"නැත",
+    "Please fill in all fields":"කරුණාකර සියලුම ක්ෂේත්‍ර පුරවන්න",
 
-    "Donation Form":"පරිත්යාග පෝරමය",
+    "Donation Form":"පරිත්යාග පෝරමය"
 
 
-    "BankName" : "බැංකු නම",
-    "AccountName": "ගිණුම් හිමියාගේ නම",
-    "AccNumber": "ගිණුම් අංකය",
-    "BranchName": "ශාඛා නාමය",
-
-    "EnterBankName" : "බැංකු නම ඇතුලත් කරන්න",
-    "EnterAccountName": "ගිණුම් හිමියාගේ නම ඇතුලත් කරන්න",
-    "EnterAccNumber": "ගිණුම් අංකය ඇතුලත් කරන්න",
-    "EnterBranchName": "ශාඛා නාමය ඇතුලත් කරන්න",
-
-    "DonationForm":"පරිත්‍යාග පෝරමය",
-    "FullName": "සම්පූර්ණ නම",
-    "DonateEmail": "විද්යුත් තැපෑල",
-    "DonatePhoneNum": "දුරකථන අංකය",
-    "DonateAddress": "ලිපිනය",
-    "Amount": "මුදල",
-    "PaymentMethod": "ගෙවීමේ ක්‍රමය",
-    "CreditCard": "ක්‍රෙඩිට් කාඩ්",
-    "CardNumber": "කාඩ් අංකය",
-    "ExpireDate": "කල් ඉකුත්වන දිනය",
-    "BankTransfer": "බැංකු හුවමාරුව",
-    "BankNameDonation" : "බැංකු නම",
-    "Branch": "ශාඛාව",
-    "AccountNum": "ගිණුම් අංකය",
-    "AccName": "ගිණුමේ නම",
-    "UploadSlip": "උඩුගත ස්ලිප්",
-    "ChooseFile": "ගොනුව තෝරන්න",
-    "NoFileChoose": "කිසිම ගොනුවක් තෝරාගෙන නැත",
-    "agrre": "ගිවිසුම බලන්න",
-    "Line": "මම හෙළිදරව් කිරීම කියවා කොන්දේසි වලට එකඟ වීමි",
-    "SubmitDonate": "ඉදිරිපත් කරන්න",
-
-    "DonateName":"නම",
-    "DonateMail": " විද්යුත් තැපෑල ඇතුලත් කරන්න",
-    "DonatePhoneNumber": "දුරකථන අංකය (+94)",
-    "DoanteAddress": "ලිපිනය ඇතුලත් කරන්න",
-    "DonateAmount": "රු.",
-    "people's Bank": "මහජන බැංකුව",
-    "Colombo": "කොළඹ",
-    "S W Fernando": "එස් ඩබ්ලිව් ප්‍රනාන්දු",
-    "Aggrement": "පරිත්‍යාග ගිවිසුම"
-    
-   
 
 
 
