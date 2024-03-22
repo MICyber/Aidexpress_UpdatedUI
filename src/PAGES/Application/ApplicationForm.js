@@ -21,7 +21,7 @@ const ApplicationForm = () => {
 
   // Create the request object with form data
   const request = {
-    nameOfHousehold: name,
+    nameOfHouseholder: name,
     address: address,
     nicNumber: nicNumber,
     telephoneNumber: telephone,
