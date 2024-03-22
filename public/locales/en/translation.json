@@ -126,7 +126,55 @@
     "ComplianceWithLaws":"Compliance With Laws",
     "ComplianceWithLawsDetails":"Affirm the program's commitment to comply with all applicable laws, regulations, and government policies governing social welfare programs.",
 
-    "Donation Form":"Donation Form"
+   
+
+
+    "BankName" : "Bank Name",
+    "AccountName": "Account Holder Name",
+    "AccNumber": "Account Number",
+    "BranchName": "Branch Name",
+
+    "EnterBankName" : "Enter Bank Name",
+    "EnterAccountName": "Enter Account Holder Name",
+    "EnterAccNumber": "Enter Account Number",
+    "EnterBranchName": "Enter Branch Name",
+
+    "DonationForm":"Donation Form",
+    "FullName": "Full Name",
+    "DonateEmail": "Email",
+    "DonatePhoneNum": "Phone Number",
+    "DonateAddress": "Address",
+    "Amount": "Amount",
+    "PaymentMethod": "PaymentMethod",
+    "CreditCard": "Credit Card",
+    "CardNumber": "Card Number",
+    "ExpireDate": "Expiration Date",
+    "BankTransfer": "Bank Transfer",
+    "BankNameDonation" : "Bank Name",
+    "Branch": "Branch",
+    "AccountNum": "Account Number",
+    "AccName": "Account Name",
+    "UploadSlip": "Upload Slip",
+    "ChooseFile": "Choose File",
+    "NoFileChoose": "No file choosen",
+    "agrre": "View Agreement",
+    "Line": "I read the Disclosure and Agreed to the Terms",
+    "SubmitDonate": "Submit",
+
+    "DonateName":"Name",
+    "DonateMail": " Enter Email",
+    "DonatePhoneNumber": "Phone number (+94)",
+    "DoanteAddress": "Enter Address",
+    "DonateAmount": "Rs",
+    "people's Bank": "People's Bank",
+    "Colombo": "Colombo",
+    "S W Fernando": "S W Fernando",
+    "Aggrement": "Donation Agreement"
+
+
+
+
+
 
 
 

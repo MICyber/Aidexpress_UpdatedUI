@@ -442,6 +442,8 @@ import app from '../../PAGES/Auth/firebaseConfig';
 import { getStorage } from 'firebase/storage';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from 'react-i18next';
+
 const DonationForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -458,6 +460,7 @@ const DonationForm = () => {
 
   const [showModal, setShowModal] = useState(false);
   const storage = getStorage(app);
+  const { t } = useTranslation();
 
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
@@ -635,13 +638,13 @@ const DonationForm = () => {
     <div className="Donate">
       <Navbar reloadnavbar={false} />
       <div className="donation-form">
-        <h1>Donation Form</h1>
+        <h1>{t("DonationForm")}</h1>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formName">
-            <Form.Label>Full Name</Form.Label>
+            <Form.Label>{t("FullName")}</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Name"
+              placeholder={t("DonateName")}
               name="name"
               value={formData.name}
               onChange={handleChange}
@@ -651,10 +654,10 @@ const DonationForm = () => {
           </Form.Group>
 
           <Form.Group controlId="formEmail">
-            <Form.Label>Email</Form.Label>
+            <Form.Label>{t("DonateEmail")}</Form.Label>
             <Form.Control
               type="email"
-              placeholder="Enter email"
+              placeholder={t("DonateMail")}
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -664,10 +667,10 @@ const DonationForm = () => {
           </Form.Group>
 
           <Form.Group controlId="formPhoneNumber">
-            <Form.Label>Phone Number</Form.Label>
+            <Form.Label>{t("DonatePhoneNum")}</Form.Label>
             <Form.Control
               type="tel"
-              placeholder="Phone Number"
+              placeholder={t("DonatePhoneNumber")}
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleChange}
@@ -677,9 +680,9 @@ const DonationForm = () => {
           </Form.Group>
 
           <Form.Group controlId="formAddress">
-            <Form.Label>Address</Form.Label>
+            <Form.Label>{t("DonateAddress")}</Form.Label>
             <Form.Control
-              placeholder="1234 Main St"
+              placeholder={t("DoanteAddress")}
               name="address"
               value={formData.address}
               onChange={handleChange}
@@ -688,10 +691,10 @@ const DonationForm = () => {
           </Form.Group>
 
           <Form.Group controlId="formAmount">
-            <Form.Label>Amount</Form.Label>
+            <Form.Label>{t("Amount")}</Form.Label>
             <Form.Control
               type="text"
-              placeholder="RS"
+              placeholder={t("DonateAmount")}
               name="amount"
               value={formData.amount}
               onChange={handleChange}
@@ -701,11 +704,11 @@ const DonationForm = () => {
           </Form.Group>
 
           <Form.Group controlId="formPaymentMethod">
-            <Form.Label>Payment Method</Form.Label>
+            <Form.Label>{t("PaymentMethod")}</Form.Label>
             <div>
               <Form.Check
                 type="radio"
-                label="Credit Card"
+                label={t("CreditCard")}
                 name="paymentMethod"
                 value="creditCard"
                 onChange={handlePaymentMethodChange}
@@ -713,7 +716,7 @@ const DonationForm = () => {
               />
               <Form.Check
                 type="radio"
-                label="Bank Transfer"
+                label={t("BankTransfer")}
                 name="paymentMethod"
                 value="bankTransfer"
                 onChange={handlePaymentMethodChange}
@@ -726,10 +729,10 @@ const DonationForm = () => {
           {formData.paymentMethod === "creditCard" && (
             <>
               <Form.Group controlId="formCardNumber">
-                <Form.Label>Card Number</Form.Label>
+                <Form.Label>{t("CardNumber")}</Form.Label>
                 <Form.Control
                   type="text"
-                  placeholder="Card Number"
+                  placeholder={t("CardNumber")}
                   name="cardNumber"
                   value={formData.cardNumber}
                   onChange={handleChange}
@@ -738,7 +741,7 @@ const DonationForm = () => {
                 />
               </Form.Group>
               <Form.Group controlId="formExpiration">
-                <Form.Label>Expiration Date</Form.Label>
+                <Form.Label>{t("ExpireDate")}</Form.Label>
                 <Form.Control
                   type="text"
                   placeholder="MM/YY"
@@ -769,22 +772,22 @@ const DonationForm = () => {
               {/* Additional Information for Bank Transfer */}
               <div>
                 <p>
-                  <strong>Bank name:</strong> People's Bank
+                  <strong>{t("BankNameDonation")}</strong> {t("people's Bank")}
                 </p>
                 <p>
-                  <strong>Branch:</strong> Colombo
+                  <strong>{t("Branch")}</strong> {t("Colombo")}
                 </p>
                 <p>
-                  <strong>Account Number:</strong> 1234567890
+                  <strong>{t("AccountNum")}</strong> 1234567890
                 </p>
                 <p>
-                  <strong>Account Name:</strong> S W Fernando
+                  <strong>{t("AccName")}</strong> {t("S W Fernando")}
                 </p>
               </div>
 
               {/* Slip Upload Field */}
               <Form.Group controlId="formSlip">
-                <Form.Label>Upload Slip</Form.Label>
+                <Form.Label>{t("UploadSlip")}</Form.Label>
                 <Form.Control
                   type="file"
                   accept=".pdf, .jpg, .png"
@@ -797,21 +800,21 @@ const DonationForm = () => {
           )}
           <div>
             <Form.Group id="formGridCheckbox">
-              <Button variant="outline-primary" onClick={handleModal}>View Agreement</Button>
-              <Form.Check type="checkbox" label="I read the Disclosure and Agreed to the Terms" required />
+              <Button variant="outline-primary" onClick={handleModal}>{t("agrre")}</Button>
+              <Form.Check type="checkbox" label={t("Line")} required />
 
             </Form.Group>
           </div>
 
           <Button variant="primary" type="submit" className="submit-button">
-            Submit
+          {t("Submit")}
           </Button>
           <ToastContainer />
         </Form>
 
         <Modal show={showModal} onHide={handleModal}>
           <Modal.Header closeButton>
-            <Modal.Title>Donation Agreement</Modal.Title>
+            <Modal.Title>{t("Aggrement")}</Modal.Title>
 
           </Modal.Header>
           <Modal.Body style={{ fontSize: "9px" }}>
