@@ -126,7 +126,25 @@
     "ComplianceWithLaws":"Compliance With Laws",
     "ComplianceWithLawsDetails":"Affirm the program's commitment to comply with all applicable laws, regulations, and government policies governing social welfare programs.",
 
-    "Donation Form":"Donation Form"
+    "Donation Form":"Donation Form",
+
+    "Application Form":"Application Form",
+    "Monthly Per Capital Income:":"Monthly Per Capital Income:",
+    "Enter Monthly Per Capital Income":"Enter Monthly Per Capital Income",
+    "Number of Livelihood Assets:":"Number of Livelihood Assets:",
+    "Enter Number of Livelihood Assets":"Enter Number of Livelihood Assets",
+    "Number of Acres of Cultivable Paddy Land:":"Number of Acres of Cultivable Paddy Land:",
+    "Enter Number of Acres of Cultivable Paddy Land":"Enter Number of Acres of Cultivable Paddy Land",
+    "Number of Residential Houses and Land Owned:":"Number of Residential Houses and Land Owned:",
+    "Enter Number of Residential Houses and Land Owned":"Enter Number of Residential Houses and Land Owned",
+    "Number of Other Houses or Buildings Owned:":"Number of Other Houses or Buildings Owned:",
+    "Enter Number of Other Houses or Buildings Owned":"Enter Number of Other Houses or Buildings Owned",
+    "Number of Transport Assets:":"Number of Transport Assets:",
+    "Enter Number of Transport Assets":"Enter Number of Transport Assets",
+    "Total Floor Area:":"Total Floor Area:",
+    "Enter Less Than 5000 Sq Ft Total Floor Area":"Enter Less Than 5000 Sq Ft Total Floor Area",
+    "Non-Availability of Drinking Water:":"Non-Availability of Drinking Water:",
+    "Absence of Necessary Sanitary Facilities:":"Absence of Necessary Sanitary Facilities:"
 
 
 
