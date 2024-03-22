@@ -198,7 +198,21 @@
     "people's Bank": "People's Bank",
     "Colombo": "Colombo",
     "S W Fernando": "S W Fernando",
-    "Aggrement": "Donation Agreement"
+    "Aggrement": "Donation Agreement",
+
+    "Get Monthly allowance":"Get Monthly allowance",
+    "Bank:":"Bank:",
+    "Enter your bank name":"Enter your bank name",
+    "Branch:":"Branch:",
+    "Enter your branch name":"Enter your branch name",
+    "Account Number:":"Account Number:",
+    "Enter your account number":"Enter your account number",
+    "Account Name:":"Account Name:",
+    "Enter your account name":"Enter your account name",
+    "Contact No:":"Contact No:",
+    "Enter your contact number":"Enter your contact number",
+    "Submit":"Submit"
+
 
 
 
