@@ -11,10 +11,14 @@ import { getStorage } from 'firebase/storage';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import apiService from '../../utill/httpUtil';
+import { useTranslation } from 'react-i18next';
+
 const DocumentUploadPage = () => {
 
   const location = useLocation();
   const { request } = location.state || {};
+  const { t } = useTranslation();
+
   // const db = getFirestore(app);
   const storage = getStorage(app);
   const [doc1, setDoc1] = useState('');
@@ -145,83 +149,74 @@ const DocumentUploadPage = () => {
     <div className="DocumentUpload">
       <Navbar reloadnavbar={false} />
       <div className="document-upload-container">
-        <h1>Document Upload</h1>
+        <h1>{t("Doc")}</h1>
         <form>
           <div className="document-box">
-            <h2>Proof of Income</h2>
+            <h2>{t("Income")}</h2>
             <p>
-              This could include recent pay stubs, a letter from your employer
-              stating your income, or documentation of any government assistance you
-              receive (such as unemployment benefits).
+            {t("p1")}
             </p>
             <input type="file" onChange={(e) => {
               handleFileUpload(e, '1')
             }} />
           </div>
           <div className="document-box">
-            <h2>Tax Returns</h2>
+            <h2>{t("Tax")}</h2>
             <p>
-              Copies of your recent tax returns or tax transcripts can show your
-              income and any deductions or credits you qualify for.
+            {t("p2")}
             </p>
             <input type="file" onChange={(e) => {
               handleFileUpload(e, '2')
             }} />
           </div>
           <div className="document-box">
-            <h2>Bank Statements</h2>
+            <h2>{t("Bank Statements")}</h2>
             <p>
-              Providing statements for your checking and savings accounts can help
-              demonstrate your financial situation.
+            {t("p3")}
             </p>
             <input type="file" onChange={(e) => {
               handleFileUpload(e, '3')
             }} />
           </div>
           <div className="document-box">
-            <h2>Proof of Assets</h2>
+            <h2>{t("Proof of Assets")}</h2>
             <p>
-              If you own any property or other valuable assets, you may need to
-              provide documentation of their value, such as property deeds or
-              vehicle registrations.
+            {t("p4")}
             </p>
             <input type="file" onChange={(e) => {
               handleFileUpload(e, '4')
             }} />
           </div>
           <div className="document-box">
-            <h2>Proof of Expenses</h2>
+            <h2>{t("Proof of Expenses")}</h2>
             <p>
-              Documents showing your monthly expenses, such as rent or mortgage
-              payments, utilities, and medical bills, can help support your case.
+            {t("p5")}
             </p>
             <input type="file" onChange={(e) => {
               handleFileUpload(e, '5')
             }} />
           </div>
           <div className="document-box">
-            <h2>Identification</h2>
+            <h2>{t("Identification")}</h2>
             <p>
-              You'll likely need to provide some form of identification, such as a
-              driver's license or passport, to verify your identity.
+            {t("p6")}
             </p>
             <input type="file" onChange={(e) => {
               handleFileUpload(e, '6')
             }} />
           </div>
           <div className="document-box">
-            <h2>Proof of Household Size</h2>
+            <h2>{t("Proof of Household Size")}</h2>
             <p>
-              Documents showing the number of people in your household, such as
-              birth certificates or marriage certificates, may be required.
+            {t("p7")}
             </p>
             <input type="file" onChange={(e) => {
               handleFileUpload(e, '7')
             }} />
           </div>
           <div className="document-box">
-            <h2>Other Documents to Support</h2>
-            <p>Additional documents to support your case.</p>
+            <h2>{t("Other Documents to Support")}</h2>
+            <p>{t("p8")}</p>
             <input type="file" onChange={(e) => {
               handleFileUpload(e, '8')
             }} />

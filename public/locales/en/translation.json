@@ -198,8 +198,26 @@
     "people's Bank": "People's Bank",
     "Colombo": "Colombo",
     "S W Fernando": "S W Fernando",
-    "Aggrement": "Donation Agreement"
+    "Aggrement": "Donation Agreement",
 
+    "Doc": "Document Upload",
+    "Income": "Proof of Income",
+    "Tax": "Tax Returns",
+    "Bank Statements": "Bank Statements",
+    "Proof of Assets": "Proof of Assets",
+    "Proof of Expenses": "Proof of Expenses",
+    "Identification": "Identification",
+    "Proof of Household Size": "Proof of Household Size",
+    "Other Documents to Support": "Other Documents to Support",
+
+    "p1": "This could include recent pay stubs, a letter from your employer stating your income, or documentation of any government assistance you receive (such as unemployment benefits",
+    "p2": "Copies of your recent tax returns or tax transcripts can show your income and any deductions or credits you qualify for.",
+    "p3": "Providing statements for your checking and savings accounts can help demonstrate your financial situation.",
+    "p4": "If you own any property or other valuable assets, you may need to provide documentation of their value, such as property deeds or vehicle registrations.",
+    "p5": "Documents showing your monthly expenses, such as rent or mortgage payments, utilities, and medical bills, can help support your case.",
+    "p6": "You'll likely need to provide some form of identification, such as a driver's license or passport, to verify your identity.",
+    "p7": "Documents showing the number of people in your household, such as birth certificates or marriage certificates, may be required.",
+    "p8": "Additional documents to support your case."
 
 
     
