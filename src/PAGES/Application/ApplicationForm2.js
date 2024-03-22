@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const ApplicationForm2 = () => {
 
   const location = useLocation();
   const { request } = location.state || {};
+  const { t } = useTranslation();
 
   useEffect(() => {
 
@@ -41,14 +43,14 @@ const ApplicationForm2 = () => {
         <h1>Application Form</h1>
         <form>
           <div className="form-section">
-            <div className="purple-box">Bank Name:</div>
+            <div className="purple-box">{t("BankName")}</div>
             <div className="input-field">
               <label htmlFor="bankName" className="label-style">
                 <input
                   type="text"
                   id="bankName"
                   name="bankName"
-                  placeholder="Enter Bank Name"
+                  placeholder={t("EnterBankName")}
                   value={bankDetails.bankName}
                   onChange={handleBankDetailsChange}
                 />
@@ -56,14 +58,14 @@ const ApplicationForm2 = () => {
             </div>
           </div>
           <div className="form-section">
-            <div className="purple-box">Account Holder Name:</div>
+            <div className="purple-box">{t("AccountName")}</div>
             <div className="input-field">
               <label htmlFor="accountHolderName" className="label-style">
                 <input
                   type="text"
                   id="accountHolderName"
                   name="accountHolderName"
-                  placeholder="Enter Account Holder Name"
+                  placeholder={t("EnterAccountName")}
                   value={bankDetails.accountHolderName}
                   onChange={handleBankDetailsChange}
                 />
@@ -71,14 +73,14 @@ const ApplicationForm2 = () => {
             </div>
           </div>
           <div className="form-section">
-            <div className="purple-box">Account Number:</div>
+            <div className="purple-box">{t("AccNumber")}</div>
             <div className="input-field">
               <label htmlFor="accountNumber" className="label-style">
                 <input
                   type="number"
                   id="accountNumber"
                   name="accountNumber"
-                  placeholder="Enter Account Number"
+                  placeholder={t("EnterAccNumber")}
                   value={bankDetails.accountNumber}
                   onChange={handleBankDetailsChange}
                 />
@@ -86,14 +88,14 @@ const ApplicationForm2 = () => {
             </div>
           </div>
           <div className="form-section">
-            <div className="purple-box">Branch Name:</div>
+            <div className="purple-box">{t("BranchName")}</div>
             <div className="input-field">
               <label htmlFor="branchName" className="label-style">
                 <input
                   type="text"
                   id="branchName"
                   name="branchName"
-                  placeholder="Enter Branch Name"
+                  placeholder={t("EnterBranchName")}
                   value={bankDetails.branchName}
                   onChange={handleBankDetailsChange}
                 />

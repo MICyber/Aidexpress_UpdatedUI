@@ -50,4 +50,4 @@ app.delete("/api/applications/:applicationId",applicationController.removeApplic
 app.get("/api/applications", applicationController.listAllApplications);
 app.get("/api//applications/:_id", applicationController.getApplicationById);
 
-app.listen(5001, () => console.log("Server running on port 5000"));
+app.listen(5000, () => console.log("Server running on port 5000"));
