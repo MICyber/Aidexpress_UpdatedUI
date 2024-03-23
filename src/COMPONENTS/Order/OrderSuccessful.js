@@ -9,6 +9,9 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
     //const [redirecto, setRedirecto] = useState(false);
     const [redirecto] = useState(false);
 
+
+
+
     const track = async (request) => {
         try {
             const response = apiService.post(`/applications/${orderdata._id}/track`, request);
@@ -29,6 +32,11 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
             throw error;
         }
     };
+
+
+
+
+
     const sendSMS = async (request) => {
         try {
             const response = apiService.post(`/send-sms`, request);
@@ -76,18 +84,20 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
 
             "_id": orderdata._id,
             "status": "completed",
-            "notes": `login details usernames: ${orderdata.accountHolderName}@gmail.com    paasword: ${orderdata.nicNumber}`,
+            "notes": `Your Login details Username: ${orderdata.nicNumber} Password: 'Mihira123'`,
 
         }
         track(request)
         usercreate();
         const request2 = {
             to: orderdata.telephoneNumber,
-            message: `login details usernames: ${orderdata.accountHolderName}@gmail.com    paasword: ${orderdata.nicNumber}`
+            message: `Login details: Username: ${orderdata.nicNumber} Password: 'Mihira123'`
         }
         sendSMS(request2);
 
     };
+
+
 
     const handleRejected = () => {
         const request = {
@@ -100,10 +110,13 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
         track(request)
         const request2 = {
             to: orderdata.telephoneNumber,
-            message: "Thank you for your Applications Rejected"
+            message: "Thank you. Your Application Rejected"
         }
         sendSMS(request2);
     };
+
+
+
     const handleCancel = (request) => {
         // Handle cancellation logic
         setordersuccesscont(request);
@@ -124,6 +137,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
             alert(error.message);
         }
     };
+
 
 
 
