@@ -27,7 +27,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="logo" />
 
           <div className="s2">
-            <Link to="/">
+            <Link to="/Home">
               <a>{t("Home")}</a>
             </Link>
 
@@ -118,7 +118,7 @@ const Navbar = () => {
 
           <ul className="s32">
             <li>
-              <Link to="/" className="stylenone">
+              <Link to="/Home" className="stylenone">
               {t("Home")}
               </Link>
             </li>
@@ -130,10 +130,10 @@ const Navbar = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">
+                  <Dropdown.Item href="/DonationForm">
                   {t("Donate")}
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">{t("Evidence")}</Dropdown.Item>
+                  <Dropdown.Item href="/DonateEvidence">{t("Evidence")}</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </li>

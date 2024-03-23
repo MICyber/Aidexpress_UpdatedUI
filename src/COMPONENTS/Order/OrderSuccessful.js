@@ -110,7 +110,9 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
         setordersuccesscont(request);
     };
 
-    const email = `${orderdata.accountHolderName}@gmail.com`;
+    
+
+    const email = `${orderdata.nicNumber}@gmail.com`;
     const password =  'Mihira123';
     const usercreate = async () => {
 
@@ -193,7 +195,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                                     <input
                                         type="text"
                                         name="nameOfHouseholder"
-                                        value={orderdata.accountHolderName}
+                                        value={orderdata.nameOfHouseholder}
                                         onChange={handleChange}
                                         disabled
                                     />
