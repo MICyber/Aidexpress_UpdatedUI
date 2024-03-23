@@ -4,7 +4,6 @@ import Home from './PAGES/HomePage/Home'
 import './App.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProductPage from './PAGES/Product/ProductPage';
 import About from './PAGES/Extra/About';
 import Contact from './PAGES/Extra/Contact';
 
@@ -23,11 +22,9 @@ import SignUpUser from './PAGES/Auth/Signup';
 import OfficerSignUp from './PAGES/AuthOfficer/OfficerSignup';
 
 import ForgotPassword from './PAGES/Auth/ForgotPassword';
-import Cart from './PAGES/Cart/Cart';
 
 import UserProfile from './PAGES/User/UserProfile';
 import OfficerProfile from './PAGES/Officer/UserProfile';
-
 
 import FAQ from './PAGES/Extra/FAQ';
 import Termsandconditions from './PAGES/Extra/Termsandconditions';
@@ -69,7 +66,6 @@ const App = () => {';/'
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/product/:prodid" element={ <ProductPage/> }/>
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/login" element={<Login/>} />
@@ -84,7 +80,6 @@ const App = () => {';/'
         <Route path="/OfficerSignUp" element={<OfficerSignUp/>} />
 
         <Route path="/forgotpassword" element={<ForgotPassword/>} />
-        <Route path="/cart" element={<Cart/>} />
 
         <Route path='/UserProfile/:activepage' element={<UserProfile/>} />
         <Route path='/OfficerProfile/:activepage' element={<OfficerProfile/>} />

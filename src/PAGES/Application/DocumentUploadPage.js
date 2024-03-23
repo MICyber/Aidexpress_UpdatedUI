@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./DocumentUploadPage.css";
-import { Link } from "react-router-dom";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import { useLocation } from 'react-router-dom';
 import app from '../Auth/firebaseConfig';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { collection, addDoc } from 'firebase/firestore';
-import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

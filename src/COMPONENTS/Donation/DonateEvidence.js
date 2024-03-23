@@ -5,10 +5,7 @@ import { useRecoilState } from 'recoil'
 import { orderSuccessfulProvider } from '../../Providers/OrderSuccessfulProvider';
 import Navbar from '../Navbar/Navbar';
 import apiService from '../../utill/httpUtil';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import app from '../../PAGES/Auth/firebaseConfig';
-import { getStorage } from 'firebase/storage';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const DonateEvidence = () => {
     const   [data,setData] = useState([]);

@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import './YourOrders.css'
-import OrderSuccessful from '../Order/OrderSuccessful'
-import { useRecoilState } from 'recoil'
-import { orderSuccessfulProvider } from '../../Providers/OrderSuccessfulProvider'
+import React, { useEffect, useState } from 'react';
+import './YourOrders.css';
+import OrderSuccessful from '../Order/OrderSuccessful';
+import { useRecoilState } from 'recoil';
+import { orderSuccessfulProvider } from '../../Providers/OrderSuccessfulProvider';
 import apiService from '../../utill/httpUtil';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import app from '../../PAGES/Auth/firebaseConfig';
-import { getStorage } from 'firebase/storage';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTranslation } from 'react-i18next';
@@ -14,27 +11,20 @@ import { useTranslation } from 'react-i18next';
 const YourOrders = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
-      const { t } = useTranslation();
+    }, []);
+    const { t } = useTranslation();
 
     const [data, setData] = useState([]);
 
     const getData = async () => {
         try {
-            const response = apiService.get(`/payments`);
-            console.log(response.subscribe(response => console.log(response)));
-            response.subscribe(response => {
-                if (response) {
-                    console.log(response);
-                    setData(response);
-
-                    //  showToastSuccess("Successfully saved ");
-                } else {
-                    showToastError("Failed to send SMS ");
-                }
-            });
-
-
+            const response = await apiService.get(`/payments`);
+            console.log(response);
+            if (response) {
+                setData(response);
+            } else {
+                showToastError("Failed to send SMS ");
+            }
         } catch (error) {
             showToastError(error);
             console.error('Error submitting service name:', error);
@@ -42,13 +32,12 @@ const YourOrders = () => {
         }
     };
 
-
     useEffect(() => {
         getData();
-    }, []);
+    });
 
-    const [selectedorderid, setselectedorderid] = useState(0)
-    const [ordersuccesscont, setordersuccesscont] = useRecoilState(orderSuccessfulProvider)
+    const [selectedorderid] = useState(0)
+    const [ordersuccesscont] = useRecoilState(orderSuccessfulProvider)
     const [bank, setbank] = useState();
     const [branch, setbranch] = useState();
     const [accountNumber, setaccountNumber] = useState();
@@ -58,50 +47,24 @@ const YourOrders = () => {
     const formatDate = (dateString) => {
         const date = new Date(dateString);
         const day = date.getDate().toString().padStart(2, '0');
-        const month = (date.getMonth() + 1).toString().padStart(2, '0'); // JavaScript months are 0-based.
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
         const year = date.getFullYear();
         return `${day}-${month}-${year}`;
     };
 
     const payment = async (request) => {
         try {
-            const response = apiService.post(`/payments/make-payment`, request);
-            console.log(response.subscribe(response => console.log(response)));
-            response.subscribe(response => {
-                if (response) {
-                    const request2 = {
-                        to: phoneNumber,
-                        message: " your payment of Rs.1000.00 to the account. Your payment has been successfully received. Thank you for your support."
-                    }
-                    sendSMS(request2);
-                    return response;
-                    // showToastSuccess("Successfully  payment");
-                } else {
-                    showToastError("Failed to payment");
+            const response = await apiService.post(`/payments/make-payment`, request);
+            if (response) {
+                const request2 = {
+                    to: phoneNumber,
+                    message: " your payment of Rs.1000.00 to the account. Your payment has been successfully received. Thank you for your support."
                 }
-            });
-
-
-        } catch (error) {
-            showToastError(error);
-            console.error('Error submitting service name:', error);
-            throw error;
-        }
-    };
-
-    const saveApplication = async (request) => {
-        try {
-            const response = apiService.post(`/payments`, request);
-            console.log(response.subscribe(response => console.log(response)));
-            response.subscribe(response => {
-                if (response) {
-                    showToastSuccess("Successfully saved ");
-                } else {
-                    showToastError("Failed to save ");
-                }
-            });
-
-
+                sendSMS(request2);
+                return response;
+            } else {
+                showToastError("Failed to payment");
+            }
         } catch (error) {
             showToastError(error);
             console.error('Error submitting service name:', error);
@@ -111,17 +74,12 @@ const YourOrders = () => {
 
     const sendSMS = async (request) => {
         try {
-            const response = apiService.post(`/send-sms`, request);
-            console.log(response.subscribe(response => console.log(response)));
-            response.subscribe(response => {
-                if (response) {
-                    //  showToastSuccess("Successfully saved ");
-                } else {
-                    showToastError("Failed to send SMS ");
-                }
-            });
-
-
+            const response = await apiService.post(`/send-sms`, request);
+            if (response) {
+                showToastSuccess("Successfully saved ");
+            } else {
+                showToastError("Failed to send SMS ");
+            }
         } catch (error) {
             showToastError(error);
             console.error('Error submitting service name:', error);
@@ -134,35 +92,14 @@ const YourOrders = () => {
         const request = {
             userId: accountName,
             amount: 1000,
+            phoneNumber: phoneNumber,
+            paymentMethod: 'bank',
+            bank: bank,
+            branch: branch,
+            accountNumber: accountNumber,
+            user: accountName
         }
-        
-        // console.log("Form submitted:", obj);
-
-        // console.log("Form submitted:", obj);
-        request.phoneNumber = phoneNumber;
-        request.paymentMethod = 'bank'
-        request.bank = bank;
-        request.branch = branch;
-        request.accountNumber = accountNumber;
-        request.user = accountName;
-         payment(request);
-        // if (formData.paymentMethod === "creditCard") {
-
-        //   request.cardNumber = formData.cardNumber
-        //   request.expiration = formData.expiration
-        //   request.cvc = formData.cvc
-
-        // }
-        // request.paymentMethod  = formData.paymentMethod
-        // request.cardNumber = formData.cardNumber
-        // request.expiration = formData.expiration
-        // request.cvc = formData.cvc
-        // request.slip = formData.slip
-     //   saveApplication(request);
-
-
-        // saveApplication(formData);
-
+        payment(request);
     };
 
     function showToastSuccess(msg) {
@@ -202,7 +139,6 @@ const YourOrders = () => {
                         <th scope='col'>Date</th>
                         <th scope='col'>Status</th>
                         <th scope='col'>Total</th>
-                        {/* <th scope='col'>Bank Statemnet</th> */}
                     </tr>
                 </thead>
 
@@ -214,27 +150,17 @@ const YourOrders = () => {
                                 <td data-label='Date'>{formatDate(item.transactionDate)}</td>
                                 <td data-label='Received Status'>
                                     <div>
-                                        {item.status == 'success' && <span className='greendot'></span>}
-                                        {item.status == 'failed' && <span className='reddot'></span>}
-
+                                        {item.status === 'success' && <span className='greendot'></span>}
+                                        {item.status === 'failed' && <span className='reddot'></span>}
                                     </div>
                                 </td>
                                 <td data-label='Total'>RS.{item.amount}</td>
-                                {/* <td data-label='Invoice'>
-                                    <button className='mainbutton1'
-                                        onClick={() => {
-                                            setselectedorderid(item.id)
-                                            setordersuccesscont(true)
-                                        }}
-                                    >View</button>
-                                </td> */}
                             </tr>
                         )
                     })}
                 </tbody>
             </table>
             <div>
-
                 <div>
                     <h1 className='mainhead1'>{t("Get Monthly allowance")}</h1>
                     <form onSubmit={handleSubmit}>

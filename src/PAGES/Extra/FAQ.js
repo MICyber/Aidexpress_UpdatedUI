@@ -59,7 +59,7 @@ const FAQ = () => {
         {
           faq.map((item, index) => {
             return (
-              activesection == item.id ?
+              activesection === item.id ?
                 <div className='faq'>
                   <div className='faqhead'>
                     <h1>
