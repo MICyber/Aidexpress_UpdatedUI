@@ -9,13 +9,7 @@ import app from '../../PAGES/Auth/firebaseConfig';
 import { getStorage } from 'firebase/storage';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useTranslation } from 'react-i18next';
-
 const YourOrders = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
-      const { t } = useTranslation();
 
     const [data, setData] = useState([]);
 
@@ -236,29 +230,29 @@ const YourOrders = () => {
             <div>
 
                 <div>
-                    <h1 className='mainhead1'>{t("Get Monthly allowance")}</h1>
+                    <h1 className='mainhead1'>Get Monthly allowance</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
-                            <label htmlFor="bank">{t("Bank:")}</label>
-                            <input type="text" id="bank" name="bank" placeholder={t("Enter your bank name")} onChange={(e) => setbank(e.target.value)} />
+                            <label htmlFor="bank">Bank:</label>
+                            <input type="text" id="bank" name="bank" placeholder="Enter your bank name" onChange={(e) => setbank(e.target.value)} />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="branch">{t("Branch:")}</label>
-                            <input type="text" id="branch" name="branch" placeholder={t("Enter your branch name")} onChange={(e) => setbranch(e.target.value)} />
+                            <label htmlFor="branch">Branch:</label>
+                            <input type="text" id="branch" name="branch" placeholder="Enter your branch name" onChange={(e) => setbranch(e.target.value)} />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="accountNumber">{t("Account Number:")}</label>
-                            <input type="text" id="accountNumber" name="accountNumber" placeholder={t("Enter your account number")} onChange={(e) => setaccountNumber(e.target.value)} />
+                            <label htmlFor="accountNumber">Account Number:</label>
+                            <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter your account number" onChange={(e) => setaccountNumber(e.target.value)} />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="accountName">{t("Account Name:")}</label>
-                            <input type="text" id="accountName" name="accountName" placeholder={t("Enter your account name")} onChange={(e) => setaccountName(e.target.value)} />
+                            <label htmlFor="accountName">Account Name:</label>
+                            <input type="text" id="accountName" name="accountName" placeholder="Enter your account name" onChange={(e) => setaccountName(e.target.value)} />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="contactNo">{t("Contact No:")}</label>
-                            <input type="text" id="contactNo" name="contactNo" placeholder={t("Enter your contact number")} onChange={(e) => setPhoneNumber(e.target.value)} />
+                            <label htmlFor="contactNo">Contact No:</label>
+                            <input type="text" id="contactNo" name="contactNo" placeholder="Enter your contact number" onChange={(e) => setPhoneNumber(e.target.value)} />
                         </div>
-                        <button type="submit" className="mainbutton1">{t("Submit")}</button>
+                        <button type="submit" className="mainbutton1">Submit</button>
                         <ToastContainer />
                     </form>
                 </div>
@@ -270,4 +264,4 @@ const YourOrders = () => {
     )
 }
 
-export default YourOrders
+export default YourOrders;

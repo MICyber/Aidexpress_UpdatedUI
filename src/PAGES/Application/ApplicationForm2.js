@@ -14,7 +14,7 @@ const ApplicationForm2 = () => {
 
     console.log("data=>", request);
 
-  }, []);
+  }, [request]);
 
   const [bankDetails, setBankDetails] = useState({
     bankName: "",

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useTransition } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../ASSETS/logo.png";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -27,32 +27,26 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="logo" />
 
           <div className="s2">
-            <Link to="/Home">
-              <a>{t("Home")}</a>
-            </Link>
+            <Link to="/Home">{t("Home")}</Link>
 
             <Dropdown>
               <Dropdown.Toggle variant="" id="dropdown-basic">{t("Donatenow")}</Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="/DonationForm">{t("Donate")}</Dropdown.Item>
-                <Dropdown.Item href="/DonateEvidence">{t("Evidence")}</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/DonationForm">{t("Donate")}</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/DonateEvidence">{t("Evidence")}</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
-            <Link to="/about">
-              <a>{t("Aboutus")}</a>
-            </Link>
+            <Link to="/about">{t("Aboutus")}</Link>
 
-            <Link to="/contact">
-              <a>{t("Contactus")}</a>
-            </Link>
+            <Link to="/contact">{t("Contactus")}</Link>
 
             <Dropdown>
               <Dropdown.Toggle variant="" id="dropdown-basic">{t("More")}</Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="/FAQ">{t("FAQ")}</Dropdown.Item>
-                <Dropdown.Item href="/privacypolicy">{t("Privacy Policy")}</Dropdown.Item>
-                <Dropdown.Item href="/termsandconditions">{t("Terms and Condition")}</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/FAQ">{t("FAQ")}</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/privacypolicy">{t("Privacy Policy")}</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/termsandconditions">{t("Terms and Condition")}</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
@@ -87,82 +81,80 @@ const Navbar = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="/AccessLevel">{t("Login")}</Dropdown.Item>
-                <Dropdown.Item href="/AccessLevelForSignUp">{t("Signup")}</Dropdown.Item>
-                <Dropdown.Item href="#">{t("Logout")}</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/AccessLevel">{t("Login")}</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/AccessLevelForSignUp">{t("Signup")}</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
         </div>
 
-      {shows3 ? (
-        <div className="s3">
-          <div className="s31">
-            <img src={logo} alt="logo" className="logo" />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-              onClick={() => setshows3(!shows3)}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </div>
+        {shows3 ? (
+          <div className="s3">
+            <div className="s31">
+              <img src={logo} alt="logo" className="logo" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+                onClick={() => setshows3(!shows3)}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
 
-          <ul className="s32">
-            <li>
-              <Link to="/Home" className="stylenone">
-              {t("Home")}
-              </Link>
-            </li>
+            <ul className="s32">
+              <li>
+                <Link to="/Home" className="stylenone">
+                  {t("Home")}
+                </Link>
+              </li>
 
-            <li>
-              <Dropdown>
-                <Dropdown.Toggle variant="" id="donate-dropdown">
-                {t("Donate Now")}
-                </Dropdown.Toggle>
+              <li>
+                <Dropdown>
+                  <Dropdown.Toggle variant="" id="donate-dropdown">
+                    {t("Donate Now")}
+                  </Dropdown.Toggle>
 
-                <Dropdown.Menu>
-                  <Dropdown.Item href="/DonationForm">
-                  {t("Donate")}
-                  </Dropdown.Item>
-                  <Dropdown.Item href="/DonateEvidence">{t("Evidence")}</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </li>
+                  <Dropdown.Menu>
+                    <Dropdown.Item as={Link} to="/DonationForm">
+                      {t("Donate")}
+                    </Dropdown.Item>
+                    <Dropdown.Item as={Link} to="/DonateEvidence">{t("Evidence")}</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </li>
 
-            <li>
-              {" "}
-              <Link to="/about" className="stylenone">
-                <a>{t("About us")}</a>
-              </Link>
-            </li>
+              <li>
+                {" "}
+                <Link to="/about" className="stylenone">
+                  {t("About us")}
+                </Link>
+              </li>
 
-            <li>
-              {" "}
-              <Link to="/contact" className="stylenone">
-                <a>{t("ContactUs")}</a>
-              </Link>
-            </li>
+              <li>
+                {" "}
+                <Link to="/contact" className="stylenone">
+                  {t("ContactUs")}
+                </Link>
+              </li>
 
-            <li>
-              
-            <Dropdown>
-              <Dropdown.Toggle variant="" id="language-dropdown">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
+              <li>
+                <Dropdown>
+                  <Dropdown.Toggle variant="" id="language-dropdown">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
