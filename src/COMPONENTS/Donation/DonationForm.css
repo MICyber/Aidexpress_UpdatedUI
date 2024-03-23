@@ -33,9 +33,9 @@
   max-width: 500px;
   margin: 40px auto;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #a6e765;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(2, 3, 28, 0.1);
 }
 
 .donation-form h1 {
