@@ -22,14 +22,16 @@ const BannerSlider = () => {
             description: t("description"),
             button: 'htttps://www.google.com'
         }
-    ]
+    ];
 
     var settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay:true, // Autoplay enabled
+        autoplaySpeed: 3000,
     };
     return (
         <div className='bannerslider'>
