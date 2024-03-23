@@ -33,6 +33,18 @@ const ApplicationForm = () => {
     gramaSevakaDivision: gramaSevakaDivision
   };
   
+    // Function to format phone number to international format
+    const formatPhoneNumber = (phoneNumber) => {
+      // Remove any non-digit characters
+      const cleanedPhoneNumber = phoneNumber.replace(/\D/g, "");
+      // Check if the number starts with "0"
+      if (cleanedPhoneNumber.startsWith("0")) {
+        // Replace "0" with "+94"
+        return "+94" + cleanedPhoneNumber.substring(1);
+      }
+      // Return the original phone number if it's already in the international format
+      return phoneNumber;
+    };
   console.log(request);
   const { t } = useTranslation();
   return (
@@ -64,7 +76,12 @@ const ApplicationForm = () => {
           <div className="form-section">
             <div className="purple-box">{t("Telephone Number:")}</div>
             <div className="input-field">
-              <input type="tel" placeholder={t("Enter Telephone Number")}   onChange={(e) => setTelephone(e.target.value)} />
+              <input 
+                type="tel" 
+                placeholder={t("Enter Telephone Number")} 
+                value={telephone} 
+                onChange={(e) => setTelephone(formatPhoneNumber(e.target.value))} 
+              />
             </div>
           </div>
   
