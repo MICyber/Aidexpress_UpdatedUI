@@ -8,8 +8,8 @@ const fromNumber = process.env.TWILIO_PHONE_NUMBER; // Your Twilio phone number
 const messagingServiceSId ="MGd3cee75bdab1955ef3f3fea516cb1949";
 async function sendSMS(to, message) {
   try {
-    console.log(`Sending message to: ${to}, Message: ${message}`);
-    const messageResponse = await client.messages.create({
+    console.log(`Sending message to: ${to}, Message: ${message}`);  // send a massage to phone number
+    const messageResponse = await client.messages.create({ 
       body: message,
       to: to, 
       from: fromNumber,
