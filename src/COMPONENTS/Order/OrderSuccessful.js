@@ -6,9 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import firebase from '../../PAGES/Auth/firebaseConfig';
 const OrderSuccessful = ({ order, setordersuccesscont }) => {
     const [orderdata, setorderdata] = useState({});
-    const [redirecto, setRedirecto] = useState(false);
-
-
+    //const [redirecto, setRedirecto] = useState(false);
+    const [redirecto] = useState(false);
 
     const track = async (request) => {
         try {
@@ -62,15 +61,15 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
         }));
     };
     // Define the handleFileChange function to handle file input changes
-    const handleFileChange = (e) => {
-        const { name, files } = e.target;
-        // Assuming you want to store the file in the state, you can do something like this
-        // Note: You may need to handle file uploads appropriately based on your requirements
-        setorderdata(prevState => ({
-            ...prevState,
-            [name]: files[0] // Assuming you only allow single file uploads
-        }));
-    };
+    // const handleFileChange = (e) => {
+    //     const { name, files } = e.target;
+    //     // Assuming you want to store the file in the state, you can do something like this
+    //     // Note: You may need to handle file uploads appropriately based on your requirements
+    //     setorderdata(prevState => ({
+    //         ...prevState,
+    //         [name]: files[0] // Assuming you only allow single file uploads
+    //     }));
+    // };
 
     const handleEligible = () => {
         const request = {
@@ -156,7 +155,7 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
              <button className='popup__close-btn'
                 onClick={() => {
 
-                    if(redirecto == 'userorders'){
+                    if(redirecto === 'userorders'){
                         window.location.href = '/user/yourorders'
                     }
                     setordersuccesscont(false)
@@ -486,35 +485,35 @@ const OrderSuccessful = ({ order, setordersuccesscont }) => {
                         <tbody>
                             <tr>
                                 <td>Proof of Income:</td>
-                                <td><img src={orderdata.proofOfIncome} /></td>
+                                <td><img src={orderdata.proofOfIncome} alt="Proof of Income" /></td>
                             </tr>
                             <tr>
                                 <td>Tax Returns:</td>
-                                <td><img name="taxReturns" src={orderdata.taxReturns} /></td>
+                                <td><img name="taxReturns" src={orderdata.taxReturns} alt="Tax Returns" /></td>
                             </tr>
                             <tr>
                                 <td>Bank Statements:</td>
-                                <td><img name="bankStatements" src={orderdata.bankStatements} /></td>
+                                <td><img name="bankStatements" src={orderdata.bankStatements} alt="Bank Statements" /></td>
                             </tr>
                             <tr>
                                 <td>Proof of Assets:</td>
-                                <td><img name="proofOfAssets" src={orderdata.proofOfAssets} /></td>
+                                <td><img name="proofOfAssets" src={orderdata.proofOfAssets} alt="Proof of Assets" /></td>
                             </tr>
                             <tr>
                                 <td>Proof of Expenses:</td>
-                                <td><img name="proofOfExpenses" src={orderdata.proofOfExpenses} /></td>
+                                <td><img name="proofOfExpenses" src={orderdata.proofOfExpenses} alt="Proof of Expenses" /></td>
                             </tr>
                             <tr>
                                 <td>Identification:</td>
-                                <td><img name="identification" src={orderdata.identification} /></td>
+                                <td><img name="identification" src={orderdata.identification} alt="Identification" /></td>
                             </tr>
                             <tr>
                                 <td>Proof of Household Size:</td>
-                                <td><img name="proofOfHouseholdSize" src={orderdata.proofOfHouseholdSize} /></td>
+                                <td><img name="proofOfHouseholdSize" src={orderdata.proofOfHouseholdSize} alt="Proof of Household Size" /></td>
                             </tr>
                             <tr>
                                 <td>Other Documents to Support:</td>
-                                <td><img name="otherDocuments" src={orderdata.otherDocumentsToSupport} /></td>
+                                <td><img name="otherDocuments" src={orderdata.otherDocumentsToSupport} alt="Other Documents to Support" /></td>
                             </tr>
                         </tbody>
                     </table>
