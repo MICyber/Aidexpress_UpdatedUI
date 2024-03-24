@@ -58,7 +58,7 @@ const ApplicationForm = () => {
     const value = e.target.value;
     setDivisionalSecretariat(value);
     if (!isDivisionalSecretariatValid(value)) {
-      setDivisionalSecretariatError("Divisional Secretariat should contain only letters and spaces.");
+      setDivisionalSecretariatError(t("Divisional Secretariat should contain only letters and spaces."));
     } else {
       setDivisionalSecretariatError("");
     }

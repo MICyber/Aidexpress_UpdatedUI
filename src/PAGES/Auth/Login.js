@@ -48,10 +48,6 @@ const Login = () => {
             <p>Forgot password?</p>
           </Link>
           <button onClick={submit}>Login</button>
-          <h2 className='or'>OR</h2>
-          <Link to='/SignUpUser' className='stylenone'>
-            <button className='btn'>Signup</button>
-          </Link>
         </form>
       </div>
     </div>
