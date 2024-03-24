@@ -1,4 +1,3 @@
-// src/controllers/applicationController.js
 const applicationService = require('../services/applicationService');
 
 async function trackApplication(req, res) {
