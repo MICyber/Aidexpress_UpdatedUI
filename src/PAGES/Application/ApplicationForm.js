@@ -9,6 +9,7 @@ const ApplicationForm = () => {
   
   // State hooks for each form input
   const [name, setName] = useState("");
+  const [nameError, setNameError] = useState(""); // Define nameError state
   const [address, setAddress] = useState("");
   const [nicNumber, setNicNumber] = useState("");
   const [telephone, setTelephone] = useState("");
@@ -17,7 +18,9 @@ const ApplicationForm = () => {
   const [maritalStatus, setMaritalStatus] = useState("");
   const [isSingleParent, setIsSingleParent] = useState(false);
   const [divisionalSecretariat, setDivisionalSecretariat] = useState("");
+  const [divisionalSecretariatError, setDivisionalSecretariatError] = useState(""); // Define divisionalSecretariatError state
   const [gramaSevakaDivision, setGramaSevakaDivision] = useState("");
+  const [gramaSevakaDivisionError, setGramaSevakaDivisionError] = useState(""); // Define gramaSevakaDivisionError state
 
   // Create the request object with form data
   const request = {
@@ -31,6 +34,44 @@ const ApplicationForm = () => {
     singleParent: isSingleParent,
     divisionalSecretariat: divisionalSecretariat,
     gramaSevakaDivision: gramaSevakaDivision
+  };
+
+
+  // Validation functions
+  const isNameValid = (input) => /^[a-zA-Z\s]*$/.test(input);
+  const isDivisionalSecretariatValid = (input) => /^[a-zA-Z\s]*$/.test(input);
+  const isGramaSevakaDivisionValid = (input) => /^[a-zA-Z\s]*$/.test(input);
+
+
+  const handleNameChange = (e) => {
+    const value = e.target.value;
+    setName(value);
+    if (!isNameValid(value)) {
+      setNameError("Name should contain only letters and spaces.");
+    } else {
+      setNameError("");
+    }
+  };
+
+
+  const handleDivisionalSecretariatChange = (e) => {
+    const value = e.target.value;
+    setDivisionalSecretariat(value);
+    if (!isDivisionalSecretariatValid(value)) {
+      setDivisionalSecretariatError("Divisional Secretariat should contain only letters and spaces.");
+    } else {
+      setDivisionalSecretariatError("");
+    }
+  };
+
+  const handleGramaSevakaDivisionChange = (e) => {
+    const value = e.target.value;
+    setGramaSevakaDivision(value);
+    if (!isGramaSevakaDivisionValid(value)) {
+      setGramaSevakaDivisionError("Grama Sevaka Division should contain only letters and spaces.");
+    } else {
+      setGramaSevakaDivisionError("");
+    }
   };
   
     // Function to format phone number to international format
@@ -56,7 +97,8 @@ const ApplicationForm = () => {
           <div className="form-section">
             <div className="purple-box">{t("Applica_Name")}</div>
             <div className="input-field">
-              <input type="text" placeholder={t("Enter Name" )}  onChange={(e) => {setName(e.target.value)}} />
+            <input type="text" placeholder={t("Enter Name" )}  value={name} onChange={handleNameChange} />
+              {nameError && <p className="error-message">{nameError}</p>}
             </div>
           </div>
           <div className="form-section">
@@ -125,14 +167,24 @@ const ApplicationForm = () => {
           <div className="form-section">
             <div className="purple-box">{t("Divisional_Secretariat")}</div>
             <div className="input-field">
-              <input type="text" placeholder={t("Enter")} onChange={(e) => setDivisionalSecretariat(e.target.value)} />
+            <input 
+                type="text" 
+                placeholder={t("Enter")} 
+                onChange={handleDivisionalSecretariatChange} 
+              />
+              {divisionalSecretariatError && <p className="error-message">{divisionalSecretariatError}</p>}
             </div>
           </div>
   
           <div className="form-section">
             <div className="purple-box">{t("Grama Sevaka Division")}</div>
             <div className="input-field">
-              <input type="text" placeholder={t("Informationn")}  onChange={(e) => setGramaSevakaDivision(e.target.value)} />
+            <input 
+              type="text" 
+              placeholder={t("Informationn")} 
+              onChange={handleGramaSevakaDivisionChange} 
+            />
+            {gramaSevakaDivisionError && <p className="error-message">{gramaSevakaDivisionError}</p>}
             </div>
           </div>
   
