@@ -188,6 +188,7 @@
     "Yes":"Yes",
     "No":"No",
     "Please fill in all fields":"Please fill in all fields",
+    "Divisional Secretariat should contain only letters and spaces.":"Divisional Secretariat should contain only letters and spaces.",
 
     "DonateName":"Name",
     "DonateMail": " Enter Email",

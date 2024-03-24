@@ -1,6 +1,6 @@
 
 :root {
-  --col1: #52578f;
+  --col1: #7b74e0;
   --col2: gray;
   --col3: #cecece;
 }
@@ -25,7 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   font-style: italic;
   /* color: conic-gradient(red, yellow, green, blue, black); */

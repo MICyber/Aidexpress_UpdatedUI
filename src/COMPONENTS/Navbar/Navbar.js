@@ -82,7 +82,7 @@ const Navbar = () => {
 
               <Dropdown.Menu>
                 <Dropdown.Item as={Link} to="/AccessLevel">{t("Login")}</Dropdown.Item>
-                <Dropdown.Item as={Link} to="/AccessLevelForSignUp">{t("Signup")}</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/OfficerSignUp">{t("Signup")}</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
