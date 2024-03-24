@@ -2,19 +2,17 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import { useLocation } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
 const ApplicationForm2 = () => {
 
   const location = useLocation();
   const { request } = location.state || {};
-  const { t } = useTranslation();
 
   useEffect(() => {
 
     console.log("data=>", request);
 
-  }, [request]);
+  }, []);
 
   const [bankDetails, setBankDetails] = useState({
     bankName: "",
@@ -23,64 +21,18 @@ const ApplicationForm2 = () => {
     branchName: "",
   });
 
-  const [errorMessage, setErrorMessage] = useState("");
+  request.bankName = bankDetails.bankName;
+  request.accountHolderName = bankDetails.accountHolderName;
+  request.accountNumber = bankDetails.accountNumber;
+  request.branchName = bankDetails.branchName;
 
   const handleBankDetailsChange = (e) => {
     const { name, value } = e.target;
-    let errorMessage = "";
-
-    // Basic validation for each field
-    switch (name) {
-      case "bankName":
-        // Example: Check if the bank name is not empty
-        if (value.trim() === "") {
-          errorMessage = "Bank name is required.";
-        }
-        break;
-      case "accountHolderName":
-        // Example: Check if the account holder name is not empty
-        if (value.trim() === "") {
-          errorMessage = "Account holder name is required.";
-        }
-        break;
-      case "accountNumber":
-        // Example: Check if the account number is not empty and is a valid number
-        if (value.trim() === "") {
-          errorMessage = "Account number is required.";
-        } else if (isNaN(value.trim())) {
-          errorMessage = "Account number must be a number.";
-        }
-        break;
-      case "branchName":
-        // Example: Check if the branch name is not empty
-        if (value.trim() === "") {
-          errorMessage = "Branch name is required.";
-        }
-        break;
-      default:
-        break;
-    }
-
-    // Update state with new input value and error message
     setBankDetails((prevDetails) => ({
       ...prevDetails,
       [name]: value,
     }));
-    setErrorMessage(errorMessage);
   };
-
-  // request.bankName = bankDetails.bankName;
-  // request.accountHolderName = bankDetails.accountHolderName;
-  // request.accountNumber = bankDetails.accountNumber;
-  // request.branchName = bankDetails.branchName;
-
-  // const handleBankDetailsChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setBankDetails((prevDetails) => ({
-  //     ...prevDetails,
-  //     [name]: value,
-  //   }));
-  // };
 
   return (
     <div className="Form2">
@@ -89,14 +41,14 @@ const ApplicationForm2 = () => {
         <h1>Application Form</h1>
         <form>
           <div className="form-section">
-            <div className="purple-box">{t("BankName")}</div>
+            <div className="purple-box">Bank Name:</div>
             <div className="input-field">
               <label htmlFor="bankName" className="label-style">
                 <input
                   type="text"
                   id="bankName"
                   name="bankName"
-                  placeholder={t("EnterBankName")}
+                  placeholder="Enter Bank Name"
                   value={bankDetails.bankName}
                   onChange={handleBankDetailsChange}
                 />
@@ -104,14 +56,14 @@ const ApplicationForm2 = () => {
             </div>
           </div>
           <div className="form-section">
-            <div className="purple-box">{t("AccountName")}</div>
+            <div className="purple-box">Account Holder Name:</div>
             <div className="input-field">
               <label htmlFor="accountHolderName" className="label-style">
                 <input
                   type="text"
                   id="accountHolderName"
                   name="accountHolderName"
-                  placeholder={t("EnterAccountName")}
+                  placeholder="Enter Account Holder Name"
                   value={bankDetails.accountHolderName}
                   onChange={handleBankDetailsChange}
                 />
@@ -119,14 +71,14 @@ const ApplicationForm2 = () => {
             </div>
           </div>
           <div className="form-section">
-            <div className="purple-box">{t("AccNumber")}</div>
+            <div className="purple-box">Account Number:</div>
             <div className="input-field">
               <label htmlFor="accountNumber" className="label-style">
                 <input
-                  type="number"
+                  type="text"
                   id="accountNumber"
                   name="accountNumber"
-                  placeholder={t("EnterAccNumber")}
+                  placeholder="Enter Account Number"
                   value={bankDetails.accountNumber}
                   onChange={handleBankDetailsChange}
                 />
@@ -134,43 +86,32 @@ const ApplicationForm2 = () => {
             </div>
           </div>
           <div className="form-section">
-            <div className="purple-box">{t("BranchName")}</div>
+            <div className="purple-box">Branch Name:</div>
             <div className="input-field">
               <label htmlFor="branchName" className="label-style">
                 <input
                   type="text"
                   id="branchName"
                   name="branchName"
-                  placeholder={t("EnterBranchName")}
+                  placeholder="Enter Branch Name"
                   value={bankDetails.branchName}
                   onChange={handleBankDetailsChange}
                 />
               </label>
             </div>
           </div>
-          {/* <div className="next-button-container">
-            <Link to="/ApplicationForm">
-              <button className="back-button">Back</button>
-            </Link>
-            <Link to="/ApplicationForm3" state={{ request }}>
-              <button className="next-button" disabled={!bankDetails.bankName || !bankDetails.accountHolderName || !bankDetails.accountNumber || !bankDetails.branchName}>Next</button>
-            </Link>
-            {(!bankDetails.bankName || !bankDetails.accountHolderName || !bankDetails.accountNumber || !bankDetails.branchName) && <p className="error-message">Please fill in all fields.</p>}
-          </div> */}
           <div className="next-button-container">
             <Link to="/ApplicationForm">
               <button className="back-button">Back</button>
             </Link>
             <Link to="/ApplicationForm3" state={{ request }}>
-              <button className="next-button" disabled={!bankDetails.bankName || !bankDetails.accountHolderName || !bankDetails.accountNumber || !bankDetails.branchName}>Next</button>
+              <button className="next-button">Next</button>
             </Link>
-            {errorMessage && <p className="error-message">{errorMessage}</p>}
           </div>
         </form>
       </div>
     </div>
   );
-  
 };
 
 export default ApplicationForm2;
