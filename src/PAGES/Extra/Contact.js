@@ -27,7 +27,7 @@ const Contact = () => {
             },
             body: JSON.stringify({Name, Email, Subject, Message})
         };
-        const res = await fetch('https://aidexpress-1fe47-default-rtdb.firebaseio.com/Meaasges.json', options);
+        const res = await fetch('https://aidexpress-25fd8-default-rtdb.firebaseio.com/Meaasges.json', options);
         console.log(res);
     };
 
