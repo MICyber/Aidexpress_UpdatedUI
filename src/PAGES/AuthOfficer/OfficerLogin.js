@@ -43,11 +43,11 @@ const OfficerLogin = () => {
                         <input type='password' id='password' onChange={(e) => setPassword(e.target.value)} />
                     </div>
 
-                    <Link to='/OfficerForgotPassword'
+                    {/* <Link to='/OfficerForgotPassword'
                         className='stylenone'
                     >
                         <p>Forgot password?</p>
-                    </Link>
+                    </Link> */}
                     
                         <button className='btn' onClick={submit}>Login</button>
                     

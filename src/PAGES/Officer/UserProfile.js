@@ -5,11 +5,8 @@ import Footer2 from '../../COMPONENTS/Footer/Footer2'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import SingleBanner from '../../COMPONENTS/Banners/SingleBanner'
 import UserSidebar from '../../COMPONENTS/OfficerProfile/UserSidebar'
-import AccountSettings from '../../COMPONENTS/OfficerProfile/AccountSettings'
 import './UserProfile.css'
-import ChangePassword from '../../COMPONENTS/OfficerProfile/ChangePassword'
 import YourOrders from '../../COMPONENTS/OfficerProfile/YourOrders'
-import UserAddress from '../../COMPONENTS/OfficerProfile/UserAddress'
 import LegalNotice from '../../COMPONENTS/OfficerProfile/LegalNotice'
 
 const UserProfile = () => {
@@ -33,10 +30,8 @@ const UserProfile = () => {
               <UserSidebar activepage={activepage}/>
             </div>
             <div className='right'>
-              {activepage === 'accountsettings' && <AccountSettings/>}
-              {activepage === 'changepassword' && <ChangePassword/>}
+              
               {activepage === 'yourorders' && <YourOrders/>}
-              {activepage === 'address' && <UserAddress/>}
               {activepage === 'legalnotice' && <LegalNotice/>}
             </div>
          </div>
