@@ -51,12 +51,12 @@ const OfficerLogin = () => {
                     
                         <button className='btn' onClick={submit}>Login</button>
                     
-                    <h2 className='or'>OR</h2>
+                    {/* <h2 className='or'>OR</h2>
                     <Link to='/OfficerSignup'
                         className='stylenone'
                     >
                         <button className='btn'>Signup</button>
-                    </Link>
+                    </Link> */}
                 </form>
             </div>
         </div>
