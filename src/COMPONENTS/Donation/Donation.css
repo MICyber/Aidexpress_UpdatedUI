@@ -1,0 +1,65 @@
+/* Donation.css */
+.donation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px;
+}
+
+.donation-content {
+  flex: 1;
+  padding: 50px;
+  margin-left: 50px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1); /* Add box shadow to the content */
+  border-radius: 50px; /* Add border-radius to match the image */
+  background-color: rgb(252, 250, 250);
+}
+
+.donation-text {
+  flex: 1;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.donation-image {
+  margin-right: 100px;
+}
+
+.donation-image img {
+  max-width: 500px;
+  height: 430px;
+  border-radius: 50px;
+}
+
+.donate-button {
+  background-color: #564beb;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  display: block; /* Make it a block element to center with margin auto */
+  margin: 0 auto;
+  border-radius: 7px;
+}
+
+.donate-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .donation-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donation-content {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  .donation-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
