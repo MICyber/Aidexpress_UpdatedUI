@@ -65,7 +65,7 @@ const DonationForm = () => {
 
   const sendSMS = async (request) => {
     try {
-      const response = apiService.post(`/send-sms`, request);
+      const response = apiService.post(`https://aidexpress-updatedui-13.onrender.com/send-sms`, request);
       console.log(response.subscribe(response => console.log(response)));
       response.subscribe(response => {
         if (response) {
@@ -101,7 +101,7 @@ const DonationForm = () => {
 
   const saveDonation = async (request) => {
     try {
-      const response = apiService.post(`/donations`, request);
+      const response = apiService.post(`https://aidexpress-updatedui-13.onrender.com/donations`, request);
       console.log(response.subscribe(response => console.log(response)));
       response.subscribe(response => {
         if (response) {
@@ -121,7 +121,7 @@ const DonationForm = () => {
 
   const payment = async (request) => {
     try {
-      const response = apiService.post(`/payments/make-payment`, request);
+      const response = apiService.post(`https://aidexpress-updatedui-13.onrender.com/payments/make-payment`, request);
       console.log(response.subscribe(response => console.log(response)));
       response.subscribe(response => {
         if (response) {
