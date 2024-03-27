@@ -16,7 +16,7 @@ const DonateEvidence = () => {
       
     const getDonation = async () => {
         try {
-          const response = apiService.get(`https://aidexpress-updatedui-13.onrender.com/donations`);
+          const response = apiService.get(`/donations`);
           console.log(response.subscribe(response => console.log(response)));
           response.subscribe(response => {
             if (response) {
