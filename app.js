@@ -24,30 +24,30 @@ mongoose
   .catch((err) => console.error("Could not connect to MongoDB...", err));
 
 // User Registration Route
-app.post("https://aidexpress-updatedui-13.onrender.com/api/users", userController.registerUser);
-app.get("https://aidexpress-updatedui-13.onrender.com/api/users/:id", userController.getUser);
-app.put("https://aidexpress-updatedui-13.onrender.com/api/users/:id", userController.updateUserEligibility);
-app.delete("https://aidexpress-updatedui-13.onrender.com/api/users/:id", userController.removeUser);
+app.post("/api/users", userController.registerUser);
+app.get("/api/users/:id", userController.getUser);
+app.put("/api/users/:id", userController.updateUserEligibility);
+app.delete("/api/users/:id", userController.removeUser);
 
-app.post("https://aidexpress-updatedui-13.onrender.com/api/send-sms", smsController.sendNotification);
+app.post("/api/send-sms", smsController.sendNotification);
 
-app.post("https://aidexpress-updatedui-13.onrender.com/api/payments/make-payment", paymentController.processPaymentReq);
-app.post("https://aidexpress-updatedui-13.onrender.com/api/payments", paymentController.create);
-app.get("https://aidexpress-updatedui-13.onrender.com/api/payments", paymentController.getAll);
-app.get("https://aidexpress-updatedui-13.onrender.com/api/payments/:id", paymentController.getById);
-app.put("https://aidexpress-updatedui-13.onrender.com/api/payments/:id", paymentController.update);
-app.delete("https://aidexpress-updatedui-13.onrender.com/api/payments/:id", paymentController.remove);
+app.post("/api/payments/make-payment", paymentController.processPaymentReq);
+app.post("/api/payments", paymentController.create);
+app.get("/api/payments", paymentController.getAll);
+app.get("/api/payments/:id", paymentController.getById);
+app.put("/api/payments/:id", paymentController.update);
+app.delete("/api/payments/:id", paymentController.remove);
 
-app.post("https://aidexpress-updatedui-13.onrender.com/api/donations", donationController.createDonation);
-app.get("https://aidexpress-updatedui-13.onrender.com/api/donations", donationController.getAll);
-app.get("https://aidexpress-updatedui-13.onrender.com/api/donations/:id", donationController.getById);
-app.put("https://aidexpress-updatedui-13.onrender.com/api/donations/:id", donationController.update);
-app.delete("https://aidexpress-updatedui-13.onrender.com/api/donations/:id", donationController.remove);
+app.post("/api/donations", donationController.createDonation);
+app.get("/api/donations", donationController.getAll);
+app.get("/api/donations/:id", donationController.getById);
+app.put("/api/donations/:id", donationController.update);
+app.delete("/api/donations/:id", donationController.remove);
 
-app.post("https://aidexpress-updatedui-13.onrender.com/api/applications/:applicationId/track",applicationController.trackApplication);
-app.post("https://aidexpress-updatedui-13.onrender.com/api/applications", applicationController.createApplication);
-app.delete("https://aidexpress-updatedui-13.onrender.com/api/applications/:applicationId",applicationController.removeApplication);
-app.get("https://aidexpress-updatedui-13.onrender.com/api/applications", applicationController.listAllApplications);
-app.get("https://aidexpress-updatedui-13.onrender.com/api//applications/:_id", applicationController.getApplicationById);
+app.post("/api/applications/:applicationId/track",applicationController.trackApplication);
+app.post("/api/applications", applicationController.createApplication);
+app.delete("/api/applications/:applicationId",applicationController.removeApplication);
+app.get("/api/applications", applicationController.listAllApplications);
+app.get("/api//applications/:_id", applicationController.getApplicationById);
 
 app.listen(5000, () => console.log("Server running on port 5000"));
