@@ -2,7 +2,7 @@ import axios from 'axios';
 import { from } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-const API_BASE_URL = 'https://aidexpress-updatedui-1-c3t0.onrender.com/api';
+const API_BASE_URL = 'https://aidexpress-backend.onrender.com/api';
 
 // Create an Axios instance
 const http = axios.create({
